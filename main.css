@@ -6,6 +6,8 @@ border: 0;
 outline: 0;
 }
 
+/* start of Header styles*/
+
 .global-header {
 background: #333;
 background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #555555), color-stop(18%, #515151), color-stop(85%, #373737), color-stop(100%, #333333));
@@ -198,3 +200,5 @@ li {
 display: list-item;
 text-align: -webkit-match-parent;
 }
+
+/* End of Header styles*/
