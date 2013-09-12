@@ -1,6 +1,7 @@
 ﻿.chrome-v5-responsive #body {
 margin-top: 68px;
 margin-bottom: 10px;
+padding:0;
 }
 
 #body, #footer {
