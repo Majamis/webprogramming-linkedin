@@ -30,12 +30,24 @@ color: #333;
 font-weight: normal;
 }
 
+.nav-legal {
+font-size: 11px;
+line-height: 17px;
+color: #333;
+font-weight: normal;
+}
+
 .nav-footer:after {
 content: "";
 display: table;
 clear: both;
 }
 
+.nav-legal:after {
+content: "";
+display: table;
+clear: both;
+}
 
 li {
 display: list-item;
@@ -101,11 +113,7 @@ float: left;
 {
     color:#0088cc;
 }
-#footer .nav-footer a:hover {
-outline: 0; 
-color:#0088cc;
 
-}
 
 p {
 display: block;
