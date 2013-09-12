@@ -188,19 +188,6 @@ padding: 5px 10px;
 }
 
 
-input, textarea, keygen, select, button, isindex {
-margin: 0em;
-font: -webkit-small-control;
-color: initial;
-letter-spacing: normal;
-word-spacing: normal;
-text-transform: none;
-text-indent: 0px;
-text-shadow: none;
-display: inline-block;
-text-align: start;
-}
-
 .os-win body, .os-win input, .os-win select, .os-win textarea, .os-win button {
 font-family: Arial,sans-serif;
 }
@@ -807,6 +794,10 @@ margin-left: 0px;
 margin-right: 5px;
 }
 
+a {
+color: #0077b5;
+text-decoration: none;
+}
 
 a:visited, #footer a:visited {
 color: #069;
@@ -858,6 +849,13 @@ z-index:4;
 text-decoration: none;
 }
 
+html {
+overflow-y: scroll;
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+}
 
 
 
