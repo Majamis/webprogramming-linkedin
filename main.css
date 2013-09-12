@@ -38,17 +38,6 @@ height: 0;
 background: none;
 }
 
-body
-{
-font-size: 62.5%;
-line-height: 1.2;
-color: #000;
-margin: 0;
-padding: 0;
-border: 0;
-outline: 0;
-}
-
 h2 {
 display: block;
 font-size: 1.5em;
@@ -57,30 +46,6 @@ font-size: 1.5em;
 -webkit-margin-start: 0px;
 -webkit-margin-end: 0px;
 font-weight: bold;
-}
-
-ul, menu, dir {
-display: block;
-list-style-type: disc;
--webkit-margin-before: 1em;
--webkit-margin-after: 1em;
--webkit-margin-start: 0px;
--webkit-margin-end: 0px;
--webkit-padding-start: 40px;
-}
-
-
-body, div, h2, ul, li, a{
-margin: 0;
-padding: 0;
-border: 0;
-outline: 0;
-font-weight: inherit;
-font-style: inherit;
-font-size: 100%;
-vertical-align: baseline;
--webkit-text-size-adjust: 100%;
-font-family: Arial,sans-serif;
 }
 
 .global-header .nav.guest-nav {
@@ -124,10 +89,6 @@ height: 0;
 clear: both;
 overflow: hidden;
 visibility: hidden;
-}
-
-ol, ul {
-list-style: none;
 }
 
 .nav-v5-2-header #in-logo, #in-premium-logo, #li-logo {
@@ -192,9 +153,4 @@ text-decoration: none;
 float: left;
 line-height: 13px;
 position: relative;
-}
-
-li {
-display: list-item;
-text-align: -webkit-match-parent;
 }
