@@ -159,7 +159,7 @@ padding-right: 0px;
 margin-top: -2px;
 margin-bottom: -2px;
 
-background: transparent no-repeat no-scroll top left url(logo_linkedin_med_grey_trans_64x16_v1.png);
+background: transparent no-repeat no-scroll top left url(images/logo_linkedin_med_grey_trans_64x16_v1.png);
 }
 
 .weight{
@@ -357,7 +357,7 @@ vertical-align: baseline;
 .backSet
 {
     font-family: Arial,sans-serif;
-    background:#e9e9e9 url(texture_grain_200x200_v2.png);   
+    background:#e9e9e9 url(images/texture_grain_200x200_v2.png);   
     line-height: 1;
     
 }
@@ -396,7 +396,7 @@ font-size: 32px;
 
 
 .header {
-background: transparent url(texture_hero_974x409_v2.png);
+background: transparent url(images/texture_hero_974x409_v2.png);
 }
 
 
