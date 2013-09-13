@@ -1,0 +1,214 @@
+﻿body {
+}
+
+#pagekey-uas-consumer-login-internal {
+background: #e9e9e9 url('texture_grain_200x200_v2.png');
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+vertical-align: baseline;
+-webkit-text-size-adjust: 100%;
+}
+
+body {
+font-size: 62.5%;
+line-height: 1.2;
+color: #000;
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+}
+
+body, input, select, textarea, button {
+font-family: sans-serif;
+}
+
+body {
+background-color: #fff;
+}
+
+.os-win body{
+font-family: Arial,sans-serif;
+}
+
+.a11y-skip-nav-container {
+position: relative;
+}
+
+.a11y-skip-nav-container .a11y-skip-nav.a11y-hidden {
+position: absolute !important;
+height: 1px;
+width: 1px;
+overflow: hidden;
+clip: rect(1px, 1px, 1px, 1px);
+}
+
+#body {
+margin-top: 80px;
+margin-bottom: 10px;
+}
+
+#body {
+margin-top: 80px;
+margin-bottom: 10px;
+}
+
+
+#body, #pagekey-uas-consumer-login-internal #body {
+margin-left: auto;
+margin-right: auto;
+width: 974px;
+}
+
+#page-title1 {
+margin: 0 10px 15px 10px;
+}
+
+#page-title1 h1, #page-title1 h1 a {
+font-size: 22px;
+font-weight: bold;
+line-height: 24px;
+color: #000;    
+}
+
+.titleset
+{
+    font-size: 22px;
+font-weight: bold;
+line-height: 24px;
+color: #000;
+}
+
+#body .wrapper {
+padding: 0 10px;
+}
+
+.signin {
+margin-bottom: 10px;
+}
+
+.signin ul {
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+-o-border-radius: 5px;
+border-radius: 5px;
+border: 1px solid #ccc;
+width: 605px;
+_width: 615px;
+margin: 0 auto;
+padding: 30px 20px 30px 20px;
+_padding-right: 0;
+}
+
+.signin ul {
+width: 470px;
+_width: 480px;
+}
+
+
+.signin ul {
+border: none;
+background: #fff;
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+}
+
+
+
+
+.signin li {
+overflow: hidden;
+margin-bottom: 4px;
+zoom: 1;
+}
+
+.signin label {
+font-size: 13px;
+color: #333;
+display: block;
+float: left;
+text-align: right;
+padding-right: 8px;
+width: 210px;
+font-weight: bold;
+line-height: 33px;
+}
+
+.signin label {
+width: 110px;
+}
+
+
+.signin .button {
+margin: 10px 0 0 218px;
+width: 410px;
+}
+
+
+.signin .button {
+margin-left: 117px;
+}
+
+.signin .button span {
+font-size: 12px;
+vertical-align: middle;
+}
+
+.btn-primary, .btn-menu-open.btn-primary, .btn-split.btn-primary:hover {
+background: #0571A6;
+background: -moz-linear-gradient(top, #73aec9 0, #73aec9 1px, #338ab0 1px, #0571a6 100%);
+background: -o-linear-gradient(top, #73aec9 0, #73aec9 1px, #338ab0 1px, #0571a6 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #73aec9), color-stop(5%, #73aec9), color-stop(5%, #338ab0), color-stop(100%, #0571a6));
+background: linear-gradient(top, #73aec9 0%,#73aec9 1px,#338ab0 1px,#0571a6 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#338AB0', endColorstr='#0571A6',GradientType=0 );
+border-color: #045a8b;
+color: #fff !important;
+}
+
+.btn-primary:hover, .btn-split-toggle-hover.btn-primary:hover {
+background: #04608E;
+background: -moz-linear-gradient(top, #69a0b6 0, #69a0b6 1px, #277696 1px, #04608e 100%);
+background: -o-linear-gradient(top, #69a0b6 0, #69a0b6 1px, #277696 1px, #04608e 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #69a0b6), color-stop(5%, #69a0b6), color-stop(5%, #277696), color-stop(100%, #04608e));
+background: linear-gradient(top, #69a0b6 0%,#69a0b6 1px,#277696 1px,#04608e 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#277696', endColorstr='#04608E',GradientType=0 );
+border-color: #004a73;
+}
+
+.signin .button input {
+vertical-align: middle;
+}
+
+.signin .fieldgroup a {
+font-size: 11px;
+padding-left: 5px;
+}
+
+.signin .fieldgroup input {
+font-size: 16px;
+width: 220px;
+}
+
+a {
+text-decoration: none;
+color: #069;
+}
+
+a:visited, #footer a:visited {
+color: #069;
+}
+
+#body .more a:visited, #body .action a:visited, #body .cancel:visited, #body .more:visited, #body .nav-link:visited, #body .nav-links a:visited {
+color: #069;
+}
