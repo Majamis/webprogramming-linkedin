@@ -540,12 +540,13 @@ line-height: 1.1em;
 }
 
 .handwritten {
-font-size: 21px;
+font-size: 18px;
 font-weight: normal;
 }
 
 .handwritten {
 font-family: LazyDogRegular,Arial,sans-serif;
+padding-top: 14px;
 }
 
 .fb_button {
