@@ -739,3 +739,12 @@ display: block;
 display: inline;
 }
 
+#new1 li
+{
+border-right: 1px solid #ccc;
+margin-right: 8px;
+padding-right: 8px;
+margin-top: 5px;
+margin-bottom: 5px;
+float: left;
+{
