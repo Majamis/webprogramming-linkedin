@@ -21,10 +21,28 @@ search_bar
     
 }
 
-
-
+#footer .nav-footer2>li{
+border-right: 1px solid #ccc;
+margin-right: 8px;
+padding-right: 8px;
+margin-top: 5px;
+margin-bottom: 5px;
+float: left;
+}
+#footer .nav-footer2>li.last{
+border-right: none;
+}
 .nav-footer {
 font-size: 13px;
+line-height: 17px;
+color: #333;
+font-weight: normal;
+}
+
+
+
+.nav-legal {
+font-size: 11px;
 line-height: 17px;
 color: #333;
 font-weight: normal;
@@ -36,6 +54,11 @@ display: table;
 clear: both;
 }
 
+.nav-legal:after {
+content: "";
+display: table;
+clear: both;
+}
 
 li {
 display: list-item;
@@ -101,11 +124,7 @@ float: left;
 {
     color:#0088cc;
 }
-#footer .nav-footer a:hover {
-outline: 0; 
-color:#0088cc;
 
-}
 
 p {
 display: block;
@@ -143,6 +162,10 @@ margin-bottom: -2px;
 background: transparent no-repeat no-scroll top left url(logo_linkedin_med_grey_trans_64x16_v1.png);
 }
 
+.weight{
+font-weight: bold;
+}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
 {
     
@@ -164,10 +187,15 @@ border-right: none;
 
 
 
-body {
-font-size: 62.5%;
+body 
+{
+    font-size: 62.5%;
 line-height: 1.2;
 color: #000;
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
 font-family:Arial,sans-serif;
 
  
@@ -182,6 +210,19 @@ clear: both;
 margin-left: auto;
 margin-right: auto;
 width: 980px;
+}
+#footer {
+font-size: 12px;
+line-height: 14px;
+color: #666;
+font-weight: normal;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-left: auto;
+margin-right: auto;
+width: 974px;
+border-top: 1px solid #ccc;
+font-family: Arial,sans-serif;
 }
 #body1:after, #footer:after {
 content: "";
@@ -203,7 +244,7 @@ vertical-align: baseline;
 }
 
 #body1 .wrapper {
-padding: 0 10px;
+padding: 0 3px;
 }
 
 ul.directory {
@@ -275,7 +316,7 @@ margin-top: 80px;
 margin-bottom: 10px;
 }
 
-#body1, #footer {
+#body1 {
 margin-left: auto;
 margin-right: auto;
 width: 980px;
@@ -322,11 +363,19 @@ vertical-align: baseline;
 }
 
 
+#main1
+{
+ background: #fff; 
+}
+
 #main
 {
  background: #fff; 
-   
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
 }
+
 
 #main h1 {
 font-size: 24px;
@@ -336,9 +385,17 @@ color: #000;
 font-size: 32px;
 }
 
+#main1 h1 {
+font-size: 24px;
+font-weight: bold;
+line-height: 26px;
+color: #000;
+font-size: 32px;
+}
+
 
 .header {
-background: transparent url(1208615_495108603914265_823390327_n.jpg);
+background: transparent url(texture_hero_974x409_v2.png);
 }
 
 
