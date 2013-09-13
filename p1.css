@@ -903,7 +903,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5D822A', endC
 .hover_1{
 position: relative
 }
-#directory ol li:hover > div{ 
+#directory ol li:hover  > div{ 
 		z-index:100;
 		opacity:1;
 		visibility:visible;
