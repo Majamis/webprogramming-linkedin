@@ -1,9 +1,4 @@
 ﻿
-.os-win body
-{
-font-family: Arial,sans-serif;
-}
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 margin: 0;
 padding: 0;
@@ -16,6 +11,26 @@ font-family: inherit;
 vertical-align: baseline;
 -webkit-text-size-adjust: 100%;
 }
+
+
+.os-win body
+{
+font-family: Arial,sans-serif;
+}
+body {
+background-color: #e6e6e6;
+}
+
+body {
+font-size: 62.5%;
+line-height: 1.2;
+color: #000;
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+}
+
 
 #header, #body, #footer {
 clear: both;
@@ -43,10 +58,18 @@ margin-top: 23px;
 .guest #header {
 margin: 0 auto;
 }
+#header:after, #nav-primary:after, #nav-primary .wrapper:after, #body:after, #body .wrapper:after, #main:after {
+content: "\0020";
+display: block;
+height: 0;
+clear: both;
+overflow: hidden;
+visibility: hidden;
+}
 
 #nav-primary .wrapper {
 padding: 0 5px;
-background: url('/scds/common/u/img/sprite/sprite_global_v8.png') no-repeat 0 -510px;
+background: url('sprite_global_v8.png') no-repeat 0 -510px;
 height: 39px;
 }
 
@@ -112,13 +135,6 @@ color: #069;
 a:visited, #footer a:visited {
 color: #069;
 }
-
-#body {
-background: #fff;
-padding: 0;
-border: 1px solid #ccc;
-}
-
 #body{
 clear: both;
 width: 98em;
@@ -128,8 +144,35 @@ max-width: 95%;
 margin: 0 auto;
 }
 
+#header, #body, #footer {
+width: 80.5em;
+_width: 805px;
+min-width: 805px;
+}
+
+#body {
+background: #fff;
+padding: 0;
+border: 1px solid #ccc;
+}
+
+
 #body .wrapper {
 padding: 15px;
+}
+
+div.alert {
+_height: 28px;
+}
+
+div.alert {
+color: #333;
+background-color: #fff;
+margin: 0 0 15px;
+padding: 6px 7px 6px 35px;
+overflow: hidden;
+min-height: 28px;
+position: relative;
 }
 
 div.alert.attention {
@@ -145,14 +188,53 @@ strong {
 font-weight: bold;
 }
 
-.introduction {
+.join-linkedin .introduction {
+padding-bottom: 11px;
+background: transparent url('bg_arrow_foursided_4a99c0_34x34.png') no-repeat bottom left;
+margin-left: 108px;
+}
+
+.fb-reg .introduction {
+background-image: url('bg_arrow_foursided_00679a_34x34.png');
+margin-bottom: 5px;
+}
+
+.join-linkedin.cookied .introduction {
 background-image: url('bg_arrow_foursided_898989_34x34.png');
 }
 
-.introduction h1 {
+h1 {
+font-size: 180%;
+color: #39c;
+}
+
+.join-linkedin .introduction h1 {
+font-size: 180%;
+font-weight: normal;
+color: #fff;
+padding: 10px 15px;
+background: #74b9dc url('bg_blue_19x63.png') repeat-x bottom left;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+margin-left: -108px;
+}
+
+.fb-reg .introduction h1 {
+padding: 16px 18px;
+background: #00679a;
+background: -moz-linear-gradient(top, #91cce7 0%, #00679a 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #91cce7), color-stop(100%, #00679a));
+}
+
+.join-linkedin.cookied .introduction h1 {
 background: #aaa url('bg_gray_19x63.png') repeat-x bottom left;
 }
 
+#main h1 {
+font-weight: normal;
+font-size: 160%;
+}
 
 #main h1 {
 font-size: 18px;
@@ -208,11 +290,233 @@ padding: 0 0 0 20px;
 margin: 0;
 }
 
+form ul input, form ul textarea {
+border: 1px solid #999;
+outline: none;
+padding: 2px 3px;
+background-color: #fff;
+}
+
+.os-win body, .os-win input, .os-win select, .os-win textarea, .os-win button {
+font-family: Arial,sans-serif;
+}
+
+.standard-form input, .standard-form select, .standard-form textarea {
+font-size: 13px;
+}
+
+
+
+.join-linkedin .standard-form input {
+width: 203px;
+margin: 0;
+}
+
+.fb-reg .standard-form input {
+width: 267px;
+}
+
+ol, ul {
+list-style: none;
+}
+
+.standard-form ul {
+margin: 0;
+padding-top: 10px;
+list-style-type: none;
+}
+
+.join-linkedin .standard-form ul {
+margin: 0;
+padding: 0;
+}
+
+.standard-form li, .standard-form fieldset.details li {
+margin-bottom: 10px;
+}
+
+.join-linkedin .standard-form li {
+zoom: 1;
+}
+
+.standard-form label, .standard-form li fieldset legend span, .standard-form li fieldset.details fieldset legend {
+font-size: 13px;
+color: #333;
+background-color: transparent;
+font-weight: bold;
+display: block;
+float: left;
+text-align: right;
+width: 185px;
+margin-right: 10px;
+}
+
+.register-container label {
+padding: 3px 0;
+}
+
+.standard-form.sided label, .standard-form.sided li fieldset legend span, .standard-form.sided li fieldset.details fieldset legend {
+width: 110px;
+}
+
+.join-linkedin .standard-form label {
+width: 97px;
+margin-right: 0;
+}
+
+.standard-form .fieldgroup {
+margin: 0 0 0 195px;
+_margin-left: 198px;
+padding: 0;
+}
+
+.register-container .fieldgroup {
+position: relative;
+}
+
+.standard-form.sided ul ul, .standard-form.sided .fieldgroup {
+margin-left: 120px;
+_margin-left: 117px;
+}
+
+.standard-form.sided .fieldgroup {
+_margin-left: 123px;
+}
+
+.join-linkedin .standard-form.sided ul ul, .join-linkedin .standard-form.sided .fieldgroup {
+margin-left: 105px;
+}
+
+
+
+span.error {
+font-weight: bold;
+color: #900;
+}
+
+.standard-form .error {
+font-size: 12px;
+color: #900;
+font-weight: bold;
+}
+
+.standard-form input, .standard-form select, .standard-form textarea {
+font-size: 13px;
+}
+
+.fb-reg .standard-form input {
+width: 267px;
+}
+.register-container .fieldgroup input#password-coldRegistrationForm {
+border: 1px solid #999;
+padding: 2px 3px;
+}
+
+.register-container .fieldgroup.field-hover input#password-coldRegistrationForm, .register-container .fieldgroup input#password-coldRegistrationForm {
+background: #fff;
+cursor: text;
+}
+
+.standard-form p {
+margin-left: 195px;
+_margin-left: 200px;
+margin-top: .25em;
+color: #333;
+}
+
+.standard-form p.example, .standard-form p.tip, .standard-form p.note {
+font-size: 11px;
+color: #666;
+}
+
+.standard-form.sided p {
+margin-left: 120px;
+}
+
+.join-linkedin .standard-form .actions {
+background: none;
+padding-top: 0;
+margin-top: 10px;
+font-size: 100%;
+zoom: 1;
+}
+
+.btn-primary, .btn-new-primary, .btn-secondary, .btn-new-secondary, .btn-tertiary, .btn-ternary, .btn-quaternary, .btn-action {
+border-width: 1px;
+border-style: solid;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+cursor: pointer;
+font-size: 12px;
+line-height: 1.35;
+margin: 0;
+overflow: visible;
+padding: 3px 10px 2px;
+text-decoration: none !important;
+vertical-align: top;
+width: auto;
+}
+
+.btn-tertiary {
+background: #69A219;
+background: -moz-linear-gradient(top, #afd47b 0, #afd47b 1px, #8bc03f 1px, #69a219 100%);
+background: -o-linear-gradient(top, #afd47b 0, #afd47b 1px, #8bc03f 1px, #69a219 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #afd47b), color-stop(5%, #afd47b), color-stop(5%, #8bc03f), color-stop(100%, #69a219));
+background: linear-gradient(top, #afd47b 0%,#afd47b 1px,#8bc03f 1px,#69a219 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#AFD47B', endColorstr='#69A219',GradientType=0 );
+border-color: #693;
+color: #fff !important;
+font-weight: bold;
+white-space: nowrap;
+}
+
+.os-win body, .os-win input, .os-win select, .os-win textarea, .os-win button {
+font-family: Arial,sans-serif;
+}
+
+.join-linkedin .standard-form .actions button {
+width: auto;
+max-width: 183px;
+zoom: 1;
+cursor: pointer;
+}
+
+
+.join-linkedin .standard-form.sided p.actions button div, .join-linkedin.existing .standard-form.sided p.actions button div {
+margin: 0;
+padding: 0;
+color: #fff;
+white-space: normal;
+}
+
+.join-linkedin .standard-form.sided p {
+margin-left: 105px;
+zoom: 1;
+}
+
+.fb-reg #email-coldRegistrationForm-error {
+margin-bottom: 5px;
+width: 270px;
+}
+
+.register-container .fieldgroup .edit {
+display: none;
+position: absolute;
+right: 20px;
+top: 5px;
+color: #006ea2;
+}
+
+
 #main.no-profile #extra {
 width: 40%;
 }
 
-
+#extra {
+float: right;
+width: 26%;
+}
 #main.no-profile #extra, #extra {
 width: 42%;
 }
@@ -252,7 +556,7 @@ outline: none;
 margin-bottom: 10px;
 }
 
-.fb_button_text {
+.fb_button .fb_button_text {
 background: #5f78ab url('sprite_fb_icon_22.png');
 border-top: 1px solid #879ac0;
 border-bottom: 1px solid #1a356e;
@@ -272,6 +576,29 @@ font-family: Arial,sans-serif;
 
 abbr {
 border: none;
+}
+
+.join-linkedin .standard-form #register-custom-nav {
+margin-top: 15px;
+clear: both;
+zoom: 1;
+font-size: 13px;
+line-height: 17px;
+color: #333;
+font-weight: normal;
+}
+
+.standard-form .screen, .ajax-form .screen {
+position: relative;
+display: block;
+filter: alpha(opacity=0);
+opacity: 0;
+z-index: 2;
+zoom: 1;
+_margin-left: -20px;
+}
+.join-linkedin .standard-form .actions em {
+font-size: 130%;
 }
 
 #extra abbr {
