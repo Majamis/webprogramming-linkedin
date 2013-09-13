@@ -69,7 +69,7 @@ visibility: hidden;
 
 #nav-primary .wrapper {
 padding: 0 5px;
-background: url('sprite_global_v8.png') no-repeat 0 -510px;
+background: url('images/sprite_global_v8.png') no-repeat 0 -510px;
 height: 39px;
 }
 
@@ -176,7 +176,7 @@ position: relative;
 }
 
 div.alert.attention {
-background: #fff5cc url('sprite_global_v8.png') no-repeat 7px -723px;
+background: #fff5cc url('images/sprite_global_v8.png') no-repeat 7px -723px;
 }
 
 div.alert p{
@@ -190,17 +190,17 @@ font-weight: bold;
 
 .join-linkedin .introduction {
 padding-bottom: 11px;
-background: transparent url('bg_arrow_foursided_4a99c0_34x34.png') no-repeat bottom left;
+background: transparent url('images/bg_arrow_foursided_4a99c0_34x34.png') no-repeat bottom left;
 margin-left: 108px;
 }
 
 .fb-reg .introduction {
-background-image: url('bg_arrow_foursided_00679a_34x34.png');
+background-image: url('images/bg_arrow_foursided_00679a_34x34.png');
 margin-bottom: 5px;
 }
 
 .join-linkedin.cookied .introduction {
-background-image: url('bg_arrow_foursided_898989_34x34.png');
+background-image: url('images/bg_arrow_foursided_898989_34x34.png');
 }
 
 h1 {
@@ -213,7 +213,7 @@ font-size: 180%;
 font-weight: normal;
 color: #fff;
 padding: 10px 15px;
-background: #74b9dc url('bg_blue_19x63.png') repeat-x bottom left;
+background: #74b9dc url('images/bg_blue_19x63.png') repeat-x bottom left;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
 border-radius: 5px;
@@ -228,7 +228,7 @@ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #91cc
 }
 
 .join-linkedin.cookied .introduction h1 {
-background: #aaa url('bg_gray_19x63.png') repeat-x bottom left;
+background: #aaa url('images/bg_gray_19x63.png') repeat-x bottom left;
 }
 
 #main h1 {
@@ -405,7 +405,7 @@ font-size: 13px;
 }
 
 .fb-reg .standard-form input {
-width: 267px;
+width: 275px;
 }
 .register-container .fieldgroup input#password-coldRegistrationForm {
 border: 1px solid #999;
@@ -549,7 +549,7 @@ font-family: LazyDogRegular,Arial,sans-serif;
 }
 
 .fb_button {
-background: #29447e url('sprite_fb_icon_22.png') 0 -44px no-repeat;
+background: #29447e url('images/sprite_fb_icon_22.png') 0 -44px no-repeat;
 display: inline-block;
 padding: 0 0 0 1px;
 outline: none;
@@ -557,7 +557,7 @@ margin-bottom: 10px;
 }
 
 .fb_button .fb_button_text {
-background: #5f78ab url('sprite_fb_icon_22.png');
+background: #5f78ab url('images/sprite_fb_icon_22.png');
 border-top: 1px solid #879ac0;
 border-bottom: 1px solid #1a356e;
 color: #fff;
@@ -646,4 +646,65 @@ margin-right: 8px;
 
 p#terms-of-use {
 margin-bottom: 8px;
+}
+
+.join-linkedin .standard-form .actions em {
+font-size: 130%;
+}
+
+.join-linkedin .standard-form.sided .actions_1 {
+margin-left: 105px;
+zoom: 1;
+}
+.standard-form .actions_1 {
+margin-left: 195px;
+_margin-left: 200px;
+margin-top: .25em;
+color: #333;
+}
+
+.join-linkedin .standard-form .actions_1 em {
+font-size: 130%;
+}
+
+.join-linkedin .standard-form .actions_1 {
+background: none;
+padding-top: 0;
+margin-top: 10px;
+font-size: 100%;
+zoom: 1;
+}
+
+.join-linkedin .standard-form .actions_1 button {
+width: auto;
+max-width: 183px;
+zoom: 1;
+cursor: pointer;
+}
+
+.join-linkedin .standard-form.sided p.actions_1 button p, .join-linkedin .standard-form.sided .actions_1 button div, .join-linkedin.existing .standard-form.sided .actions_1 button div {
+margin: 0;
+padding: 0;
+color: #fff;
+white-space: normal;
+}
+
+.standard-form .progress-indicator, .ajax-form .progress-indicator {
+display: none;
+}
+
+#footer {
+border-top: 1px solid #ccc;
+margin: 20px auto;
+padding: 10px 0;
+color: #666;
+clear: both;
+}
+
+html {
+overflow-y: scroll;
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
 }
