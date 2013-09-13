@@ -538,8 +538,7 @@ opacity: 0;
 transition: opacity 0.3s ease;
 overflow: hidden;
 visibility: hidden;
-bottom: 19;
-right: -106;
+top:-250000;
 }
 
 element.style {
@@ -909,6 +908,10 @@ position: relative
 		opacity:1;
 		visibility:visible;
 		transition-delay:0s;
+		
+bottom: 19;
+right: -106;
+top: -139;
 }
 
 #directory ol {
