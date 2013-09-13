@@ -46,7 +46,7 @@ margin-top: 50px;
 margin-bottom: 10px;
 }
 
-#body, #footer {
+#body{
 margin-left: auto;
 margin-right: auto;
 width: 980px;
@@ -414,10 +414,7 @@ display: inline;
 font-size: 11px;
 }
 
-#directory ol {
-border-right: 0;
-line-height: 1.5;
-}
+
 
 .ghome #agreement {
 text-align: left;
@@ -425,10 +422,6 @@ font-size: 110%;
 color: #666;
 border-top: 1px solid #ccc;
 padding: 20px 0 10px;
-}
-
-strong {
-font-weight: bold;
 }
 
 .ghome #agreement strong {
@@ -516,6 +509,8 @@ text-decoration: underline;
 
 #directory .country-search {
 display: block;
+padding-bottom:1px;
+
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
@@ -543,6 +538,8 @@ opacity: 0;
 transition: opacity 0.3s ease;
 overflow: hidden;
 visibility: hidden;
+bottom: 19;
+right: -106;
 }
 
 element.style {
@@ -551,14 +548,18 @@ Matched CSS Rules
 a.lu-state-hover, a.hover, a:hover, a.lu-state-focus, a.focus, a:focus {
 text-decoration: underline;
 }
-
+/* 
 #directory p, #directory ol {
 margin: 0;
 padding: 0 4px 0 0;
 display: inline;
 font-size: 11px;
 }
-
+ */
+ 
+ .callout-head p{
+ float:left;
+ }
 
 element.style {
 visibility: visible;
@@ -566,14 +567,6 @@ z-index: 10;
 width: auto;
 left: 551px;
 top: 317px;
-}
-
-#callout-overlay.tooltip-callout, #callout-overlay.hovercard-callout {
-overflow: visible;
--webkit-transition: none;
--moz-transition: none;
--o-transition: none;
-transition: none;
 }
 
 #callout-overlay.shown {
@@ -832,7 +825,7 @@ color: #0077b5;
 text-decoration: none;
 }
 
-a:visited, #footer a:visited {
+a:visited{
 color: #069;
 }
 
@@ -908,4 +901,21 @@ background: linear-gradient(top, #5d822a 0%,#669933 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5D822A', endColorstr='#669933',GradientType=0 );
 }
 
+.hover_1{
+position: relative
+}
+#directory ol li:hover > div{ 
+		z-index:100;
+		opacity:1;
+		visibility:visible;
+		transition-delay:0s;
+}
 
+#directory ol {
+border-right: 0;
+line-height: 1.4;
+}
+
+strong {
+font-weight: bold;
+}
