@@ -178,6 +178,17 @@ vertical-align: baseline;
 
     
 }
+h2 {
+font-size: 24px;
+font-weight: bold;
+line-height: 26px;
+color: #000;
+margin: 30px 0 25px;
+vertical-align: middle;
+}
+h2.logo-container {
+margin: 0;
+}
 #footer .nav-footer>li.last, #footer #nav-legal>li.last {
 border-right: none;
 }
@@ -464,14 +475,7 @@ visibility: hidden;
 {
 }
 
-#body1 h2 {
-font-size: 24px;
-font-weight: bold;
-line-height: 26px;
-color: #000;
-margin: 30px 0 25px;
-vertical-align: middle;
-}
+
 
 h2#introduction {
 float: left;
