@@ -470,14 +470,7 @@ color: #fff !important;
 font-weight: bold;
 white-space: nowrap;
 }
-.btn-tertiary:hover {
-background: #5D8329;
-background: -moz-linear-gradient(top, #94bd5b 0, #94bd5b 1px, #649f15 1px, #5d8329 100%);
-background: -o-linear-gradient(top, #94bd5b 0, #94bd5b 1px, #649f15 1px, #5d8329 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #94bd5b), color-stop(5%, #94bd5b), color-stop(5%, #649f15), color-stop(100%, #5d8329));
-background: linear-gradient(top, #94bd5b 0%,#94bd5b 1px,#649f15 1px,#5d8329 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#94BD5B', endColorstr='#5D8329',GradientType=0 );
-}
+
 .os-win body, .os-win input, .os-win select, .os-win textarea, .os-win button {
 font-family: Arial,sans-serif;
 }
@@ -547,12 +540,13 @@ line-height: 1.1em;
 }
 
 .handwritten {
-font-size: 21px;
+font-size: 18px;
 font-weight: normal;
 }
 
 .handwritten {
 font-family: LazyDogRegular,Arial,sans-serif;
+padding-top: 14px;
 }
 
 .fb_button {
@@ -594,15 +588,7 @@ line-height: 17px;
 color: #333;
 font-weight: normal;
 }
-a:hover {
-text-decoration: underline;
-}
-a:visited, #footer a:visited {
-color: #069;
-}
-a:active, a:hover {
-outline: 0;
-}
+
 .standard-form .screen, .ajax-form .screen {
 position: relative;
 display: block;
@@ -722,4 +708,30 @@ margin: 0;
 padding: 0;
 border: 0;
 outline: 0;
+}
+
+.fb_button:active .fb_button_text {
+border-bottom: 1px solid #29447e;
+border-top: 1px solid #45619d;
+background: #4f6aa3;
+}
+
+
+.btn-tertiary:hover {
+background: #5D8329;
+background: -moz-linear-gradient(top, #94bd5b 0, #94bd5b 1px, #649f15 1px, #5d8329 100%);
+background: -o-linear-gradient(top, #94bd5b 0, #94bd5b 1px, #649f15 1px, #5d8329 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #94bd5b), color-stop(5%, #94bd5b), color-stop(5%, #649f15), color-stop(100%, #5d8329));
+background: linear-gradient(top, #94bd5b 0%,#94bd5b 1px,#649f15 1px,#5d8329 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#94BD5B', endColorstr='#5D8329',GradientType=0 );
+}
+
+
+.btn-tertiary:active {
+background: #669933;
+background: -moz-linear-gradient(top, #5d822a 0, #693 100%);
+background: -o-linear-gradient(top, #5d822a 0, #693 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5d822a), color-stop(100%, #693));
+background: linear-gradient(top, #5d822a 0%,#669933 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5D822A', endColorstr='#669933',GradientType=0 );
 }
