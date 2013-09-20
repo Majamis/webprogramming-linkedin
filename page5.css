@@ -176,7 +176,7 @@ position: relative;
 }
 
 div.alert.attention {
-background: #fff5cc url('images/sprite_global_v8.png') no-repeat 7px -723px;
+background: #fee url('images/sprite_global_v8.png') no-repeat 7px -643px;
 }
 
 div.alert p{
@@ -734,4 +734,8 @@ background: -o-linear-gradient(top, #5d822a 0, #693 100%);
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5d822a), color-stop(100%, #693));
 background: linear-gradient(top, #5d822a 0%,#669933 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5D822A', endColorstr='#669933',GradientType=0 );
+}
+
+#register-global-error{
+display:none;
 }
