@@ -1,4 +1,4 @@
-$("#btn-submit").click(function()
+$("#page5form").submit(function()
 {
 var is_valid = 1;
 //firstname
