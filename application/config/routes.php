@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "common/page/page6";
+$route['default_controller'] = "login/login";
 //$route['UserAgreement']="UserAgreement/UserAgreement";
 $route['404_override'] = '';
 

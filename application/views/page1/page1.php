@@ -14,7 +14,7 @@
 			  <div class="leo-module mod-feat jointoday" id="module-id3">
 				  <div class="header"><h2>Join LinkedIn Today</h2></div>
 				  <div class="content">
-						<form action="<?php echo base_url();?>index.php/register/register/process" method="POST" name="coldRegistrationForm" class="feature" id="yui-gen2">
+						<form action="index.html" method="POST" name="coldRegistrationForm" class="feature" id="yui-gen2">
 							<input type="hidden" name="isJsEnabled" value="true">
 							<fieldset>
 								<legend>Sign Up</legend>
