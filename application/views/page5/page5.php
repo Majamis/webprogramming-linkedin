@@ -7,7 +7,7 @@
  <div id="nav-primary">
  <div class="wrapper">
  <div class="logo" id="logo-linkedin">
- <img src="images/logo_linkedin_92x22.png" width="92" height="22" alt="LinkedIn">
+ <img class="Hello" src="../img/logo_linkedin_92x22.png" alt="LinkedIn">
  </div>
  <ul class="menu">
  <li id="nav-primary-auth">

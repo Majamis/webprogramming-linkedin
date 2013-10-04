@@ -367,10 +367,20 @@ vertical-align: baseline;
 }
 .backSet
 {
+    
     font-family: Arial,sans-serif;
     background:#e9e9e9 url(../img/texture_grain_200x200_v2.png);   
     line-height: 1;
     
+}
+.setBack
+{
+    margin:0;
+    border:0;
+    font-family: Arial,sans-serif;
+    background:#e9e9e9 url(../img/texture_grain_200x200_v2.png);   
+    line-height: 1;
+
 }
 
 

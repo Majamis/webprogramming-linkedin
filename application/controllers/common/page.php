@@ -21,7 +21,7 @@ class page extends CI_Controller{
 			$data['css2'] = "StyleSheet1";
 			$data['css3'] = "";
 			$this->load->view('common/header',$data);
-			$this->load->view('common/mynav',$data);
+			//$this->load->view('common/mynav',$data);
 			$this->load->view('UserAgreeView/UserAgree_View', $data);
 		
 		$this->load->view('common/footer1',$data);
@@ -65,7 +65,7 @@ class page extends CI_Controller{
 			$data['css3'] = "page3";
             
             $this->load->view('common/header',$data);
-            $this->load->view('common/mynav',$data);
+            //$this->load->view('common/mynav',$data);
 			
             $this->load->view('page3/page3', $data);
         
@@ -95,7 +95,7 @@ $this->load->view('common/header',$data);
 			$data['css2'] = "page6";
 			$data['css3'] = "StyleSheet1";
             $this->load->view('common/header',$data);
-            $this->load->view('common/mynav',$data);
+           // $this->load->view('common/mynav',$data);
             $this->load->view('page6/page6', $data);
         
         $this->load->view('common/footer2',$data);

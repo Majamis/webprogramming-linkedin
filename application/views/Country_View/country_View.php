@@ -1,3 +1,4 @@
+<div id="body1" class="main2">
  <div id="page-title">
              <h1> Browse Members By Country</h1>
         </div>
@@ -314,3 +315,4 @@
         </div>
         </div>
     </div>
+</div>
