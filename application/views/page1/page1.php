@@ -14,7 +14,7 @@
 			  <div class="leo-module mod-feat jointoday" id="module-id3">
 				  <div class="header"><h2>Join LinkedIn Today</h2></div>
 				  <div class="content">
-						<form action="index.html" method="POST" name="coldRegistrationForm" class="feature" id="yui-gen2">
+						<form action="<?php echo base_url();?>index.php/register/register/process" method="POST" name="coldRegistrationForm" class="feature" id="yui-gen2">
 							<input type="hidden" name="isJsEnabled" value="true">
 							<fieldset>
 								<legend>Sign Up</legend>
@@ -36,6 +36,7 @@
 									<li id="email-address">
 										<label for="email-coldRegistrationForm">Email:</label>
 										<div class="fieldgroup">
+											<?php if(!is_null($msg)) echo $msg;?>
 											<span class="error" id="email-coldRegistrationForm-error"></span>
 											<input type="email" name="email" value="" id="email-coldRegistrationForm" maxlength="128" data-ime-mode-disabled="">
 										</div>  

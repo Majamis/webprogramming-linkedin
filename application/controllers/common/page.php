@@ -41,20 +41,7 @@ class page extends CI_Controller{
         $this->load->view('common/footer2',$data);
 	}
 	
-	public function page1(){
-
-		
-            $data['heading'] = "Page 1";
-            $data['css1'] = "StyleSheet1";
-			$data['css2'] = "p1";
-			$data['css3'] = "";
-            $this->load->view('common/header',$data);
-            $this->load->view('common/mynav',$data);
-			
-            $this->load->view('page1/page1', $data);
-        
-        $this->load->view('common/footer1',$data);
-	}
+	
 
 	public function page3(){
 
