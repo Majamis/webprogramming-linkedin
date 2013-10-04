@@ -9,77 +9,110 @@ class page extends CI_Controller{
 		//$this->load->helper('url');
 	}
 	
-	public function UserAgreement($msg = NULL){
+	public function UserAgreement(){
 		// Load our view to be displayed
 		// to the user
 		//$this->load->helper('url');
 
 		
-			$data['msg'] = $msg;
+			
 			$data['heading'] = "User Agreement";
+			$data['css1'] = "p1";
+			$data['css2'] = "StyleSheet1";
+			$data['css3'] = "";
 			$this->load->view('common/header',$data);
+			$this->load->view('common/mynav',$data);
 			$this->load->view('UserAgreeView/UserAgree_View', $data);
 		
 		$this->load->view('common/footer1',$data);
 	}
 
 	public function countrylisting(){
-		$data['msg'] = $msg;
-            $data['heading'] = "User Agreement";
+		
+            $data['heading'] = "Country Listing";
+            $data['css1'] = "p1";
+			$data['css2'] = "StyleSheet1";
+			$data['css3'] = "";
             $this->load->view('common/header',$data);
+            $this->load->view('common/mynav',$data);
+			
             $this->load->view('Country_View/country_View', $data);
         
-        $this->load->view('common/footer1',$data);
+        $this->load->view('common/footer2',$data);
 	}
 	
 	public function page1(){
 
-		$data['msg'] = $msg;
-            $data['heading'] = "User Agreement";
+		
+            $data['heading'] = "Page 1";
+            $data['css1'] = "StyleSheet1";
+			$data['css2'] = "p1";
+			$data['css3'] = "";
             $this->load->view('common/header',$data);
-            $this->load->view('Country_View/country_View', $data);
+            $this->load->view('common/mynav',$data);
+			
+            $this->load->view('page1/page1', $data);
         
         $this->load->view('common/footer1',$data);
 	}
 
 	public function page3(){
 
-		$data['msg'] = $msg;
-            $data['heading'] = "User Agreement";
+		
+            $data['heading'] = "page 3";
+            $data['css1'] = "StyleSheet1";
+			$data['css2'] = "p1";
+			$data['css3'] = "page3";
+            
             $this->load->view('common/header',$data);
-            $this->load->view('Country_View/country_View', $data);
+            $this->load->view('common/mynav',$data);
+			
+            $this->load->view('page3/page3', $data);
         
         $this->load->view('common/footer1',$data);
 	}
 
 	public function page5(){
 
-		$data['msg'] = $msg;
-            $data['heading'] = "User Agreement";
-            $this->load->view('common/header',$data);
-            $this->load->view('Country_View/country_View', $data);
+		
+            $data['heading'] = "page 5";
+            
+            $data['css1'] = "page5";
+			$data['css2'] = "";
+			$data['css3'] = "";
+$this->load->view('common/header',$data);
+            $this->load->view('page5/page5', $data);
         
-        $this->load->view('common/footer1',$data);
+        //$this->load->view('common/footer1',$data);
 	}
 
 	public function page6(){
 
-		$data['msg'] = $msg;
-            $data['heading'] = "User Agreement";
+		
+            $data['heading'] = "page 6";
+
+            $data['css1'] = "p1";
+			$data['css2'] = "page6";
+			$data['css3'] = "StyleSheet1";
             $this->load->view('common/header',$data);
-            $this->load->view('Country_View/country_View', $data);
+            $this->load->view('common/mynav',$data);
+            $this->load->view('page6/page6', $data);
         
-        $this->load->view('common/footer1',$data);
+        $this->load->view('common/footer2',$data);
 	}
 
 	public function page2(){
 
-		$data['msg'] = $msg;
-            $data['heading'] = "User Agreement";
+		
+            $data['heading'] = "page 2";
+            $data['css1'] = "StyleSheet1";
+			$data['css2'] = "p1";
+			$data['css3'] = "p2";
             $this->load->view('common/header',$data);
-            $this->load->view('Country_View/country_View', $data);
+            $this->load->view('common/mynav',$data);
+            $this->load->view('page2/page2', $data);
         
-        $this->load->view('common/footer1',$data);
+        $this->load->view('common/footer2',$data);
 	}
 	/*public function process(){
 		// Load the model
