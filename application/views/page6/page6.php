@@ -44,7 +44,7 @@
  
 <div id="main" class="signin">
 
-   <form action="" method="POST" name="login" novalidate="novalidate" id="login" class="ajax-form" data-jsenabled="check">
+   <form action="<?php echo base_url();?>index.php/login/login/process" method="POST" name="login" novalidate="novalidate" id="login" class="ajax-form" data-jsenabled="check">
     
     <input type="hidden" name="isJsEnabled" value="false"/>
 
