@@ -1,0 +1,741 @@
+﻿
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+vertical-align: baseline;
+-webkit-text-size-adjust: 100%;
+}
+
+
+.os-win body
+{
+font-family: Arial,sans-serif;
+}
+body {
+background-color: #e6e6e6;
+}
+
+body {
+font-size: 62.5%;
+line-height: 1.2;
+color: #000;
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+}
+
+
+#header, #body, #footer {
+clear: both;
+width: 98em;
+_width: 980px;
+min-width: 980px;
+max-width: 95%;
+margin: 0 auto;
+}
+
+#header {
+margin-bottom: 15px;
+}
+
+#header, #body, #footer {
+width: 80.5em;
+_width: 805px;
+min-width: 805px;
+}
+
+.guest #header {
+margin-top: 23px;
+}
+
+.guest #header {
+margin: 0 auto;
+}
+#header:after, #nav-primary:after, #nav-primary .wrapper:after, #body:after, #body .wrapper:after, #main:after {
+content: "\0020";
+display: block;
+height: 0;
+clear: both;
+overflow: hidden;
+visibility: hidden;
+}
+
+#nav-primary .wrapper {
+padding: 0 5px;
+background: url('../img/sprite_global_v8.png') no-repeat 0 -510px;
+height: 39px;
+}
+
+#nav-primary, #nav-primary .wrapper {
+background: none;
+padding: 0;
+}
+
+#logo-linkedin {
+float: left;
+margin: 8px 10px 0 4px;
+position: relative;
+}
+
+img {
+border: none;
+}
+
+ol, ul {
+list-style: none;
+}
+
+#header ul{
+margin: 0;
+padding: 0;
+border: none;
+list-style-type: none;
+}
+
+#nav-primary ul{
+margin: 0;
+padding: 0;
+border: none;
+list-style-type: none;
+}
+
+#nav-primary li{
+margin: 0;
+padding: 0;
+border: none;
+list-style-type: none;
+}
+
+#pagekey-reg-cold-signup #nav-primary-auth, #pagekey-reg-group-signup #nav-primary-auth, #pagekey-reg-warm-signup #nav-primary-auth, #pagekey-reg-warm-existing #nav-primary-auth {
+display: inline;
+}
+
+
+#nav-primary #nav-primary-auth, #nav-primary #nav-primary-auth.hover, #nav-primary #nav-primary-auth:hover {
+line-height: 39px;
+color: #666;
+background-color: transparent;
+float: right;
+font-weight: normal;
+font-size: 11px;
+}
+
+a {
+text-decoration: none;
+color: #069;
+}
+
+a:visited, #footer a:visited {
+color: #069;
+}
+#body{
+clear: both;
+width: 98em;
+_width: 980px;
+min-width: 980px;
+max-width: 95%;
+margin: 0 auto;
+}
+
+#header, #body, #footer {
+width: 80.5em;
+_width: 805px;
+min-width: 805px;
+}
+
+#body {
+background: #fff;
+padding: 0;
+border: 1px solid #ccc;
+}
+
+
+#body .wrapper {
+padding: 15px;
+}
+
+div.alert {
+_height: 28px;
+}
+
+div.alert {
+color: #333;
+background-color: #fff;
+margin: 0 0 15px;
+padding: 6px 7px 6px 35px;
+overflow: hidden;
+min-height: 28px;
+position: relative;
+}
+
+div.alert.attention {
+background: #fee url('../img/sprite_global_v8.png') no-repeat 7px -643px;
+}
+
+div.alert p{
+font-size: 13px;
+margin: 7px 21px 5px 7px;
+}
+
+strong {
+font-weight: bold;
+}
+
+.join-linkedin .introduction {
+padding-bottom: 11px;
+background: transparent url('../img/bg_arrow_foursided_4a99c0_34x34.png') no-repeat bottom left;
+margin-left: 108px;
+}
+
+.fb-reg .introduction {
+background-image: url('../img/bg_arrow_foursided_00679a_34x34.png');
+margin-bottom: 5px;
+}
+
+.join-linkedin.cookied .introduction {
+background-image: url('../img/bg_arrow_foursided_898989_34x34.png');
+}
+
+h1 {
+font-size: 180%;
+color: #39c;
+}
+
+.join-linkedin .introduction h1 {
+font-size: 180%;
+font-weight: normal;
+color: #fff;
+padding: 10px 15px;
+background: #74b9dc url('../img/bg_blue_19x63.png') repeat-x bottom left;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+margin-left: -108px;
+}
+
+.fb-reg .introduction h1 {
+padding: 16px 18px;
+background: #00679a;
+background: -moz-linear-gradient(top, #91cce7 0%, #00679a 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #91cce7), color-stop(100%, #00679a));
+}
+
+.join-linkedin.cookied .introduction h1 {
+background: #aaa url('../img/bg_gray_19x63.png') repeat-x bottom left;
+}
+
+#main h1 {
+font-weight: normal;
+font-size: 160%;
+}
+
+#main h1 {
+font-size: 18px;
+overflow: hidden;
+line-height: 23px;
+}
+
+#content {
+float: left;
+width: 72%;
+}
+
+#main.no-profile #content, #content {
+width: 58%;
+}
+
+#main.no-profile #content {
+width: 58%;
+}
+
+#content {
+width: 58%;
+}
+
+.join-linkedin .register-container {
+overflow: hidden;
+zoom: 1;
+margin: 10px 0 25px 0;
+width: 555px;
+}
+
+#main.join-linkedin .register-container {
+width: auto;
+}
+
+#main.fb-reg .register-container {
+border-right: 1px solid #ccc;
+}
+
+.standard-form {
+margin: 20px 40px;
+}
+
+.standard-form.sided {
+margin: 20px 10px;
+}
+
+.join-linkedin .standard-form.sided {
+width: 320px;
+_width: 335px;
+float: left;
+padding: 0 0 0 20px;
+margin: 0;
+}
+
+form ul input, form ul textarea {
+border: 1px solid #999;
+outline: none;
+padding: 2px 3px;
+background-color: #fff;
+}
+
+.os-win body, .os-win input, .os-win select, .os-win textarea, .os-win button {
+font-family: Arial,sans-serif;
+}
+
+.standard-form input, .standard-form select, .standard-form textarea {
+font-size: 13px;
+}
+
+
+
+.join-linkedin .standard-form input {
+width: 203px;
+margin: 0;
+}
+
+.fb-reg .standard-form input {
+width: 267px;
+}
+
+ol, ul {
+list-style: none;
+}
+
+.standard-form ul {
+margin: 0;
+padding-top: 10px;
+list-style-type: none;
+}
+
+.join-linkedin .standard-form ul {
+margin: 0;
+padding: 0;
+}
+
+.standard-form li, .standard-form fieldset.details li {
+margin-bottom: 10px;
+}
+
+.join-linkedin .standard-form li {
+zoom: 1;
+}
+
+.standard-form label, .standard-form li fieldset legend span, .standard-form li fieldset.details fieldset legend {
+font-size: 13px;
+color: #333;
+background-color: transparent;
+font-weight: bold;
+display: block;
+float: left;
+text-align: right;
+width: 185px;
+margin-right: 10px;
+}
+
+.register-container label {
+padding: 3px 0;
+}
+
+.standard-form.sided label, .standard-form.sided li fieldset legend span, .standard-form.sided li fieldset.details fieldset legend {
+width: 110px;
+}
+
+.join-linkedin .standard-form label {
+width: 97px;
+margin-right: 0;
+}
+
+.standard-form .fieldgroup {
+margin: 0 0 0 195px;
+_margin-left: 198px;
+padding: 0;
+}
+
+.register-container .fieldgroup {
+position: relative;
+}
+
+.standard-form.sided ul ul, .standard-form.sided .fieldgroup {
+margin-left: 120px;
+_margin-left: 117px;
+}
+
+.standard-form.sided .fieldgroup {
+_margin-left: 123px;
+}
+
+.join-linkedin .standard-form.sided ul ul, .join-linkedin .standard-form.sided .fieldgroup {
+margin-left: 105px;
+}
+
+
+
+span.error {
+font-weight: bold;
+color: #900;
+}
+
+.standard-form .error {
+font-size: 12px;
+color: #900;
+font-weight: bold;
+}
+
+.standard-form input, .standard-form select, .standard-form textarea {
+font-size: 13px;
+}
+
+.fb-reg .standard-form input {
+width: 275px;
+}
+.register-container .fieldgroup input#password-coldRegistrationForm {
+border: 1px solid #999;
+padding: 2px 3px;
+}
+
+.register-container .fieldgroup.field-hover input#password-coldRegistrationForm, .register-container .fieldgroup input#password-coldRegistrationForm {
+background: #fff;
+cursor: text;
+}
+
+.standard-form p {
+margin-left: 195px;
+_margin-left: 200px;
+margin-top: .25em;
+color: #333;
+}
+
+.standard-form p.example, .standard-form p.tip, .standard-form p.note {
+font-size: 11px;
+color: #666;
+}
+
+.standard-form.sided p {
+margin-left: 120px;
+}
+
+.join-linkedin .standard-form .actions {
+background: none;
+padding-top: 0;
+margin-top: 10px;
+font-size: 100%;
+zoom: 1;
+}
+
+.btn-primary, .btn-new-primary, .btn-secondary, .btn-new-secondary, .btn-tertiary, .btn-ternary, .btn-quaternary, .btn-action {
+border-width: 1px;
+border-style: solid;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+cursor: pointer;
+font-size: 12px;
+line-height: 1.35;
+margin: 0;
+overflow: visible;
+padding: 3px 10px 2px;
+text-decoration: none !important;
+vertical-align: top;
+width: auto;
+}
+
+.btn-tertiary {
+background: #69A219;
+background: -moz-linear-gradient(top, #afd47b 0, #afd47b 1px, #8bc03f 1px, #69a219 100%);
+background: -o-linear-gradient(top, #afd47b 0, #afd47b 1px, #8bc03f 1px, #69a219 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #afd47b), color-stop(5%, #afd47b), color-stop(5%, #8bc03f), color-stop(100%, #69a219));
+background: linear-gradient(top, #afd47b 0%,#afd47b 1px,#8bc03f 1px,#69a219 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#AFD47B', endColorstr='#69A219',GradientType=0 );
+border-color: #693;
+color: #fff !important;
+font-weight: bold;
+white-space: nowrap;
+}
+
+.os-win body, .os-win input, .os-win select, .os-win textarea, .os-win button {
+font-family: Arial,sans-serif;
+}
+
+.join-linkedin .standard-form .actions button {
+width: auto;
+max-width: 183px;
+zoom: 1;
+cursor: pointer;
+}
+
+
+.join-linkedin .standard-form.sided p.actions button div, .join-linkedin.existing .standard-form.sided p.actions button div {
+margin: 0;
+padding: 0;
+color: #fff;
+white-space: normal;
+}
+
+.join-linkedin .standard-form.sided p {
+margin-left: 105px;
+zoom: 1;
+}
+
+.fb-reg #email-coldRegistrationForm-error {
+margin-bottom: 5px;
+width: 270px;
+}
+
+.register-container .fieldgroup .edit {
+display: none;
+position: absolute;
+right: 20px;
+top: 5px;
+color: #006ea2;
+}
+
+
+#main.no-profile #extra {
+width: 40%;
+}
+
+#extra {
+float: right;
+width: 26%;
+}
+#main.no-profile #extra, #extra {
+width: 42%;
+}
+
+.sign-in-with {
+text-align: center;
+}
+
+.handwritten {
+color: #0085C0;
+font-style: italic;
+}
+
+
+.handwritten {
+color: #333;
+margin: 1.4em 0 .7em;
+font-size: 21px;
+letter-spacing: .02em;
+line-height: 1.1em;
+}
+
+.handwritten {
+font-size: 18px;
+font-weight: normal;
+}
+
+.handwritten {
+font-family: LazyDogRegular,Arial,sans-serif;
+padding-top: 14px;
+}
+
+.fb_button {
+background: #29447e url('../img/sprite_fb_icon_22.png') 0 -44px no-repeat;
+display: inline-block;
+padding: 0 0 0 1px;
+outline: none;
+margin-bottom: 10px;
+}
+
+.fb_button .fb_button_text {
+background: #5f78ab url('../img/sprite_fb_icon_22.png');
+border-top: 1px solid #879ac0;
+border-bottom: 1px solid #1a356e;
+color: #fff;
+display: block;
+_display: inline-block;
+font-weight: bold;
+font-size: 11px;
+padding: 2px 6px 3px 6px;
+margin: 1px 1px 0 21px;
+height: 14px;
+}
+
+.fb_button_text {
+font-family: Arial,sans-serif;
+}
+
+abbr {
+border: none;
+}
+
+.join-linkedin .standard-form #register-custom-nav {
+margin-top: 15px;
+clear: both;
+zoom: 1;
+font-size: 13px;
+line-height: 17px;
+color: #333;
+font-weight: normal;
+}
+
+.standard-form .screen, .ajax-form .screen {
+position: relative;
+display: block;
+filter: alpha(opacity=0);
+opacity: 0;
+z-index: 2;
+zoom: 1;
+_margin-left: -20px;
+}
+.join-linkedin .standard-form .actions em {
+font-size: 130%;
+}
+
+#extra abbr {
+font-size: 13px;
+vertical-align: super;
+}
+
+#agreement {
+clear: both;
+font-size: 110%;
+border-top: 1px solid #ccc;
+color: #555;
+margin-bottom: 25px;
+padding-top: 15px;
+text-align: center;
+}
+
+#agreement {
+margin: 0;
+}
+
+.guest #footer {
+border: none;
+padding: 0 0 0 8px;
+}
+
+#footer ul, #footer li, #footer p {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+#footer p {
+font-size: 110%;
+}
+
+
+p#copyright {
+float: left;
+border-right: 1px solid #ccc;
+padding: 0 8px 0 0;
+margin-right: 8px;
+-webkit-text-size-adjust: 165%;
+}
+
+p#terms-of-use {
+margin-bottom: 8px;
+}
+
+.join-linkedin .standard-form .actions em {
+font-size: 130%;
+}
+
+.join-linkedin .standard-form.sided .actions_1 {
+margin-left: 105px;
+zoom: 1;
+}
+.standard-form .actions_1 {
+margin-left: 195px;
+_margin-left: 200px;
+margin-top: .25em;
+color: #333;
+}
+
+.join-linkedin .standard-form .actions_1 em {
+font-size: 130%;
+}
+
+.join-linkedin .standard-form .actions_1 {
+background: none;
+padding-top: 0;
+margin-top: 10px;
+font-size: 100%;
+zoom: 1;
+}
+
+.join-linkedin .standard-form .actions_1 button {
+width: auto;
+max-width: 183px;
+zoom: 1;
+cursor: pointer;
+}
+
+.join-linkedin .standard-form.sided p.actions_1 button p, .join-linkedin .standard-form.sided .actions_1 button div, .join-linkedin.existing .standard-form.sided .actions_1 button div {
+margin: 0;
+padding: 0;
+color: #fff;
+white-space: normal;
+}
+
+.standard-form .progress-indicator, .ajax-form .progress-indicator {
+display: none;
+}
+
+#footer {
+border-top: 1px solid #ccc;
+margin: 20px auto;
+padding: 10px 0;
+color: #666;
+clear: both;
+}
+
+html {
+overflow-y: scroll;
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+}
+
+.fb_button:active .fb_button_text {
+border-bottom: 1px solid #29447e;
+border-top: 1px solid #45619d;
+background: #4f6aa3;
+}
+
+
+.btn-tertiary:hover {
+background: #5D8329;
+background: -moz-linear-gradient(top, #94bd5b 0, #94bd5b 1px, #649f15 1px, #5d8329 100%);
+background: -o-linear-gradient(top, #94bd5b 0, #94bd5b 1px, #649f15 1px, #5d8329 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #94bd5b), color-stop(5%, #94bd5b), color-stop(5%, #649f15), color-stop(100%, #5d8329));
+background: linear-gradient(top, #94bd5b 0%,#94bd5b 1px,#649f15 1px,#5d8329 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#94BD5B', endColorstr='#5D8329',GradientType=0 );
+}
+
+
+.btn-tertiary:active {
+background: #669933;
+background: -moz-linear-gradient(top, #5d822a 0, #693 100%);
+background: -o-linear-gradient(top, #5d822a 0, #693 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5d822a), color-stop(100%, #693));
+background: linear-gradient(top, #5d822a 0%,#669933 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5D822A', endColorstr='#669933',GradientType=0 );
+}
+
+#register-global-error{
+display:none;
+}
