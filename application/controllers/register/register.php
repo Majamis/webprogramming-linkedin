@@ -38,6 +38,12 @@ class Register extends CI_Controller{
 		else
 		{
 			$this->format_email($result,'txt');
+			$msg = 'registered';
+			//redirect('register/register/page1','refresh');
+			$this->page1($msg);
+			//return true;
+			
+			
 		}
 	}
 
@@ -50,10 +56,10 @@ class Register extends CI_Controller{
     $template = file_get_contents($root.'/signup_template.'.$format);  
               
     //replace all the tags  
-    //$template = ereg_replace('{USERNAME}', $info['username'], $template);  
-    $template = preg_replace('{EMAIL}', $info['username'], $template);  
-    $template = preg_replace('{KEY}', $info['key'], $template);  
-    $template = preg_replace('{SITEPATH}','http://localhost/webprogramming-linkedin/index.php/register/register/key_validate', $template);  
+    $template = preg_replace('/{USERNAME}/', $info['username'], $template);  
+    $template = preg_replace('/{EMAIL}/', $info['username'], $template);  
+    $template = preg_replace('/{KEY}/', $info['key'], $template);  
+    $template = preg_replace('/{SITEPATH}/','http://localhost/webprogramming-linkedin/index.php/register/register/', $template);  
           
             $var_str = var_export($template, true);
 			/*$var = "<?php\n\n\$$template = $var_str;\n\n?>";*/
