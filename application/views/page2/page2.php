@@ -4,7 +4,7 @@
 		</div>
 		<div class="request-password-reset">
 			<h1></h1>
-			<form action="index.html" method="POST" name="requestPasswordReset" novalidate="novalidate">
+			<form action="<?php echo base_url('index.php/common/page/page2');?>" method="POST" name="requestPasswordReset" novalidate="novalidate">
 				<div class="error"></div>
 				<h1>Changing your password is simple</h1>
 				<p>

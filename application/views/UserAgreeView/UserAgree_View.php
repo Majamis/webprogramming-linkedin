@@ -3,17 +3,17 @@
         <div id="top-header">
             <div class="wrapper">
                 <h2 class="logo-container">
-                     <a href="index.html" class="logo" id="li-logo">LinkedIn Home</a>
+                     <a href="<?php echo base_url('index.php/register/register/page1');?>" class="logo" id="li-logo">LinkedIn Home</a>
                 </h2>
                 <ul class="nav main-nav guest-nav" role="navigation">
                     <li class="nav-item">
-                         <a href="page3.html" class="nav-link">What is LinkedIn?</a>
+                         <a href="<?php echo base_url('index.php/common/page/page3');?>" class="nav-link">What is LinkedIn?</a>
                     </li>
                     <li class="nav-item">
-                         <a href="page5.html" class="nav-link" rel="nofollow">Join Today</a>
+                         <a href="<?php echo base_url('index.php/register/register/page5');?>" class="nav-link" rel="nofollow">Join Today</a>
                     </li>
                     <li class="nav-item">
-                         <a href="page6.html" class="nav-link" rel="nofollow">Sign In</a>
+                         <a href="<?php echo base_url('index.php/common/page/page6');?>" class="nav-link" rel="nofollow">Sign In</a>
                     </li>
                 </ul>
             </div>
@@ -61,7 +61,7 @@
                                 <div class="full-copy">
                                     <p>
                                     Our User Aggrement has been updated;
-                                        <a  href="index.html"> click here for a summary of changes</a>.
+                                        <a  href="<?php echo base_url('index.php/register/register/page1');?>"> click here for a summary of changes</a>.
                                     </p>
                                     <h3>A. Purpose</h3>
                                     <p>
@@ -86,7 +86,7 @@
                                     Mountain View, California 94043, USA if you reside in the United States, and with LinkedIn Ireland Limited,
                                     Gardner House, Wilton Plaza, Wilton Place, , Dublin 2, Ireland, if you reside outside the United States (“we,”
                                     “us,” “our,” and “LinkedIn”) based on the terms of this LinkedIn User Agreement and the LinkedIn 
-                                   <a href="index.html"> Privacy Policy</a>
+                                   <a href="<?php echo base_url('index.php/register/register/page1');?>"> Privacy Policy</a>
                                     , which is hereby incorporated by reference (collectively referred to as the “Agreement”) and become a LinkedIn member
                                     (“Member”). If you are using LinkedIn on behalf of a company or other legal entity, you are nevertheless individually
                                     bound by this Agreement even if your company has a separate agreement with us. If you do not want to register an account
@@ -95,14 +95,14 @@
                                     similar), you acknowledge that you have read and understood the terms and conditions of this Agreement and that you 
                                     agree to be bound by all of its provisions. By clicking “Join Now,” you also consent to use electronic signatures and 
                                     acknowledge your click of the “Join Now” button as one. Please note that the LinkedIn User Agreement and 
-                                    <a href="index.html"> Privacy Policy</a>
+                                    <a href="<?php echo base_url('index.php/register/register/page1');?>"> Privacy Policy</a>
                                     are also collectively referred to as LinkedIn’s “Terms of Service.
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="back-to-top">
-                            <a href="#main1">
+                            <a href="<?php echo base_url('index.php/common/page/UserAgreement');?>">
                             Back To Top
                             <span></span>
                             </a>
@@ -120,10 +120,10 @@
                                 <div class="full-copy">
                                     <p>You must comply with all applicable laws and this Agreement, as may be amended from time to time with or without advance notice, and the policies and processes explained in the following sections:</p>
                                     <ul>
-                                        <li><a href="index.html">DOs and DON’Ts</a>;</li>
-                                        <li><a href="index.html">Complaints Regarding Content Posted on the LinkedIn Website</a>; and</li>
+                                        <li><a href="<?php echo base_url('index.php/register/register/page1');?>">DOs and DON’Ts</a>;</li>
+                                        <li><a href="<?php echo base_url('index.php/register/register/page1');?>">Complaints Regarding Content Posted on the LinkedIn Website</a>; and</li>
                                         <li>
-                                             <a href="index.html">LinkedIn’s Privacy Policy</a>.
+                                             <a href="<?php echo base_url('index.php/register/register/page1');?>">LinkedIn’s Privacy Policy</a>.
                                         </li>
                                     </ul>
                                 </div>
@@ -156,7 +156,7 @@
                                         <p>You will not copy or transfer any part of the Service.</p>
                                       </div>
                                       <div class="full-copy">
-                                        <p>The profile you create on LinkedIn will become part of LinkedIn and except for the information that you license to us is owned by LinkedIn. However, between you and others, your account belongs to you. You agree to: (1) keep your password secure and confidential; (2) not permit others to use your account; (3) not use other’s accounts; (4) not sell, trade, or transfer your LinkedIn account to another party; and (5) not charge anyone for access to any portion of LinkedIn, or any information therein. Further, you are responsible for anything that happens through your account until you close down your account or prove that your account security was compromised due to no fault of your own. To close your account, please visit <a target="_blank" href="index.html">LinkedIn’s Help Center</a>.</p>
+                                        <p>The profile you create on LinkedIn will become part of LinkedIn and except for the information that you license to us is owned by LinkedIn. However, between you and others, your account belongs to you. You agree to: (1) keep your password secure and confidential; (2) not permit others to use your account; (3) not use other’s accounts; (4) not sell, trade, or transfer your LinkedIn account to another party; and (5) not charge anyone for access to any portion of LinkedIn, or any information therein. Further, you are responsible for anything that happens through your account until you close down your account or prove that your account security was compromised due to no fault of your own. To close your account, please visit <a target="_blank" href="<?php echo base_url('index.php/register/register/page1');?>">LinkedIn’s Help Center</a>.</p>
                                       </div>
                                     </div>
                                     <div class="row">
@@ -175,7 +175,7 @@
                                         <p>We don't guarantee refunds.</p>
                                       </div>
                                       <div class="full-copy">
-                                        <p>If you purchase any services that we offer for a fee, either on a one-time or subscription basis (“Premium Services”), you agree to LinkedIn storing your payment information. You also agree to pay the applicable fees for the Premium Services (including, without limitation, periodic fees for premium accounts) as they become due plus all related taxes, and to reimburse us for all collection costs and interest for any overdue amounts. Failure to pay may result in the termination of your subscription. Depending on where you transact with us, the type of payment method used and where your payment method was issued, your transaction with us may be subject to foreign exchange fees or differences in prices, including because of exchange rates. LinkedIn does not support all payment methods, currencies or locations for payment. If the payment method you use with us, such as a credit card, reaches its expiration date and you do not edit your payment method information or cancel your account or such Premium Service, you authorize us to continue billing that payment method and you remain1 responsible for any uncollected amounts.  Your obligation to pay fees continues through the end of the subscription period during which you cancel your subscription. All applicable taxes are calculated based on the billing information you provide us at the time of purchase. You may cancel or suspend your Premium Services <a target="_blank" href="index.html">here</a>. LinkedIn’s refund policy is explained <a target="_blank" href="index.html">here</a>. We do not guarantee refunds for lack of usage or dissatisfaction. You also acknowledge that LinkedIn’s Premium Services are subject to this Agreement and any additional terms related to the provision of the Premium Service. Additionally, if you require a printed invoice for your transaction with us, you may access it through your LinkedIn account settings under “<a href="index.html">Purchase History</a>.” request one by contacting our Customer Support.</p>
+                                        <p>If you purchase any services that we offer for a fee, either on a one-time or subscription basis (“Premium Services”), you agree to LinkedIn storing your payment information. You also agree to pay the applicable fees for the Premium Services (including, without limitation, periodic fees for premium accounts) as they become due plus all related taxes, and to reimburse us for all collection costs and interest for any overdue amounts. Failure to pay may result in the termination of your subscription. Depending on where you transact with us, the type of payment method used and where your payment method was issued, your transaction with us may be subject to foreign exchange fees or differences in prices, including because of exchange rates. LinkedIn does not support all payment methods, currencies or locations for payment. If the payment method you use with us, such as a credit card, reaches its expiration date and you do not edit your payment method information or cancel your account or such Premium Service, you authorize us to continue billing that payment method and you remain1 responsible for any uncollected amounts.  Your obligation to pay fees continues through the end of the subscription period during which you cancel your subscription. All applicable taxes are calculated based on the billing information you provide us at the time of purchase. You may cancel or suspend your Premium Services <a target="_blank" href="<?php echo base_url('index.php/register/register/page1');?>">here</a>. LinkedIn’s refund policy is explained <a target="_blank" href="<?php echo base_url('index.php/register/register/page1');?>">here</a>. We do not guarantee refunds for lack of usage or dissatisfaction. You also acknowledge that LinkedIn’s Premium Services are subject to this Agreement and any additional terms related to the provision of the Premium Service. Additionally, if you require a printed invoice for your transaction with us, you may access it through your LinkedIn account settings under “<a href="<?php echo base_url('index.php/register/register/page1');?>">Purchase History</a>.” request one by contacting our Customer Support.</p>
                                       </div>
                                     </div>
                                     <div class="row">
@@ -194,7 +194,7 @@
                                         <p>The contact information you provide must be accurate or you may not receive important notices.</p>
                                       </div>
                                       <div class="full-copy">
-                                        <p>For purposes of service messages and notices about the Services, LinkedIn may place a banner notice across its pages to alert you to certain changes such as modifications to this Agreement. Alternatively, notice may consist of an email from LinkedIn to an email address associated with your account, even if we have other contact information. You also agree that LinkedIn may communicate with you through your LinkedIn account or through other means including email, mobile number, telephone, or delivery services including the postal service about your LinkedIn account or services associated with LinkedIn. Please review your <a href="index.html">Settings</a> to control what kind of messages you receive from LinkedIn. You acknowledge and agree that we shall have no liability associated with or arising from your failure to do so main1tain accurate contact or other information, including, but not limited to, your failure to receive critical information about the Service.</p>
+                                        <p>For purposes of service messages and notices about the Services, LinkedIn may place a banner notice across its pages to alert you to certain changes such as modifications to this Agreement. Alternatively, notice may consist of an email from LinkedIn to an email address associated with your account, even if we have other contact information. You also agree that LinkedIn may communicate with you through your LinkedIn account or through other means including email, mobile number, telephone, or delivery services including the postal service about your LinkedIn account or services associated with LinkedIn. Please review your <a href="<?php echo base_url('index.php/register/register/page1');?>">Settings</a> to control what kind of messages you receive from LinkedIn. You acknowledge and agree that we shall have no liability associated with or arising from your failure to do so main1tain accurate contact or other information, including, but not limited to, your failure to receive critical information about the Service.</p>
                                       </div>
                                     </div>
                                     <div class="row">
@@ -222,7 +222,7 @@
                                   </div>
                                   <div class="full-copy">
                                     <p>
-                                      You should carefully read our full <a href="index.html">Privacy Policy</a> before using LinkedIn as it is hereby incorporated into this Agreement by reference, and governs our treatment of any information, including personally identifiable information you submit to us. Please note that certain information, statements, data, and content (such as photographs) which you may submit to LinkedIn, or groups you choose to join might, or are likely to, reveal your gender, ethnic origin, nationality, age, and/or other personal information about you. You acknowledge that your submission of any information, statements, data, and content to us is voluntary on your part and that LinkedIn may process such information, within the terms of the Privacy Policy.
+                                      You should carefully read our full <a href="<?php echo base_url('index.php/register/register/page1');?>">Privacy Policy</a> before using LinkedIn as it is hereby incorporated into this Agreement by reference, and governs our treatment of any information, including personally identifiable information you submit to us. Please note that certain information, statements, data, and content (such as photographs) which you may submit to LinkedIn, or groups you choose to join might, or are likely to, reveal your gender, ethnic origin, nationality, age, and/or other personal information about you. You acknowledge that your submission of any information, statements, data, and content to us is voluntary on your part and that LinkedIn may process such information, within the terms of the Privacy Policy.
                                     </p>
                                   </div>
                                 </div>
@@ -249,7 +249,7 @@
                               </div>
 
                               <div class="back-to-top">
-                                <a href="#main1">Back to Top<span></span></a>
+                                <a href="<?php echo base_url('index.php/common/page/UserAgreement');?>">Back to Top<span></span></a>
                               </div>
                             </div>
                         <div class="row primary-separator">
@@ -278,7 +278,7 @@
                                 </div>
                             </div>
                             <div class="back-to-top">
-                                <a href="#main1">Back to Top
+                                <a href="<?php echo base_url('index.php/common/page/UserAgreement');?>">Back to Top
                                 <span></span>
                                 </a>
                             </div>
@@ -316,8 +316,8 @@
                                     <div class="full-copy">
                                         <p>
                                         LinkedIn may include links to third party web sites (“Third Party Sites”) on 
-                                        <a href="index.html">www.linkedin.com</a>, 
-                                        <a target="_blank" href="index.html">developer.linkedin.com</a>
+                                        <a href="<?php echo base_url('index.php/register/register/page1');?>">www.linkedin.com</a>, 
+                                        <a target="_blank" href="<?php echo base_url('index.php/register/register/page1');?>">developer.linkedin.com</a>
                                         , and elsewhere. LinkedIn also enables third party developers (“Platform Developers”) to create applications 
                                         (“Platform Applications”)that provide features and functionality using data and developer tools made available 
                                         by LinkedIn through its developer platform. You are responsible for evaluating whether you want to access or use 
@@ -330,7 +330,7 @@
                                         Platform Application or Third Party Site to authenticate you or connect with your LinkedIn account, that application or website can access 
                                         information on LinkedIn related to you and your connections. For additional information regarding Platform Developers and Platform Applications, 
                                         please refer to LinkedIn’s 
-                                        <a href="index.html">Privacy Policy</a>
+                                        <a href="<?php echo base_url('index.php/register/register/page1');?>">Privacy Policy</a>
                                         .
                                         </p>
                                     </div>
@@ -352,7 +352,7 @@
                                         personal safety of LinkedIn, our Members or the public. Disclosures of Member information to third parties 
                                         other than those required to provide customer support, administer this agreement, or comply with legal 
                                         requirements are addressed in the 
-                                        <a href="index.html">Privacy Policy</a>
+                                        <a href="<?php echo base_url('index.php/register/register/page1');?>">Privacy Policy</a>
                                         .
                                         </p>
                                     </div>
@@ -392,7 +392,7 @@
                                 </div>
                             </div>
                             <div class="back-to-top">
-                                <a href="#main1">Back to Top
+                                <a href="<?php echo base_url('index.php/common/page/UserAgreement');?>">Back to Top
                                 <span></span>
                                 </a>
                             </div>
@@ -436,7 +436,7 @@
                                 </div>
                             </div>
                             <div class="back-to-top">
-                                <a href="#main1">Back to Top
+                                <a href="<?php echo base_url('index.php/common/page/UserAgreement');?>">Back to Top
                                 <span></span>
                                 </a>
                             </div>
@@ -459,7 +459,7 @@
                                 </div>
                             </div>
                             <div class="back-to-top">
-                                <a href="#main1">Back to Top
+                                <a href="<?php echo base_url('index.php/common/page/UserAgreement');?>">Back to Top
                                 <span></span>
                                 </a>
                             </div>
@@ -490,7 +490,7 @@
                                 </div>
                             </div>
                             <div class="back-to-top">
-                                <a href="#main1">Back to Top<span></span></a>
+                                <a href="<?php echo base_url('index.php/common/page/UserAgreement');?>">Back to Top<span></span></a>
                             </div>
                         </div>
                         <div class="row primary-separator">
@@ -516,7 +516,7 @@
                                 </div>
                             </div>
                             <div class="back-to-top">
-                                <a href="#main1">Back to Top<span></span></a>
+                                <a href="<?php echo base_url('index.php/common/page/UserAgreement');?>">Back to Top<span></span></a>
                             </div>
                         </div>
                         <div class="row primary-separator">
@@ -540,7 +540,7 @@
                                 <div class="row">
                                     <div class="full-copy-no-brief">
                                         <h3>C. Notices and Service of Process</h3>
-                                        <p>In addition to Section 2.h. (“Notices and Service Messages”), we may notify you via postings on <a href="index.html">www.linkedin.com</a>. You may contact us <a target="_blank" href="index.html">here</a>. Or via mail or courier at: LinkedIn Corporation ATTN: Legal Department 2029 Stierlin Court Mountain View, CA 94043 USA   Additionally, LinkedIn accepts service of process at this address. Any notices that you provide without compliance with this section shall have no legal effect.</p>
+                                        <p>In addition to Section 2.h. (“Notices and Service Messages”), we may notify you via postings on <a href="<?php echo base_url('index.php/register/register/page1');?>">www.linkedin.com</a>. You may contact us <a target="_blank" href="<?php echo base_url('index.php/register/register/page1');?>">here</a>. Or via mail or courier at: LinkedIn Corporation ATTN: Legal Department 2029 Stierlin Court Mountain View, CA 94043 USA   Additionally, LinkedIn accepts service of process at this address. Any notices that you provide without compliance with this section shall have no legal effect.</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -552,7 +552,7 @@
                                 <div class="row">
                                     <div class="full-copy-no-brief">
                                         <h3>E. Amendments to This Agreement</h3>
-                                        <p>We reserve the right to modify, supplement, or replace the terms of this Agreement, effective prospectively upon posting at <a href="index.html">www.linkedin.com</a> or notifying you otherwise. For example, we may present a banner on the Services when we have amended this Agreement or the Privacy Policy so that you may access and review the changes prior to your continued use of the site. If you do not want to agree to changes to this Agreement, you can terminate this Agreement at any time per Section 7 (Termination).</p>
+                                        <p>We reserve the right to modify, supplement, or replace the terms of this Agreement, effective prospectively upon posting at <a href="<?php echo base_url('index.php/register/register/page1');?>">www.linkedin.com</a> or notifying you otherwise. For example, we may present a banner on the Services when we have amended this Agreement or the Privacy Policy so that you may access and review the changes prior to your continued use of the site. If you do not want to agree to changes to this Agreement, you can terminate this Agreement at any time per Section 7 (Termination).</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -593,7 +593,7 @@
                                 </div>
                             </div>
                             <div class="back-to-top">
-                                <a href="#main1">Back to Top<span></span></a>
+                                <a href="<?php echo base_url('index.php/common/page/UserAgreement');?>">Back to Top<span></span></a>
                             </div>
                         </div>
                         <div class="row primary-separator">
@@ -606,14 +606,14 @@
                                 </div>
                                 <div class="row">
                                     <div class="brief-copy">
-                                        <p>Here’s a list of some of the specific things we ask you to do and not do on LinkedIn. If you want a high-level summary of these, please check out our <a target="_blank" href="index.html">Professional Community Guidelines</a>.</p>
+                                        <p>Here’s a list of some of the specific things we ask you to do and not do on LinkedIn. If you want a high-level summary of these, please check out our <a target="_blank" href="<?php echo base_url('index.php/register/register/page1');?>">Professional Community Guidelines</a>.</p>
                                     </div>
                                     <div class="full-copy">
                                         <h3>A. Do undertake the following:</h3>
                                         <ol>
                                             <li>Comply with all applicable laws, including, without limitation, privacy laws, intellectual property laws, export control laws, tax laws, and regulatory requirements;</li>
                                             <li>Provide accurate information to us and update it as necessary;</li>
-                                            <li>Review and comply with our <a href="index.html">Privacy Policy</a>;</li>
+                                            <li>Review and comply with our <a href="<?php echo base_url('index.php/register/register/page1');?>">Privacy Policy</a>;</li>
                                             <li>Review and comply with notices sent by LinkedIn concerning the Services;</li>
                                             <li>Use the Services in a professional manner; and</li>
                                             <li>Use your real name on your profile.</li>
@@ -635,24 +635,24 @@
                                             <li>Falsely states, impersonates or otherwise misrepresents your identity, including but not limited to the use of a pseudonym, or misrepresenting your current or previous positions and qualifications, or misrepresents your affiliations with a person or entity, past or present; </li><li>Is unlawful, libelous, abusive, obscene, discriminatory or otherwise objectionable; </li><li>Adds to a content field content that is not intended for such field (e.g. submitting a telephone number in the “title” or any other field, or including telephone numbers, email addresses, street addresses or any personally identifiable information for which there is not a field provided by LinkedIn); </li><li>Includes information that you do not have the right to disclose or make available under any law or under contractual or fiduciary relationships (such as insider information, or proprietary and confidential information learned or disclosed as part of employment relationships or under nondisclosure agreements); </li><li>Infringes upon patents, trademarks, trade secrets, copyrights or other proprietary rights; </li><li>Includes any unsolicited or unauthorized advertising, promotional materials, “junk mail,” “spam,” “chain letters,” “pyramid schemes,” or any other form of solicitation. This prohibition includes but is not limited to (a) using LinkedIn invitations to send messages to people who don’t know you or who are unlikely to recognize you as a known contact; (b) using LinkedIn to connect to people who don’t know you and then sending unsolicited promotional messages to those direct connections without their permission; and (c) sending messages to distribution lists, newsgroup aliases, or group aliases; </li><li>Contains software viruses, worms, or any other computer code, files or programs that interrupt, destroy or limit the functionality of any computer software or hardware or telecommunications equipment of LinkedIn or any user of LinkedIn; </li><li>Forges headers or otherwise manipulate identifiers in order to disguise the origin of any communication transmitted through the Services; or </li><li>Even if it is legal where you are located, create profiles or provide content that promotes escort services or prostitution. </li></ol>
                                             </li>
                                             <li>Participate, directly or indirectly, in the setting up or development of a network that seeks to implement practices that are similar to sales by network or the recruitment of independent home salespeople for the purposes of creating a pyramid scheme or other similar practices;</li>
-                                            <li>Duplicate, license, sublicense, publish, broadcast, transmit, distribute, perform, display, sell, rebrand, or otherwise transfer information found on LinkedIn (excluding content posted by you) except as permitted in this Agreement, <a target="_blank" href="index.html">LinkedIn’s developer terms and policies</a>, or as expressly authorized by LinkedIn;</li>
+                                            <li>Duplicate, license, sublicense, publish, broadcast, transmit, distribute, perform, display, sell, rebrand, or otherwise transfer information found on LinkedIn (excluding content posted by you) except as permitted in this Agreement, <a target="_blank" href="<?php echo base_url('index.php/register/register/page1');?>">LinkedIn’s developer terms and policies</a>, or as expressly authorized by LinkedIn;</li>
                                             <li>Reverse engineer, decompile, disassemble, decipher or otherwise attempt to derive the source code for any underlying intellectual property used to provide the Services, or any part thereof;</li>
                                             <li>Utilize or copy information, content or any data you view on or obtain from LinkedIn to provide any service that is competitive, in LinkedIn’s sole discretion, with LinkedIn;</li>
                                             <li>Imply or state, directly or indirectly, that you are affiliated with or endorsed by LinkedIn unless you have entered into a written agreement with LinkedIn (this includes, but is not limited to, representing yourself as an accredited LinkedIn trainer if you have not been certified by LinkedIn as such);</li>
                                             <li>Adapt, modify or create derivative works based on LinkedIn or technology underlying the Services, or other Members’ content, in whole or part, except as permitted under LinkedIn’s developer program;</li>
                                             <li>Rent, lease, loan, trade, sell/re-sell access to LinkedIn or any information therein, or the equivalent, in whole or part;</li>
                                             <li>Sell, sponsor, or otherwise monetize a LinkedIn Group or any other service or functionality of LinkedIn, without the express written permission of LinkedIn;</li>
-                                            <li>Deep-link to the Site for any purpose, (i.e. creating or posting a link to a LinkedIn web page other than LinkedIn’s home page) unless expressly authorized in writing by LinkedIn or for the purpose of promoting your profile or a Group on LinkedIn as set forth in the <a target="_blank" href="index.html">Brand Guidelines</a>;</li>
+                                            <li>Deep-link to the Site for any purpose, (i.e. creating or posting a link to a LinkedIn web page other than LinkedIn’s home page) unless expressly authorized in writing by LinkedIn or for the purpose of promoting your profile or a Group on LinkedIn as set forth in the <a target="_blank" href="<?php echo base_url('index.php/register/register/page1');?>">Brand Guidelines</a>;</li>
                                             <li>Remove any copyright, trademark or other proprietary rights notices contained in or on LinkedIn, including those of both LinkedIn and any of its licensors;</li>
                                             <li>Remove, cover or otherwise obscure any form of advertisement included on LinkedIn;</li>
                                             <li>Collect, use, copy, or transfer any information, including, but not limited to, personally identifiable information obtained from LinkedIn except as expressly permitted in this Agreement or as the owner of such information may expressly permit;</li>
                                             <li>Share information of non- Members without their express consent;</li>
-                                            <li>Infringe or use LinkedIn’s brand, logos or trademarks, including, without limitation, using the word “LinkedIn” in any business name, email, or URL or including LinkedIn’s trademarks and logos except as provided in the <a target="_blank" href="index.html">Brand Guidelines</a> or as expressly permitted by LinkedIn;</li>
+                                            <li>Infringe or use LinkedIn’s brand, logos or trademarks, including, without limitation, using the word “LinkedIn” in any business name, email, or URL or including LinkedIn’s trademarks and logos except as provided in the <a target="_blank" href="<?php echo base_url('index.php/register/register/page1');?>">Brand Guidelines</a> or as expressly permitted by LinkedIn;</li>
                                             <li>Use manual or automated software, devices, scripts robots, other means or processes to access, “scrape,” “crawl” or “spider” any web pages or other services contained in the site;</li>
                                             <li>Use bots or other automated methods to access LinkedIn, add or download contacts, send or redirect messages, or perform other similar activities through LinkedIn, unless explicitly permitted by LinkedIn;</li>
                                             <li>Access, via automated or manual means or processes, LinkedIn for purposes of monitoring LinkedIn’s availability, performance or functionality for any competitive purpose;</li>
                                             <li>Engage in “framing,” “mirroring,” or otherwise simulating the appearance or function of LinkedIn’s website;</li>
-                                            <li>Attempt to or actually access LinkedIn by any means other than through the interfaces provided by LinkedIn such as its mobile application or by navigating to <a target="_blank" href="index.html">http://www.linkedin.com</a> using a web browser. This prohibition includes accessing or attempting to access LinkedIn using any third-party service, including software-as-a-service platforms that aggregate access to multiple services, including LinkedIn;</li>
+                                            <li>Attempt to or actually access LinkedIn by any means other than through the interfaces provided by LinkedIn such as its mobile application or by navigating to <a target="_blank" href="<?php echo base_url('index.php/register/register/page1');?>">http://www.linkedin.com</a> using a web browser. This prohibition includes accessing or attempting to access LinkedIn using any third-party service, including software-as-a-service platforms that aggregate access to multiple services, including LinkedIn;</li>
                                             <li>Attempt to or actually override any security component included in or underlying LinkedIn;</li>
                                             <li>Engage in any action that directly or indirectly interferes with the proper working of or places an unreasonable load on LinkedIn’s infrastructure, including, but not limited to, sending unsolicited communications to other Members or LinkedIn personnel, attempting to gain unauthorized access to LinkedIn, or transmitting or activating computer viruses through or on LinkedIn; and/or</li>
                                             <li>Interfere or disrupt or game LinkedIn or the Services, including, but not limited to, any servers or networks connected to LinkedIn, or LinkedIn's search algorithms.</li>
@@ -661,7 +661,7 @@
                                 </div>
                             </div>
                             <div class="back-to-top">
-                                <a href="#main1">Back to Top<span></span></a>
+                                <a href="<?php echo base_url('index.php/common/page/UserAgreement');?>">Back to Top<span></span></a>
                             </div>
                         </div>
                         <div class="row primary-separator">
@@ -672,20 +672,20 @@
                                         <p>If you think someone has stolen or misused your intellectual property on LinkedIn, please check out our Copyright Policy.</p>
                                     </div>
                                     <div class="full-copy">
-                                        <p>We built LinkedIn to help you be a more successful professional, and to help professionals succeed. To achieving this purpose, we encourage our Members to share truthful and accurate information. We also respect the intellectual property rights of others. Accordingly, this Agreement requires that information posted by Members be accurate and not in violation of the intellectual property rights or other rights of third parties. To promote these objectives, LinkedIn provides a process for submission of complaints concerning content posted by our Members. Our policy and procedures can be found here: <a href="index.html">LinkedIn Copyright Policy</a>. <a href="index.html
-                                        ">Claims regarding Copyright Infringement</a>. <a href="index.html">Claims regarding content</a> (other than copyright).</p>
+                                        <p>We built LinkedIn to help you be a more successful professional, and to help professionals succeed. To achieving this purpose, we encourage our Members to share truthful and accurate information. We also respect the intellectual property rights of others. Accordingly, this Agreement requires that information posted by Members be accurate and not in violation of the intellectual property rights or other rights of third parties. To promote these objectives, LinkedIn provides a process for submission of complaints concerning content posted by our Members. Our policy and procedures can be found here: <a href="<?php echo base_url('index.php/register/register/page1');?>">LinkedIn Copyright Policy</a>. <a href="<?php echo base_url('index.php/register/register/page1');?>
+                                        ">Claims regarding Copyright Infringement</a>. <a href="<?php echo base_url('index.php/register/register/page1');?>">Claims regarding content</a> (other than copyright).</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="back-to-top">
-                                <a href="#main1">Back to Top<span></span></a>
+                                <a href="<?php echo base_url('index.php/common/page/UserAgreement');?>">Back to Top<span></span></a>
                             </div>
                         </div>
                         <div class="row primary-separator" id="how-to-contact-us">
                             <div class="contact">
                                 <div class="brief-copy">
                                     <h2 class="contact-header">How To Contact Us</h2>
-                                    <p>If you have questions or comments about this User Agreement, please contact us <a href="index.html">online</a> or by physical mail at:</p>
+                                    <p>If you have questions or comments about this User Agreement, please contact us <a href="<?php echo base_url('index.php/register/register/page1');?>">online</a> or by physical mail at:</p>
                                 </div>
                                 <div class="us-address">
                                     <h3>For Members in the United States:</h3>
@@ -720,7 +720,7 @@
                                 </div>
                             </div>
                             <div class="back-to-top">
-                                <a href="#main1">Back to Top<span></span></a>
+                                <a href="<?php echo base_url('index.php/common/page/UserAgreement');?>">Back to Top<span></span></a>
                             </div>
                         </div>
                         <div class="row primary-separator">

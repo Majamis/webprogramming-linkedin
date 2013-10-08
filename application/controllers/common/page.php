@@ -59,19 +59,10 @@ class page extends CI_Controller{
         $this->load->view('common/footer1',$data);
 	}
 
-	public function page5(){
+	
 
-		
-            $data['heading'] = "page 5";
-            
-            $data['css1'] = "page5";
-			$data['css2'] = "";
-			$data['css3'] = "";
-$this->load->view('common/header',$data);
-            $this->load->view('page5/page5', $data);
-        
-        //$this->load->view('common/footer1',$data);
-	}
+
+	
 
 	public function page6(){
 

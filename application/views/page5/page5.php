@@ -2,16 +2,30 @@
 <body class="en guest v2 registration-start chrome-v5 chrome-v5-responsive background-v4 sticky-bg guest" id="pagekey-reg-cold-signup">
  <input id="inSlowConfig" type="hidden" value="false" />
  
+ <script>
+<?php 
+  if($msg== 'registered')
+  
+  echo '$(function()  {
+    $("#dialogue").dialog();
+  });'
+  
+  //echo 'javascript'
+?>
+</script>
+
+<div id="dialogue" title = "Registered !!!">
+  <p> You have been Registered. A verification Email has been sent to you</p>
+</div>
+
 <div id="header" class="guest">
  <div class="wrapper">
  <div id="nav-primary">
  <div class="wrapper">
- <div class="logo" id="logo-linkedin">
- <img class="Hello" src="../img/logo_linkedin_92x22.png" alt="LinkedIn">
- </div>
+ 
  <ul class="menu">
  <li id="nav-primary-auth">
-                                Already on LinkedIn? <a href="page6.html" rel="nofollow"><span>Sign in</span></a></li>
+                                Already on LinkedIn? <a href="<?php echo base_url('index.php/common/page/page6');?>" rel="nofollow"><span>Sign in</span></a></li>
  </ul>
  </div>
  </div>
@@ -39,7 +53,7 @@
 <div id="content">
 
   <div class="register-container">
-      <form action="" method="POST" name="coldRegistrationForm" id= "page5form" class="standard-form sided " >
+      <form action="<?php echo base_url();?>index.php/register/register/process2" novalidate method="POST" name="coldRegistrationForm" id= "page5form" class="standard-form sided " >
                <input type="hidden" name="isJsEnabled" value="false"/>
 
                 
@@ -61,6 +75,7 @@
                   <li>
                       <label for="email-coldRegistrationForm" >Email:</label>
                       <div class="fieldgroup">
+                        <?php if(!is_null($msg)&& !($msg=='registered')) echo $msg;?>
                         <span class="error" id="email-coldRegistrationForm-error"></span>
                         <span class="edit">Edit</span>
                         <input type="email" name="email" value="" id="email-coldRegistrationForm" maxlength="128" data-ime-mode-disabled>
@@ -86,7 +101,7 @@
 						</div>
               
                 <p id="register-custom-nav" class="key">
-                                Already on LinkedIn? <a href="page6.html">Sign in</a>
+                                Already on LinkedIn? <a href="<?php echo base_url('index.php/common/page/page6');?>">Sign in</a>
                 </p>
            
           <input type="hidden" name="webmailImport" value="false" id="webmailImport-coldRegistrationForm">
@@ -111,7 +126,7 @@
         <p class="actions">
           
             
-              <a class="fb_button" href="#" id="yui-gen3"><span class="fb_button_text">Sign up with Facebook</span></a>
+              <a class="fb_button" href="<?php echo base_url('index.php/register/register/page1');?>" id="yui-gen3"><span class="fb_button_text">Sign up with Facebook</span></a>
              <abbr title="By clicking Join LinkedIn, you are indicating that you have read, understood, and agree to LinkedIn's User Agreement and Privacy Policy">*</abbr>
         </p>
       </div>
@@ -123,7 +138,7 @@
 </div>
 
   <p id="agreement">
-            * By joining LinkedIn, you agree to LinkedIn's <a target="_blank" href="UserAggrement.html">User Agreement</a>, <a target="_blank" href="index.html">Privacy Policy</a> and <a target="_blank" href="index.html">Cookie Policy</a>
+            * By joining LinkedIn, you agree to LinkedIn's <a target="_blank" href="<?php echo base_url('index.php/common/page/UserAgreement');?>">User Agreement</a>, <a target="_blank" href="<?php echo base_url('index.php/register/register/page1');?>">Privacy Policy</a> and <a target="_blank" href="<?php echo base_url('index.php/register/register/page1');?>">Cookie Policy</a>
   </p>
  
  </div>
@@ -140,7 +155,7 @@
  </div>
 </div>
  
-	<script src="validation.js" type="text/javascript"></script>
+	<script src="assets/js/validation.js"></script>
  
  </body>
 </html>

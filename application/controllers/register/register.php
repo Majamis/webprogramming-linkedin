@@ -8,7 +8,21 @@ class Register extends CI_Controller{
 		parent::__construct();
 		$this->load->helper('url');
 	}
-	
+
+	public function page5($msg = null){
+
+			$data['msg'] = $msg;
+            $data['heading'] = "page 5";
+            
+            $data['css1'] = "page5";
+			$data['css2'] = "";
+			$data['css3'] = "";
+			$this->load->view('common/header',$data);
+            $this->load->view('page5/page5', $data);
+        
+        //$this->load->view('common/footer1',$data);
+	}
+
 	public function page1($msg = null){
 
 			$data['msg'] = $msg;
@@ -47,6 +61,29 @@ class Register extends CI_Controller{
 		}
 	}
 
+	public function process2(){
+		// Load the model
+		$this->load->model('register_model');
+		$result = $this->register_model->register_user();
+
+		if($result['value'] == false)
+		{
+			$msg = '<font style=bold color=red>Email already exists.</font><br />';
+			$this->page5($msg);
+			//redirect('common/page/page1','refresh');
+		}
+		else
+		{
+			$this->format_email($result,'txt');
+			$msg = 'registered';
+			//redirect('register/register/page5');
+			$this->page5($msg);
+			//return true;
+			
+			
+		}
+	}
+
 	public function format_email($info, $format){  
   
     //set the root  
@@ -63,7 +100,9 @@ class Register extends CI_Controller{
           
             $var_str = var_export($template, true);
 			/*$var = "<?php\n\n\$$template = $var_str;\n\n?>";*/
-			file_put_contents('filename.txt', $var_str);
+			$filename = $info['username'];
+			$filename = $filename . '.txt';
+			file_put_contents($filename, $var_str);
     //return the html of the template  
    //return $template;
   
@@ -95,6 +134,8 @@ class Register extends CI_Controller{
 	}  */
 
 }
+
+
 
 
 ?>

@@ -72,6 +72,9 @@ class settings extends CI_Controller{
 		$data['actionMD'] =	site_url('common/settings/MandrillKey');
 		$data['actionShopify'] = site_url('common/settings/InsertShopify');
 
+		$data['css1'] = "bootstrap";
+		$data['css2'] = "bootstrap-responsive";
+		$data['css3'] = "style";
 		$this->load->view('common/header',$data);
 		$this->load->view('common/nav',$data);
 		$this->load->view('common/settings_view',$data);

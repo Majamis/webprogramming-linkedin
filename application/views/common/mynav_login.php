@@ -6,11 +6,10 @@
                      <a href="<?php echo base_url('index.php/register/register/page1');?>" class="logo" id="li-logo">LinkedIn Home</a>
                 </h2>
                 <ul class="nav main-nav guest-nav" role="navigation">
+                    
                     <li class="nav-item">
-                         <a href="<?php echo base_url('index.php/common/page/page3');?>" class="nav-link">What is LinkedIn?</a>
-                    </li>
-                    <li class="nav-item">
-                         <a href="<?php echo base_url('index.php/register/register/page5');?>" class="nav-link" rel="nofollow">Join Today</a>
+
+                         <a href="<?php echo base_url('index.php/common/page/page5');?>" class="nav-link" rel="nofollow"><?php if(!is_null($username) echo $username;?></a>
                     </li>
                     <li class="nav-item">
                          <a href="<?php echo base_url('index.php/common/page/page6');?>" class="nav-link" rel="nofollow">Sign In</a>

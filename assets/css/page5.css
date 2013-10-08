@@ -12,6 +12,11 @@ vertical-align: baseline;
 -webkit-text-size-adjust: 100%;
 }
 
+#dialogue
+{
+	
+	display:none;
+}
 
 .os-win body
 {

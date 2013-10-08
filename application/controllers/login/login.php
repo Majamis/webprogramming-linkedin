@@ -39,12 +39,12 @@ class Login extends CI_Controller{
 		}else{
 			// If user did validate, 
 			// Send them to members area
-			redirect('common/page/page1','refresh');
+			redirect('common/settings','refresh');
 		}		
 	}
 	public function do_logout(){
 		$this->session->sess_destroy();
-		redirect('login/login','refresh');
+		redirect('register/register/page1','refresh');
 	}
 
 

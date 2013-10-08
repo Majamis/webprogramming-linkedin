@@ -6,11 +6,10 @@
                      <a href="<?php echo base_url('index.php/register/register/page1');?>" class="logo" id="li-logo">LinkedIn Home</a>
                 </h2>
                 <ul class="nav main-nav guest-nav" role="navigation">
+                              
                     <li class="nav-item">
-                         <a href="<?php echo base_url('index.php/common/page/page3');?>" class="nav-link">What is LinkedIn?</a>
-                    </li>
-                    <li class="nav-item">
-                         <a href="<?php echo base_url('index.php/register/register/page5');?>" class="nav-link" rel="nofollow">Join Today</a>
+
+                         <a href="<?php echo base_url('index.php/common/page/page5');?>" class="nav-link" rel="nofollow"><?php if(!is_null($username) echo $username;?></a>
                     </li>
                     <li class="nav-item">
                          <a href="<?php echo base_url('index.php/common/page/page6');?>" class="nav-link" rel="nofollow">Sign In</a>
@@ -72,7 +71,7 @@
                         <input type="password" name="session_password" value="" id="session_password-login" tabindex="2">
                     
                 
-                    <a id="forgot-password" href="<?php echo base_url('index.php/common/page/page2');?>" tracking="signin_fpwd" class="nav-link">Forgot password?</a>
+                    <a id="forgot-password" href="page2.html" tracking="signin_fpwd" class="nav-link">Forgot password?</a>
                   
             </div>
           </li>

@@ -1,0 +1,9 @@
+'Welcome Hello@gmail.com!
+
+Thank-you for creating an account.
+
+Please confirm your account by copy and pasting the link below into your browsers address bar.
+
+http://localhost/webprogramming-linkedin/index.php/register/register//confirm.php?email=Hello@gmail.com&key=7af32835d00e6db1c27a401d544ca231
+
+Thanks!'
