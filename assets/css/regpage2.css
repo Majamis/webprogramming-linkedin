@@ -1,0 +1,403 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+vertical-align: baseline;
+-webkit-text-size-adjust: 100%;
+}
+html {
+overflow-y: scroll;
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+}
+body {
+font-size: 62.5%;
+line-height: 1.2;
+color: #000;
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+}
+body {
+background-color: #fff;
+}
+body {
+background-color: #e6e6e6;
+}
+.os-win body, .os-win input, .os-win select, .os-win textarea, .os-win button {
+font-family: Arial,sans-serif;
+}
+
+#header, #body, #footer {
+clear: both;
+width: 98em;
+_width: 980px;
+min-width: 980px;
+max-width: 95%;
+margin: 0 auto;
+}
+#header {
+margin-bottom: 15px;
+}
+#footer {
+color: #666;
+}
+#footer {
+border-top: 1px solid #ccc;
+margin: 20px auto;
+padding: 10px 0;
+color: #666;
+clear: both;
+}
+#header, #body, #footer {
+width: 80.5em;
+_width: 805px;
+min-width: 805px;
+}
+.guest #header {
+margin-top: 23px;
+}
+.guest #header {
+margin: 0 auto;
+}
+#nav-primary, #nav-primary .wrapper {
+background: none;
+padding: 0;
+}
+#nav-primary, #nav-primary .wrapper {
+background: none;
+padding: 0;
+height: 39px;
+}
+#logo-linkedin {
+float: left;
+margin: 8px 10px 0 4px;
+position: relative;
+}
+#body {
+background: #fff;
+padding: 0;
+border: 1px solid #ccc;
+}
+#body .wrapper {
+padding: 0 10px;
+}
+#body .wrapper {
+padding: 15px;
+}
+.progress-container {
+overflow: hidden;
+zoom: 1;
+border-bottom: 1px solid #ccc;
+padding-bottom: 6px;
+margin-bottom: 18px;
+}
+h1 {
+font-size: 180%;
+color: #39c;
+}
+.progress-container h1 {
+width: 75%;
+float: left;
+}
+#main h1 {
+font-weight: normal;
+font-size: 160%;
+}
+#main h1 {
+font-size: 17px;
+}
+strong {
+font-weight: bold;
+}
+#motivation {
+width: 280px;
+_width: 270px;
+float: right;
+margin-top: 10px;
+display: inline;
+position: relative;
+z-index: 1;
+}
+#motivation .profile-features {
+border: 1px solid #baddee;
+padding: 10px;
+}
+#motivation .profile-features h3 {
+font-weight: bold;
+margin-bottom: 2px;
+font-size: 140%;
+margin-bottom: 10px;
+background: #fff url('/scds/common/u/img/icon/icon_lightbulb_10x17.png') no-repeat;
+padding-left: 20px;
+}
+ol, ul {
+list-style: none;
+}
+#motivation .profile-features li {
+font-size: 130%;
+margin-top: 8px;
+background: #fff url('/scds/common/u/img/sprite/sprite_registration_v2.png') no-repeat scroll 0 -297px;
+padding-left: 15px;
+}
+.standard-form {
+margin: 20px 40px;
+}
+.standard-form.sided {
+margin: 20px 10px;
+}
+.standard-form.sided {
+width: 485px;
+margin: 0 0 20px;
+float: left;
+}
+.js #main.employed form.employed, .js #main.looking form.looking, .js #main.student form.student, .js .self-employed li.industry, .js .employed .industry.show, .js .looking .industry.show, .js .student .industry.show {
+display: block;
+}
+#motivation .profile-features li.first {
+margin-top: 0;
+}
+.standard-form ul {
+margin: 0;
+padding-top: 10px;
+list-style-type: none;
+}
+.standard-form li:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+.standard-form li, .standard-form fieldset.details li {
+margin-bottom: 10px;
+}
+.standard-form label, .standard-form li fieldset legend span, .standard-form li fieldset.details fieldset legend {
+font-size: 13px;
+color: #333;
+background-color: transparent;
+font-weight: bold;
+display: block;
+float: left;
+text-align: right;
+width: 185px;
+margin-right: 10px;
+}
+.standard-form li fieldset legend span {
+font-size: 13px;
+position: absolute;
+white-space: normal;
+}
+.standard-form li fieldset label, .standard-form li fieldset.details fieldset label {
+font-weight: normal;
+float: none;
+text-align: left;
+line-height: 1;
+width: auto;
+margin-bottom: 0;
+}
+.standard-form.sided label, .standard-form.sided li fieldset legend span, .standard-form.sided li fieldset.details fieldset legend {
+width: 110px;
+}
+.standard-form.sided label, .standard-form.sided li fieldset legend span, .standard-form.sided li fieldset.details fieldset legend {
+width: 150px;
+}
+.standard-form .required label em, .standard-form .required legend em {
+color: #900;
+}
+.standard-form ul {
+margin: 0;
+padding-top: 10px;
+list-style-type: none;
+}
+.standard-form ul ul, .standard-form .fieldgroup {
+margin: 0 0 0 195px;
+_margin-left: 198px;
+padding: 0;
+}
+.standard-form.sided ul ul, .standard-form.sided .fieldgroup {
+margin-left: 120px;
+_margin-left: 117px;
+}
+.standard-form.sided .fieldgroup {
+_margin-left: 123px;
+}
+.standard-form p {
+margin-left: 195px;
+_margin-left: 200px;
+margin-top: .25em;
+color: #333;
+}
+.standard-form p.actions {
+background: url('/scds/common/u/img/bg/bg_grey_dotted_h-line_3x1.png') 0 0 repeat-x;
+padding-top: 20px;
+margin-top: 20px;
+font-size: 13px;
+}
+.standard-form p.key {
+font-size: 11px;
+color: #666;
+margin-top: 15px;
+}
+.standard-form.sided p {
+margin-left: 120px;
+}
+.standard-form.sided ul ul, .standard-form.sided .fieldgroup, .standard-form.sided p {
+margin-left: 160px;
+}
+.standard-form .error {
+font-size: 12px;
+color: #900;
+font-weight: bold;
+}
+form ul select {
+outline: none;
+}
+.standard-form input, .standard-form select, .standard-form textarea {
+font-size: 13px;
+}
+form ul input.text-input {
+border: 1px solid #999;
+padding: 2px 3px;
+}
+.standard-form .fieldgroup input, .standard-form .fieldgroup select, .standard-form .fieldgroup textarea, .standard-form .typeahead input {
+width: 310px;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+.standard-form li, .standard-form fieldset.details li {
+margin-bottom: 10px;
+}
+.js #main #status-chooser-container {
+margin: 12px 0 16px;
+}
+.standard-form li fieldset {
+background: none;
+border: none;
+margin: 0;
+padding: 0;
+}
+.standard-form legend {
+font-size: 180%;
+color: #333;
+background-color: #fff;
+padding-right: 10px;
+_margin-left: -7px;
+}
+.standard-form li fieldset legend {
+position: relative;
+line-height: 1.5;
+padding: 0;
+margin: 0;
+}
+.standard-form li:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+.standard-form li, .standard-form fieldset.details li {
+margin-bottom: 10px;
+}
+.standard-form li li, .standard-form fieldset.details li li {
+margin-bottom: 0;
+}
+.js #main #status-chooser-container li {
+float: left;
+}
+.standard-form.sided #status-chooser-container li label {
+width: auto;
+}
+form ul input, form ul textarea {
+border: 1px solid #999;
+outline: none;
+padding: 2px 3px;
+background-color: #fff;
+}
+.standard-form input, .standard-form select, .standard-form textarea {
+font-size: 13px;
+}
+.standard-form .self-employed input {
+width: auto;
+margin-left: 0;
+}
+form ul input, form ul textarea, form ul .self-employed .fieldgroup input, form ul fieldset input:focus, form ul .fieldgroup input:focus {
+border: 0;
+padding: 3px 0;
+}
+
+.standard-form.sided #status-chooser-container fieldset input {
+margin-right: 5px;
+}
+.standard-form p.actions {
+margin-top: 15px;
+background: transparent;
+padding-top: 0;
+}
+.btn-primary, .btn-new-primary, .btn-secondary, .btn-new-secondary, .btn-tertiary, .btn-ternary, .btn-quaternary, .btn-action {
+border-width: 1px;
+border-style: solid;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+cursor: pointer;
+font-size: 12px;
+line-height: 1.35;
+margin: 0;
+overflow: visible;
+padding: 3px 10px 2px;
+text-decoration: none !important;
+vertical-align: top;
+width: auto;
+}
+.btn-primary, .btn-menu-open.btn-primary, .btn-split.btn-primary:hover {
+background: #0571A6;
+background: -moz-linear-gradient(top, #73aec9 0, #73aec9 1px, #338ab0 1px, #0571a6 100%);
+background: -o-linear-gradient(top, #73aec9 0, #73aec9 1px, #338ab0 1px, #0571a6 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #73aec9), color-stop(5%, #73aec9), color-stop(5%, #338ab0), color-stop(100%, #0571a6));
+background: linear-gradient(top, #73aec9 0%,#73aec9 1px,#338ab0 1px,#0571a6 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#338AB0', endColorstr='#0571A6',GradientType=0 );
+border-color: #045a8b;
+color: #fff !important;
+}
+.standard-form p.actions input {
+font-size: inherit;
+vertical-align: middle;
+}
+.standard-form p.key strong {
+vertical-align: top;
+color: #900;
+font-size: 13px;
+}
+.guest #footer {
+border: none;
+padding: 0 0 0 8px;
+}
+#footer ul, #footer li, #footer p {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+#footer p {
+font-size: 110%;
+}
+p#copyright {
+float: left;
+border-right: 1px solid #ccc;
+padding: 0 8px 0 0;
+margin-right: 8px;
+-webkit-text-size-adjust: 165%;
+}
+p#terms-of-use {
+margin-bottom: 8px;
+}

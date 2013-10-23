@@ -37,6 +37,20 @@ class Register extends CI_Controller{
         
         $this->load->view('common/footer1',$data);
 	}
+	public function regpage2($msg = null){
+
+			$data['msg'] = $msg;
+            $data['heading'] = "Build Your Profile | LinkedIn";
+            $data['css1'] = "regpage2";
+			$data['css2'] = "";
+			$data['css3'] = "";
+            $this->load->view('common/header',$data);
+            //$this->load->view('common/mynav',$data);
+			
+            $this->load->view('regpage2/regpage2', $data);
+        
+        $this->load->view('common/footer3',$data);
+	}
 
 	public function process(){
 		// Load the model
