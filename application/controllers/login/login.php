@@ -12,18 +12,15 @@ class Login extends CI_Controller{
 	public function index($msg = NULL){
 		// Load our view to be displayed
 		// to the user
-		$this->load->helper('url');
-
-		if($this->session->userdata('username')){
-			redirect('common/settings', 'refresh');
-		}else{
 			$data['msg'] = $msg;
-			$data['heading'] = "Login";
-			$this->load->view('common/header',$data);
-			$this->load->view('common/header1',$data);
-			$this->load->view('loginView/login_view', $data);
-		}
-		$this->load->view('common/footer4',$data);
+		   	$data['heading'] = "page 6";
+            $data['css1'] = "p1";
+			$data['css2'] = "page6";
+			$data['css3'] = "StyleSheet1";
+            $this->load->view('common/header',$data);
+            $this->load->view('page6/page6', $data);
+        
+        $this->load->view('common/footer2',$data);
 	}
 	
 	public function process(){

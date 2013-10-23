@@ -108,6 +108,18 @@ class Register extends CI_Controller{
   
 	}  
 
+	public function confirm($key)
+	{
+		$this->load->model('register_model');
+		$result = $this->register_model->verify($key);
+		if($result == false)
+		{
+			redirect('register/register/page5');
+		}
+
+	}
+	
+
 	/*function send_email($info){  
           
     //format each email  

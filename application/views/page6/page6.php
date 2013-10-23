@@ -55,6 +55,7 @@
       <ul>
        <li>
             <label for="session_key-login" >Email address:</label>
+            <?php if(!is_null($msg))echo $msg; ?>
             <div class="fieldgroup">
                 <span class="error" id="session_key-login-error"></span>
                 

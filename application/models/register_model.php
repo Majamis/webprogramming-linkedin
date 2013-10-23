@@ -43,6 +43,33 @@
 			return true;
 	        }
 	    }
+	    function verify($key)
+	    {
+	
+	    	$this->db->select('*');
+	    	$this->db->from('confirm');
+	 		$this->db->where('key', $key);
+	 		$query = $this->db->get();
+
+	 		$row = $query->row_array();
+	 		$username = $row['email'];
+
+	 		
+	 		//echo $query->result();
+
+	    	if($query->num_rows() == 1)
+	    	{
+	    		$this->db->get('users');
+	    		$this->db->set('validate', '1', False);
+	    		$this->db->where('username', $username);
+    			$this->db->update('users');
+    			return true;
+	    	}
+	    	else
+	    		return false;
+	    	
+
+	    }
 	}
 
 ?>

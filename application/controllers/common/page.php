@@ -64,9 +64,9 @@ class page extends CI_Controller{
 
 	
 
-	public function page6(){
+	public function page6($msg = NULL){
 
-		
+			$data['msg'] = $msg;
             $data['heading'] = "page 6";
 
             $data['css1'] = "p1";
