@@ -27,7 +27,7 @@
  <div class="wrapper">
     <div id="main" class="establish-profile employed">
       <div class="progress-container">
-                <h1><strong>yolo</strong>, let's start creating your professional profile</h1>
+                <h1><strong><?php if(!is_null($msg)&& !($msg=='registered')) echo $msg;?></strong>, let's start creating your professional profile</h1>
       </div>
        <div id="motivation" class="motivation">
               
@@ -41,9 +41,9 @@
               </div>
             </div>
         <div id="control_gen_1">
-        <form action="#" method="POST" name="employedProfileForm" novalidate="novalidate" id="employed-form" class="standard-form sided employed stacked-form active-form">
-       
-    <ul class="infoList">
+        <form action="<?php echo base_url();?>index.php/register/register/process_next" method="POST" name="employedProfileForm" novalidate="novalidate" id="employed-form" class="standard-form sided employed stacked-form active-form">
+       <input name="username" id="php_user" value=<?php if(!is_null($msg)&& !($msg=='registered')) echo $msg;?>>
+    <ul class="infoList">y
 
 
         <li class="country required location">

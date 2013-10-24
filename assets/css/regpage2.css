@@ -10,6 +10,7 @@ font-family: inherit;
 vertical-align: baseline;
 -webkit-text-size-adjust: 100%;
 }
+
 html {
 overflow-y: scroll;
 margin: 0;
@@ -400,4 +401,9 @@ margin-right: 8px;
 }
 p#terms-of-use {
 margin-bottom: 8px;
+}
+
+#php_user{
+	
+	display:none;
 }

@@ -38,7 +38,6 @@ class Register extends CI_Controller{
         $this->load->view('common/footer1',$data);
 	}
 	public function regpage2($msg = null){
-
 			$data['msg'] = $msg;
             $data['heading'] = "Build Your Profile | LinkedIn";
             $data['css1'] = "regpage2";
@@ -60,15 +59,17 @@ class Register extends CI_Controller{
 		if($result['value'] == false)
 		{
 			$msg = '<font style=bold color=red>Email already exists.</font><br />';
-			$this->page1($msg);
-			//redirect('common/page/page1','refresh');
+			//$this->page1($msg);
+			redirect('common/page/page1','refresh');
 		}
 		else
 		{
-			$this->format_email($result,'txt');
-			$msg = 'registered';
-			//redirect('register/register/page1','refresh');
-			$this->page1($msg);
+			//$this->format_email($result,'txt');
+			//$msg = 'registered';
+			$username=$result['username'];
+			$this->regpage2($username);
+			//redirect('register/register/regpage2');
+			//$this->page1($msg);
 			//return true;
 			
 			
@@ -88,14 +89,28 @@ class Register extends CI_Controller{
 		}
 		else
 		{
-			$this->format_email($result,'txt');
-			$msg = 'registered';
-			//redirect('register/register/page5');
-			$this->page5($msg);
+			//$this->format_email($result,'txt');
+			//$msg = 'registered';
+			$username=$result['username'];
+			$this->regpage2($username);
+			//$this->page5($msg);
 			//return true;
 			
 			
 		}
+	}
+
+	public function process_next(){
+		// Load the model
+		$this->load->model('register_model');
+		$result = $this->register_model->register_user_details();
+
+		
+			$this->format_email($result,'txt');
+			$msg = 'registered';
+			$this->page1($msg);
+			//return true;
+			
 	}
 
 	public function format_email($info, $format){  

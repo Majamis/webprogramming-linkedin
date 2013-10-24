@@ -33,6 +33,7 @@
 				$info ['username'] = $email;  
     			$info ['key'] = $key;
     			$info ['value'] = true;
+    			$info ['username'] = $email;
     			return $info;
     			
 			}  
@@ -43,6 +44,29 @@
 			return true;
 	        }
 	    }
+
+	     function register_user_details()
+	    {
+	    	$username = $this->security->xss_clean($this->input->post('username'));
+			$this->db->select('*');
+			$this->db->from('users');
+			$this->db->where('username',$username);
+    		$query = $this->db->get();
+    		$row = $query->row_array();
+
+			$data['UserId']= $row['userid'];
+			$data['Country'] = $this->security->xss_clean($this->input->post('countryCode'));
+			$data['PostalCode'] = $this->security->xss_clean($this->input->post('postalCode'));
+	    	$data['Jtitle'] = $this->security->xss_clean($this->input->post('workCompanyTitle'));
+			$data['SelfEmp'] = $this->security->xss_clean($this->input->post('selfEmployed'));
+			$data['Company'] = $this->security->xss_clean($this->input->post('companyName'));
+			$data['Industry'] = $this->security->xss_clean($this->input->post('industryChooser'));
+			$data['TypeId'] = $this->security->xss_clean($this->input->post('status-chooser'));
+			$this->db->insert('useradditionalinfo', $data);
+			
+			return true;
+	    }
+
 	    function verify($key)
 	    {
 	
