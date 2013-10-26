@@ -67,6 +67,33 @@
 			return true;
 	    }
 
+	    function register_user_details_image()
+	    {
+	    	$username = $this->security->xss_clean($this->input->post('username'));
+			$this->db->select('*');
+			$this->db->from('users');
+			$this->db->where('username',$username);
+    		$query = $this->db->get();
+    		$row = $query->row_array();
+
+			//$data['UserId']= $row['userid'];
+			$image= $this->security->xss_clean($this->input->post('file'));
+			if($query->num_rows() == 1)
+	    	{
+	    		$this->db->get('useradditionalinfo');
+	    		$this->db->set('Picture', '$image', False);
+	    		$this->db->where('username', $username);
+    			$this->db->update('useradditionalinfo');
+    			return true;
+	    	}
+	    	else
+	    		return false;
+			//$data['Picture'] = $this->security->xss_clean($this->input->post('file'));
+			//$this->db->insert('useradditionalinfo', $data);
+			
+			return true;
+	    }
+
 	    function verify($key)
 	    {
 	

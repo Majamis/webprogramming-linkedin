@@ -121,12 +121,27 @@ class Register extends CI_Controller{
 		$result = $this->register_model->register_user_details();
 
 		
+			//$this->format_email($result,'txt');
+			$username=$result['username'];
+			$this->regpage3($username);
+			//return true;
+			
+	}
+
+	public function process_next_image(){
+		// Load the model
+		$this->load->model('register_model');
+		$result = $this->register_model->register_user_details_image();
+
+		
 			$this->format_email($result,'txt');
 			$msg = 'registered';
 			$this->page1($msg);
 			//return true;
 			
 	}
+
+
 
 	public function format_email($info, $format){  
   
