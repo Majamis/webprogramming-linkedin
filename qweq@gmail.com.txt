@@ -1,0 +1,9 @@
+'Welcome qweq@gmail.com!
+
+Thank-you for creating an account.
+
+Please confirm your account by copy and pasting the link below into your browsers address bar.
+
+http://localhost/webprogramming-linkedin/index.php/register/register/confirm/7e3cbdb65ebd8539fc2774a685a0cac7
+
+Thanks!'
