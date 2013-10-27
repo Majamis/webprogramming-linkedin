@@ -80,4 +80,6 @@ $(function () {
         });
     }
 
+    $('.search-scope global-nav-styled-dropdown').dropdown()
+
 });

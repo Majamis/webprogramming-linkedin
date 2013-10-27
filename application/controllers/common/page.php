@@ -27,6 +27,8 @@ class page extends CI_Controller{
 		$this->load->view('common/footer1',$data);
 	}
 
+
+
 	public function countrylisting(){
 		
             $data['heading'] = "Country Listing";
@@ -41,6 +43,20 @@ class page extends CI_Controller{
         $this->load->view('common/footer2',$data);
 	}
 	
+	public function home(){
+		
+            $data['heading'] = "Home";
+            $data['css1'] = "header_logged";
+			$data['css2'] = "";
+			$data['css3'] = "";
+			$this->load->view('common/header',$data);
+            $this->load->view('common/header_home',$data);
+           // $this->load->view('common/mynav',$data);
+			
+           // $this->load->view('Country_View/country_View', $data);
+        
+        //$this->load->view('common/footer2',$data);
+	}
 	
 
 	public function page3(){
