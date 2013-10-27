@@ -51,6 +51,21 @@ class Register extends CI_Controller{
         $this->load->view('common/footer3',$data);
 	}
 
+	public function regpage3($msg = null){
+			$data['msg'] = $msg;
+            $data['heading'] = "Add your Photograph | LinkedIn";
+            $data['css1'] = "addphoto";
+			$data['css2'] = "stylesheet1";
+			$data['css3'] = "bootstrap";
+            $this->load->view('common/header',$data);
+            //$this->load->view('common/mynav',$data);
+			
+            $this->load->view('regpage3/regpage3', $data);
+        
+        $this->load->view('common/footer3',$data);
+	}
+
+
 	public function process(){
 		// Load the model
 		$this->load->model('register_model');
@@ -106,12 +121,27 @@ class Register extends CI_Controller{
 		$result = $this->register_model->register_user_details();
 
 		
+			//$this->format_email($result,'txt');
+			$username=$result['username'];
+			$this->regpage3($username);
+			//return true;
+			
+	}
+
+	public function process_next_image(){
+		// Load the model
+		$this->load->model('register_model');
+		$result = $this->register_model->register_user_details_image();
+
+		
 			$this->format_email($result,'txt');
 			$msg = 'registered';
 			$this->page1($msg);
 			//return true;
 			
 	}
+
+
 
 	public function format_email($info, $format){  
   

@@ -1,0 +1,9 @@
+'Welcome sd@gmail.com!
+
+Thank-you for creating an account.
+
+Please confirm your account by copy and pasting the link below into your browsers address bar.
+
+http://localhost/webprogramming-linkedin/index.php/register/register/confirm/sd@gmail.com/593dd11fd768deae3859ba03baf89126
+
+Thanks!'
