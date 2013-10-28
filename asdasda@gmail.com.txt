@@ -1,9 +1,0 @@
-'Welcome asdasda@gmail.com!
-
-Thank-you for creating an account.
-
-Please confirm your account by copy and pasting the link below into your browsers address bar.
-
-http://localhost/webprogramming-linkedin/index.php/register/register/confirm/bc3cc3f9806c8626e0800e5777cbc91c
-
-Thanks!'

@@ -60,9 +60,10 @@ class Register extends CI_Controller{
             $this->load->view('common/header',$data);
             //$this->load->view('common/mynav',$data);
 			
-            $this->load->view('regpage3/regpage3', $data);
+			
+            $this->load->view('regpage3/regpage3', array('error' => ' ' ));
         
-        $this->load->view('common/footer3',$data);
+      		$this->load->view('common/footer3',$data);
 	}
 
 
@@ -79,7 +80,7 @@ class Register extends CI_Controller{
 		}
 		else
 		{
-			//$this->format_email($result,'txt');
+			$this->format_email($result,'txt');
 			//$msg = 'registered';
 			$username=$result['username'];
 			$this->regpage2($username);
@@ -128,16 +129,10 @@ class Register extends CI_Controller{
 			
 	}
 
-	public function process_next_image(){
-		// Load the model
-		$this->load->model('register_model');
-		$result = $this->register_model->register_user_details_image();
 
+
+	public function process_next_image($path = null){
 		
-			$this->format_email($result,'txt');
-			$msg = 'registered';
-			$this->page1($msg);
-			//return true;
 			
 	}
 
@@ -174,6 +169,10 @@ class Register extends CI_Controller{
 		if($result == false)
 		{
 			redirect('register/register/page5');
+		}
+		else
+		{
+			redirect('common/page/page6');
 		}
 
 	}

@@ -1,6 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 	class Register_model extends CI_Model {
+		
 	    function register_user()
 	    {
 	    	$query = $this->db->get('users');
@@ -64,10 +65,49 @@
 			$data['TypeId'] = $this->security->xss_clean($this->input->post('status-chooser'));
 			$this->db->insert('useradditionalinfo', $data);
 			
-			return true;
+			$result['username']=$username;
+			$result['value']=true;
+			return $result;
 	    }
 
-	    function register_user_details_image()
+	    function do_upload()
+	    {
+	    	$gallery_path;
+	    	$gallery_path = realpath(APPPATH . '../images');
+	    	$handle = fopen($_FILES["UploadFileName"]["tmp_name"], 'r');
+	    	echo $handle;
+	    	echo $gallery_path;
+	    	$config['upload_path'] = "C:\Users\Omer Zahid\Pictures\snake.jpg";
+	    	$config['allowed_types'] = 'jpg|jpeg|png';
+	    	$config['max_size'] = '31231230000';
+	    		
+
+
+	    	$this->load->library('upload', $config);
+	    	if(! $this->upload->do_upload())
+	    	{
+	    		$error = array('error' => $this->upload->display_errors());
+	    		//$this->load->view('upload',$error);
+	    		$error = array_values($error);
+	    		echo $error[0];
+	    		echo $error[1];
+	    	}
+	    	$image_data = $this->upload->data();
+
+	    	$config = array(
+	    		'souce_image' => $image_data['full_path'],
+	    		'new_image' => $gallery_path . '/thumbs',
+	    		'maintain_ratio' => true,
+	    		'width' => 150,
+	    		'height' => 100
+	    		);
+
+	    	$this->load->library('image_lib',$config);
+	    	$this->image_lib->resize();
+	    	return $gallery_path;
+	    }
+
+	    function register_user_details_image($path = null)
 	    {
 	    	$username = $this->security->xss_clean($this->input->post('username'));
 			$this->db->select('*');
@@ -76,22 +116,21 @@
     		$query = $this->db->get();
     		$row = $query->row_array();
 
-			//$data['UserId']= $row['userid'];
-			$image= $this->security->xss_clean($this->input->post('file'));
+			$data['UserId']= $row['userid'];
+
+			$image = $this->security->xss_clean($this->input->post('file'));
+			$path= "'" . $path . "'";
 			if($query->num_rows() == 1)
 	    	{
 	    		$this->db->get('useradditionalinfo');
-	    		$this->db->set('Picture', '$image', False);
-	    		$this->db->where('username', $username);
+	    		$this->db->set('Picture', $path, False);
+	    		$this->db->where('UserId', $data['UserId']);
     			$this->db->update('useradditionalinfo');
     			return true;
 	    	}
 	    	else
 	    		return false;
-			//$data['Picture'] = $this->security->xss_clean($this->input->post('file'));
-			//$this->db->insert('useradditionalinfo', $data);
 			
-			return true;
 	    }
 
 	    function verify($key)
