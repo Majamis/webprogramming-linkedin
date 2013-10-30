@@ -36,7 +36,7 @@ class Login extends CI_Controller{
 		}else{
 			// If user did validate, 
 			// Send them to members area
-			redirect('common/settings','refresh');
+			redirect('common/page/home','refresh');
 		}		
 	}
 	public function do_logout(){

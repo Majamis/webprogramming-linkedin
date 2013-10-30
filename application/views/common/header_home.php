@@ -1,5 +1,4 @@
 <body class="en member v2 chrome-v5 chrome-v5-responsive background-v4 sticky-bg js" id="pagekey-member-home">
-
 	<div id="header" class="header global-header responsive-header nav-v5-2-header responsive-1" role="logged_header">
 		<div id="top-header">
 			<div class="wrapper">
@@ -96,17 +95,17 @@
 						                	</a>
 						            	</div>
 						            	<div id="messages-container" class="activity-drop-body">
-						                	<form>
+						                	<form id="msging">
 						                    	<ol class="inbox-list inbox-list-widget">
 						                        	<li data-gid="I150801351_220" class="inbox-item message-item">
-						                        		<img src="http://s.c.lnkd.licdn.com/scds/common/u/img/themes/katy/ghosts/profiles/ghost_profile_40x40_v1.png" class="photo" alt="LinkedIn" height="40" width="40">
+						                        		<img src="http://s.c.lnkd.licdn.com/scds/common/u/img/themes/katy/ghosts/profiles/ghost_profile_40x40_v1.png" id="photo_thumb" class="photo" alt="LinkedIn" height="40" width="40">
 								                        <div class="item-content actions-left">
 								                            <div class="date">
 								                                 Mar 31
 								                            </div>
 								                            <span class="participants">LinkedIn </span>
 								                            <p class="subject">
-								                                <a class="detail-link " href="/mbox?displayMBoxItem=&amp;itemID=I150801351_220&amp;trk=hb-messages-item-subj-v2">
+								                                <a class="detail-link " id= "notification_msg"href="/mbox?displayMBoxItem=&amp;itemID=I150801351_220&amp;trk=hb-messages-item-subj-v2">
 								                                Asad ullah has added you as a... </a>
 								                            </p>
 								                            <p class="preview">
@@ -209,10 +208,10 @@
 						                        </span>
 						                        <span class="act-set-name">
 						                        <a href="/profile/view?id=220597888&amp;trk=nav_responsive_tab_profile_pic" class="act-set-name-split-link">
-						                        Omer Zahid </a>
+						                        <?php echo $this->session->userdata('username');?> </a>
 						                        </span>
 						                        <span class="act-set-action">
-						                        <a href="http://www.linkedin.com/uas/logout?session_full_logout=&amp;csrfToken=ajax%3A6143196274179150177&amp;trk=nav_account_sub_nav_signout" class="account-submenu-split-link">
+						                        <a href="<?php echo base_url('index.php/login/login/do_logout');?>" class="account-submenu-split-link">
 						                        Sign Out </a>
 						                        </span>
 						                        </span>
@@ -375,14 +374,23 @@
 		    </div>
 		</div>
 	</div>
-
+<textarea id="text" readonly="" style="
+    top: 300px;
+    margin-top: 300px;
+"> </textarea>
+  <br/>
+  <button id="button">
+    Get Time from Server
+  </button>
 	<script src="assets/js/bootstrap.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/logged_js.js"></script>
 
 	<script>
 	$('.dropdown-toggle').dropdown('')
 
 	</script>
+
 
 </body>
 </html>

@@ -1,0 +1,15 @@
+add process for creating image thumbnails, also add another column for storing thumbnail path in db
+
+alter upload picture method to input dynamic path of image into the db
+
+redirect non-implemented links to homepage
+
+clean code
+
+conversion of time format into just date and month i.e 31 march
+
+add javascript and clean regpage 2
+
+implement search functionality
+
+implement add contact functionality
