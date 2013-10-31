@@ -1,4 +1,23 @@
 <body class="en member v2 chrome-v5 chrome-v5-responsive background-v4 sticky-bg js" id="pagekey-member-home">
+	<div class="yui-ac-content" style="" id="seach_div">
+        <div class="yui-ac-hd" style="display: none;">
+        </div>
+        <div class="yui-ac-bd">
+            <ul class="hasCategory hasImage" id="search_bar">
+                <li style="" class="rank-0 top category mynetwork">
+                <h3><strong>Connections</strong></h3>
+                </li>
+                <li style="" class="rank-0 top item mynetwork first primary"><img id="search_bar_img" src=".." class="hoverZoomLink">
+                    <h4 class="item-headline"><strong></strong> <span class="separator">·</span><span class="typeahead-degree"></span></h4>
+                <p class="item-subline">
+              
+                </p>
+                </li>
+            </ul>
+        </div>
+        <div class="yui-ac-ft" style="display: none;">
+        </div>
+    </div>
 	<div id="header" class="header global-header responsive-header nav-v5-2-header responsive-1" role="logged_header">
 		<div id="top-header">
 			<div class="wrapper">
@@ -95,12 +114,53 @@
 						                	</a>
 						            	</div>
 						            	<div id="messages-container" class="activity-drop-body">
-						                	<form id="msging">
+						            		
+						            		<form action="/inbox/bulk_action" method="POST" name="bulkActionForm" novalidate="novalidate" id="msging">
+												<ol class="inbox-list inbox-list-widget">
+													<li data-gid="I24511753_252" class="inbox-item invitation-item">
+													<a href="/profile/view?id=281605701&amp;authType=name&amp;authToken=LryJ&amp;invAcpt=281376742_I24511753_252&amp;goback=&amp;trk=hb-invitations-item-photo-v2">
+													<img id="photo_thumb" src="http://s.c.lnkd.licdn.com/scds/common/u/img/themes/katy/ghosts/profiles/ghost_profile_40x40_v1.png" class="photo" alt="Muhammad Arslan Shabbir" height="40" width="40">
+													</a>
+													<div class="item-content">
+														<div class="date">
+															Aug 21
+														</div>
+														<span class="participants">
+														<a class="profile-link" href="/profile/view?id=281605701&amp;authType=name&amp;authToken=LryJ&amp;invAcpt=281376742_I24511753_252&amp;goback=&amp;trk=hb-invitations-item-pro-v2">
+														Muhammad Arslan Shabbir </a>
+														</span>
+														<span class="headline">
+														student at FAST-NUCES </span>
+														<div class="inbox-actions">
+															<ul>
+																<li>
+																<div class="primary-actions">
+																	<ul>
+																		<li>
+																		<a data-action="invitationAccept" data-action-url="/inbox/action?mboxItemGID=I24511753_252&amp;actionType=invitationAccept&amp;csrfToken=ajax%3A7797344814100961717&amp;trk=hb-invitations-item-accept-v2" class="accept noreply" href="/inbox/action?mboxItemGID=I24511753_252&amp;actionType=invitationAccept&amp;csrfToken=ajax%3A7797344814100961717&amp;trk=hb-invitations-item-accept-v2">Accept</a>
+																		</li>
+																	</ul>
+																</div>
+																</li>
+																<li>
+																<a data-action="invitationIgnore" data-action-url="/inbox/action?mboxItemGID=I24511753_252&amp;actionType=invitationIgnore&amp;csrfToken=ajax%3A7797344814100961717&amp;trk=hb-invitations-item-ignore-v2" class="ignore btn-quaternary" href="/inbox/action?mboxItemGID=I24511753_252&amp;actionType=invitationIgnore&amp;csrfToken=ajax%3A7797344814100961717&amp;trk=hb-invitations-item-ignore-v2">Ignore</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+													</li>
+												</ol>
+												<input type="hidden" name="mboxItemGIDs" value="" id="mboxItemGIDs-bulkActionForm"><input type="hidden" name="csrfToken" value="ajax:7797344814100961717" id="csrfToken-bulkActionForm"><input type="hidden" name="sourceAlias" value="0_8Kr6uuaoJDW40gs7VbkystXmPi8RhM7KDNdeWR5IDiM" id="sourceAlias-bulkActionForm">
+											</form>
+						            		
+
+
+						                	<!--<form id="msging">
 						                    	<ol class="inbox-list inbox-list-widget">
 						                        	<li data-gid="I150801351_220" class="inbox-item message-item">
 						                        		<img src="http://s.c.lnkd.licdn.com/scds/common/u/img/themes/katy/ghosts/profiles/ghost_profile_40x40_v1.png" id="photo_thumb" class="photo" alt="LinkedIn" height="40" width="40">
 								                        <div class="item-content actions-left">
-								                            <div class="date">
+								                            <div class="date" id="date_notification">
 								                                 Mar 31
 								                            </div>
 								                            <span class="participants">LinkedIn </span>
@@ -121,7 +181,7 @@
 								                        </ul>
 						                        	</li>
 						                    	</ol>
-						                	</form>
+						                	</form>!-->
 						            	</div>
 						        	</div>
 						   		</div>

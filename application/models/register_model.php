@@ -71,7 +71,7 @@
 	    }
 
 	   
-	    function register_user_details_image($path = null)
+	    function register_user_details_image($path = null,$path_thumb=null)
 	    {
 	    	$username = $this->security->xss_clean($this->input->post('username'));
 			$this->db->select('*');
@@ -84,10 +84,12 @@
 
 			$image = $this->security->xss_clean($this->input->post('file'));
 			$path= "'" . $path . "'";
+			$path_thumb= "'" . $path_thumb . "'";
 			if($query->num_rows() == 1)
 	    	{
 	    		$this->db->get('useradditionalinfo');
 	    		$this->db->set('Picture', $path, False);
+	    		$this->db->set('thumbnail',$path_thumb, False);
 	    		$this->db->where('UserId', $data['UserId']);
     			$this->db->update('useradditionalinfo');
     			return true;

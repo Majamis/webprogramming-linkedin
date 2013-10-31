@@ -21,6 +21,8 @@ class Upload extends CI_Controller {
 		$config['max_width']  = '2500';
 		$config['max_height']  = '2500';
 
+
+
 		$this->load->library('upload', $config);
 
 		if ( ! $this->upload->do_upload())
@@ -32,12 +34,33 @@ class Upload extends CI_Controller {
 		else
 		{
 			$data = array('upload_data' => $this->upload->data());
-			echo $data['upload_data']['full_path'];
-			$path = $data['upload_data']['full_path'];	
+			$path = $data['upload_data']['file_name'];	
+			$path = 'uploads/images/'.$path;
 		}
 
+		 $filename = $data['upload_data']['file_name'];
+    	 $source_path = $data['upload_data']['full_path'];
+
+    	 $target_path = $data['upload_data']['file_path'] . '/thumb/';
+    	 $config_manip = array(
+        'source_image' => $source_path,
+        'new_image' => $target_path,
+        'maintain_ratio' => TRUE,
+        'create_thumb' => TRUE,
+        'thumb_marker' => '',
+        'width' => 60,
+        'height' => 60
+    );
+    	$this->load->library('image_lib', $config_manip);
+    	if (!$this->image_lib->resize()) {
+        echo $this->image_lib->display_errors();
+   		 }
+    // clear //
+    $this->image_lib->clear();
+    $thumb_path='uploads/images/thumb/'.$filename;
+
 		$this->load->model('register_model');	
-		$result = $this->register_model->register_user_details_image($path);
+		$result = $this->register_model->register_user_details_image($path,$thumb_path);
 		redirect('register/register/page1/registered','refresh');
 
 	}

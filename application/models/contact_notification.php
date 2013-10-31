@@ -39,6 +39,7 @@
 	    		$row_username = $query_username->row_array(); 
 
 	    		$row->picture = $row_pic['Picture'];
+	    		$row->thumbnail = $row_pic['thumbnail'];
 	    		$row->fname = $row_username['fname'];
 	    		$row->lname = $row_username['lname'];
 

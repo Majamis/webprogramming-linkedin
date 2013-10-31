@@ -1,4 +1,4 @@
-add process for creating image thumbnails, also add another column for storing thumbnail path in db
+
 
 alter upload picture method to input dynamic path of image into the db
 
