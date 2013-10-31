@@ -115,7 +115,7 @@ jQuery(function($) {
             //  alert(myObject[0].fname);
 
 
-              for (var i=0;i<10;i++)
+          for (var i=0;i<10;i++)
           { 
     
             $(".item-headline").html(myObject[i].fname + ' ' + myObject[i].lname);
@@ -153,3 +153,66 @@ jQuery(function($) {
       });
 
     });
+
+
+
+
+//----------------------------------------
+var result_prev_html=$("#results").html();
+
+jQuery(function($) {
+    $('#search_button').click (function(e) {
+      //alert( "Handler for .change() called." );
+      var html="";
+      var myObject;
+      var size=0;
+      var serviceURL = 'index.php/search/index';
+      var input =$("#main-search-box").val();
+      
+      $("#results").html(result_prev_html);
+    $.ajax({
+            type: "POST",
+            url:  serviceURL,
+            data: {data: input},
+            success: function(data){
+              myObject = eval('(' + data + ')');
+              size=Object.keys(myObject).length;
+            
+              for (var i=0;i<10;i++)
+          { 
+    
+            $(".title").html(myObject[i].fname + ' ' + myObject[i].lname);
+
+            document.getElementById("search_profile_img").src=myObject[i].thumbnail;
+
+            $(".description").html(myObject[i].JTitle);
+
+            html=html + $("#results").html();
+
+          }
+           $("#results").html(html);
+
+            //alert(data);   // data printed on echoed on the server side.
+            },
+            error:function(x,e)
+            {
+              if(x.status==0){
+              alert('You are offline!!\n Please Check Your Network.');
+              }else if(x.status==404){
+              alert('Requested URL not found.');
+              }else if(x.status==500){
+              alert('Internel Server Error.');
+              }else if(e=='parsererror'){
+              alert('Error.\nParsing JSON Request failed.');
+              }else if(e=='timeout'){
+              alert('Request Time out.');
+              }else {
+              alert('Unknow Error.\n'+x.responseText);
+              }
+            },
+            dataType: 'html'
+          });     
+          
+      });
+
+});

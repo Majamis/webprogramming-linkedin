@@ -28,7 +28,7 @@
 							LinkedIn
 						</a>
 					</h2>
-					<form id="global-search" role="search"action="//" method="get" accept-charset="UTF-8" name="commonSearch" class="global-search voltron voltron-vertical-selector">
+					<form id="global-search" role="search" method="get"  accept-charset="UTF-8" name="commonSearch" class="global-search voltron voltron-vertical-selector">
 						<fieldset>
 							<legend>Find People, Jobs, Companies, and More</legend>
 							<div class="search-scope global-nav-styled-dropdown dropdown" id="control_gen_">
@@ -84,7 +84,7 @@
           						<input name="rsid" type="hidden">
      							<input name="pageKey" type="hidden" value="member-home">
     						</div>
-    						<button name="search" value="Search" class="search-button" type="submit">
+    						<button name="search" value="Search" class="search-button" id="search_button" type="button">
         						<span>Search</span>
       						</button>
 						</fieldset>
@@ -434,23 +434,4 @@
 		    </div>
 		</div>
 	</div>
-<textarea id="text" readonly="" style="
-    top: 300px;
-    margin-top: 300px;
-"> </textarea>
-  <br/>
-  <button id="button">
-    Get Time from Server
-  </button>
-	<script src="assets/js/bootstrap.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/logged_js.js"></script>
 
-	<script>
-	$('.dropdown-toggle').dropdown('')
-
-	</script>
-
-
-</body>
-</html>

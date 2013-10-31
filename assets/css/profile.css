@@ -1,0 +1,665 @@
+
+.os-win body {
+	font-family:Arial,sans-serif
+}
+
+.os-win body,.os-win input,.os-win select,.os-win textarea,.os-win button {
+	font-family:Arial,sans-serif
+}
+
+#body .more a:visited,#body .action a:visited,#body .cancel:visited,#body .more:visited,#body .nav-link:visited,#body .nav-links a:visited {
+	color:#069
+}
+
+.js .toggle-show-more,.js .toggle-show-less {
+	color:#069;
+	font-size:11px;
+	cursor:pointer;
+	white-space:nowrap;
+	padding-left:3px
+}
+
+.global-header .utilities .is-backfilling .activity-drop-body .loading,.global-header .utilities .activity-drop-loading .activity-drop-body {
+	display:block;
+	content:"\0020";
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+	opacity:0.7;
+	background-color:#fff;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-image:url('/scds/common/u/img/anim/anim_loading_16x16.gif')
+}
+
+.quick-help .account-settings-link .failed-to-load .loading,.quick-help .account-settings-link .failed-to-load .qh-page-tours {
+	display:none
+}
+
+#body {
+	margin-top:50px;
+	margin-bottom:10px
+}
+
+.chrome-v5-responsive #body {
+	margin-top:80px;
+	margin-bottom:10px
+}
+
+.chrome-v5-retract-nav-enabled #body.globalnav-hideStart,.chrome-v5-retract-nav-enabled #body.globalnav-hide {
+	margin-top:55px;
+	margin-bottom:10px;
+	-webkit-transition:margin-top 0.2s;
+	-moz-transition:margin-top 0.2s;
+	-o-transition:margin-top 0.2s;
+	transition:margin-top 0.2s
+}
+
+.os-android .chrome-v5-responsive #body,.os-ios .chrome-v5-responsive #body {
+	margin-top:10px;
+	margin-bottom:10px
+}
+
+#body,#footer {
+	margin-left:auto;
+	margin-right:auto;
+	width:980px;
+	*zoom:1
+}
+
+#body,.primary,.wrapper {
+	clear:both;
+	*zoom:1
+}
+
+#body .wrapper {
+	padding:0 10px
+}
+
+#pagekey-member-home #body,#pagekey-uas-consumer-login-internal #body {
+	margin-left:auto;
+	margin-right:auto;
+	width:974px
+}
+
+.wrapper #section-header,.wrapper #page-title {
+	margin:0 0 15px
+}
+
+#section-header,.wrapper #page-title {
+	background:url('/scds/common/u/img/bg/bg_border_3x1.png') repeat-x 0 100%
+}
+
+.dialog-no-header .dialog-title .title,.dialog-noheader-modal .dialog-title .title {
+	display:none;
+	border:0
+}
+
+.dialog-v2 .dialog-title .title,.dialog-v2-retrofit .dialog-title .title {
+	font-size:14px;
+	font-weight:normal;
+	line-height:16px;
+	color:#fff;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin:0
+}
+
+.drop li .title,.drop li a,.drop li div,.drop li strong {
+	color:#069;
+	font-size:12px;
+	display:block;
+	margin:0;
+	padding:5px;
+	*min-width:140px
+}
+
+.drop li li .title,.drop li li a,.drop li li div,.drop li li strong {
+	padding:5px 10px
+}
+
+.js .styled-dropdown.open ul,.js .styled-dropdown.open iframe {
+	display:block;
+	left:auto
+}
+
+.os-win .nus-feed-container .today-news-el #linkedin-today .article .article-title,.os-win .nus-feed-container .today-news-el #linkedin-today .article-1 .article-title,.os-win .feed-redesign #my-feed-post.katify .today-news-el #linkedin-today .article .article-title,.os-win .feed-redesign #my-feed-post.katify .today-news-el #linkedin-today .article-1 .article-title {
+	font-family:Arial,sans-serif
+}
+
+.nus-feed-container .today-news-el #linkedin-today .influencer-list .influencer .miniprofile-container,.feed-redesign #my-feed-post.katify .today-news-el #linkedin-today .influencer-list .influencer .miniprofile-container {
+	display:block
+}
+
+.os-win .nus-feed-container .feed-item,.os-win .feed-redesign #my-feed-post.katify .feed-item {
+	font-family:Arial,sans-serif
+}
+
+.os-win .nus-feed-container .feed-item .share-title,.os-win .feed-redesign #my-feed-post.katify .feed-item .share-title {
+	font-family:Arial,sans-serif
+}
+
+.nus-feed-container .feed-item .nested-update span.miniprofile-container a,.feed-redesign #my-feed-post.katify .feed-item .nested-update span.miniprofile-container a {
+	font-weight:normal
+}
+
+.nus-feed-container .feed-item span.miniprofile-container a,.feed-redesign #my-feed-post.katify .feed-item span.miniprofile-container a {
+	color:#0077b5;
+	font-size:13px
+}
+
+.nus-feed-container .feed-item span.miniprofile-container a,.feed-redesign #my-feed-post.katify .feed-item span.miniprofile-container a {
+	font-family:sans-serif
+}
+
+.os-win .nus-feed-container .feed-item span.miniprofile-container a,.os-win .feed-redesign #my-feed-post.katify .feed-item span.miniprofile-container a {
+	font-family:Arial,sans-serif
+}
+
+.os-mac .nus-feed-container .feed-item span.miniprofile-container a,.os-mac .feed-redesign #my-feed-post.katify .feed-item span.miniprofile-container a {
+	font-family:Helvetica,Arial,sans-serif
+}
+
+.os-linux .nus-feed-container .feed-item span.miniprofile-container a,.os-linux .feed-redesign #my-feed-post.katify .feed-item span.miniprofile-container a {
+	font-family:Helvetica,FreeSans,"Liberation Sans",Helmet,Arial,sans-serif
+}
+
+.nus-feed-container .feed-item span.miniprofile-container a.commenter,.feed-redesign #my-feed-post.katify .feed-item span.miniprofile-container a.commenter {
+	font-weight:normal
+}
+
+.nus-feed-container .feed-item span.miniprofile-container a.company-link-single,.nus-feed-container .feed-item span.miniprofile-container a.company-link-digested,.nus-feed-container .feed-item span.miniprofile-container a.actor-company-link,.feed-redesign #my-feed-post.katify .feed-item span.miniprofile-container a.company-link-single,.feed-redesign #my-feed-post.katify .feed-item span.miniprofile-container a.company-link-digested,.feed-redesign #my-feed-post.katify .feed-item span.miniprofile-container a.actor-company-link {
+	text-decoration:none
+}
+
+.nus-feed-container .feed-item span.miniprofile-container a.company-link-single:hover,.nus-feed-container .feed-item span.miniprofile-container a.company-link-digested:hover,.nus-feed-container .feed-item span.miniprofile-container a.actor-company-link:hover,.feed-redesign #my-feed-post.katify .feed-item span.miniprofile-container a.company-link-single:hover,.feed-redesign #my-feed-post.katify .feed-item span.miniprofile-container a.company-link-digested:hover,.feed-redesign #my-feed-post.katify .feed-item span.miniprofile-container a.actor-company-link:hover {
+	text-decoration:underline;
+	background:none;
+	color:#0077b5
+}
+
+.nus-feed-container .feed-item span.miniprofile-container a.company-link-single,.feed-redesign #my-feed-post.katify .feed-item span.miniprofile-container a.company-link-single {
+	color:#666
+}
+
+.nus-feed-container .feed-item span.miniprofile-container a.company-link-digested,.feed-redesign #my-feed-post.katify .feed-item span.miniprofile-container a.company-link-digested {
+	color:#333
+}
+
+.nus-feed-container .feed-item span.miniprofile-container a.actor-company-link,.feed-redesign #my-feed-post.katify .feed-item span.miniprofile-container a.actor-company-link {
+	color:#0077b5
+}
+
+.os-win .nus-feed-container .feed-item .share-object.doc-share .share-title a,.os-win .feed-redesign #my-feed-post.katify .feed-item .share-object.doc-share .share-title a {
+	font-family:Arial,sans-serif
+}
+
+.os-win .nus-feed-container .feed-item .share-object .share-title a,.os-win .feed-redesign #my-feed-post.katify .feed-item .share-object .share-title a {
+	font-family:Arial,sans-serif
+}
+
+.os-win .nus-feed-container .feed-item .share-object .share-title a.share-attribution,.os-win .feed-redesign #my-feed-post.katify .feed-item .share-object .share-title a.share-attribution {
+	font-family:Arial,sans-serif
+}
+
+.nus-feed-container .feed-item .share-object .share-title .title,.feed-redesign #my-feed-post.katify .feed-item .share-object .share-title .title {
+	color:#000;
+	font-size:13px;
+	line-height:1
+}
+
+.nus-feed-container .feed-item .share-object .share-title .title,.feed-redesign #my-feed-post.katify .feed-item .share-object .share-title .title {
+	font-family:sans-serif
+}
+
+.os-win .nus-feed-container .feed-item .share-object .share-title .title,.os-win .feed-redesign #my-feed-post.katify .feed-item .share-object .share-title .title {
+	font-family:Arial,sans-serif
+}
+
+.os-mac .nus-feed-container .feed-item .share-object .share-title .title,.os-mac .feed-redesign #my-feed-post.katify .feed-item .share-object .share-title .title {
+	font-family:Helvetica,Arial,sans-serif
+}
+
+.os-linux .nus-feed-container .feed-item .share-object .share-title .title,.os-linux .feed-redesign #my-feed-post.katify .feed-item .share-object .share-title .title {
+	font-family:Helvetica,FreeSans,"Liberation Sans",Helmet,Arial,sans-serif
+}
+
+.os-win .nus-feed-container .feed-item .share-object .share-source,.os-win .feed-redesign #my-feed-post.katify .feed-item .share-object .share-source {
+	font-family:Arial,sans-serif
+}
+
+.os-win .nus-feed-container .feed-item .share-object .share-desc,.os-win .feed-redesign #my-feed-post.katify .feed-item .share-object .share-desc {
+	font-family:Arial,sans-serif
+}
+
+.nus-feed-container .feed-item .comments .feed-follow.loading,.feed-redesign #my-feed-post.katify .feed-item .comments .feed-follow.loading {
+	height:34px !important
+}
+
+.nus-feed-container .feed-item.linkedin-trending-company-share.digested .feed-actions .feed-like .show-like.loading,.feed-redesign #my-feed-post.katify .feed-item.linkedin-trending-company-share.digested .feed-actions .feed-like .show-like.loading {
+	background-position-x:18px !important;
+	padding-right:18px !important
+}
+
+.nus-feed-container .feed-item .share-object .properties .share-title,.nus-feed-container .feed-item .share-object .properties .title,.nus-feed-container .feed-item .share-object .properties .property-label,.feed-redesign #my-feed-post.katify .feed-item .share-object .properties .share-title,.feed-redesign #my-feed-post.katify .feed-item .share-object .properties .title,.feed-redesign #my-feed-post.katify .feed-item .share-object .properties .property-label {
+	font-weight:normal;
+	font-size:13px;
+	line-height:17px;
+	color:#333;
+	font-weight:normal
+}
+
+.nus-feed-container .feed-item .share-object .properties .title,.feed-redesign #my-feed-post.katify .feed-item .share-object .properties .title {
+	display:block
+}
+
+.nus-feed-container .feed-item .share-object.linkedin-job-change .miniprofile-container a:hover,.nus-feed-container .feed-item .share-object.linkedin-anniversary .miniprofile-container a:hover,.feed-redesign #my-feed-post.katify .feed-item .share-object.linkedin-job-change .miniprofile-container a:hover,.feed-redesign #my-feed-post.katify .feed-item .share-object.linkedin-anniversary .miniprofile-container a:hover {
+	text-decoration:none
+}
+
+.nus-feed-container .feed-item .share-object.linkedin-article .title,.nus-feed-container .feed-item .share-object.linkedin-company .title,.nus-feed-container .feed-item .share-object.linkedin-group .title,.nus-feed-container .feed-item .share-object.linkedin-content .title,.feed-redesign #my-feed-post.katify .feed-item .share-object.linkedin-article .title,.feed-redesign #my-feed-post.katify .feed-item .share-object.linkedin-company .title,.feed-redesign #my-feed-post.katify .feed-item .share-object.linkedin-group .title,.feed-redesign #my-feed-post.katify .feed-item .share-object.linkedin-content .title {
+	font-size:14px;
+	font-weight:bold;
+	line-height:18px
+}
+
+.nus-feed-container .feed-item .share-object.linkedin-article a.title,.feed-redesign #my-feed-post.katify .feed-item .share-object.linkedin-article a.title {
+	font-size:14px
+}
+
+.nus-feed-container .feed-item .share-object.linkedin-member .properties .share-title .miniprofile-container a,.feed-redesign #my-feed-post.katify .feed-item .share-object.linkedin-member .properties .share-title .miniprofile-container a {
+	color:#0077b5;
+	font-size:13px;
+	font-weight:normal
+}
+
+.nus-feed-container .feed-item .share-object.linkedin-member .title,.nus-feed-container .feed-item .share-object.linkedin-member .location,.feed-redesign #my-feed-post.katify .feed-item .share-object.linkedin-member .title,.feed-redesign #my-feed-post.katify .feed-item .share-object.linkedin-member .location {
+	line-height:17px;
+	color:#666
+}
+
+.nus-feed-container .feed-item.linkedin-people-follow .share-title a.title,.nus-feed-container .feed-item.linkedin-like .share-title a.title,.nus-feed-container .feed-item.linkedin-comment .share-title a.title,.feed-redesign #my-feed-post.katify .feed-item.linkedin-people-follow .share-title a.title,.feed-redesign #my-feed-post.katify .feed-item.linkedin-like .share-title a.title,.feed-redesign #my-feed-post.katify .feed-item.linkedin-comment .share-title a.title {
+	font-weight:bold;
+	font-size:14px
+}
+
+.nus-feed-container .feed-item.linkedin-profile-update .linkedin-birthday .share-title .title,.feed-redesign #my-feed-post.katify .feed-item.linkedin-profile-update .linkedin-birthday .share-title .title {
+	display:inline;
+	font-size:13px;
+	line-height:17px;
+	color:#666;
+	font-weight:normal
+}
+
+.nus-feed-container .feed-item.linkedin-group-post .share-summary-content .title a:link,.nus-feed-container .feed-item.linkedin-like .share-summary-content .title a:link,.nus-feed-container .feed-item.linkedin-comment .share-summary-content .title a:link,.feed-redesign #my-feed-post.katify .feed-item.linkedin-group-post .share-summary-content .title a:link,.feed-redesign #my-feed-post.katify .feed-item.linkedin-like .share-summary-content .title a:link,.feed-redesign #my-feed-post.katify .feed-item.linkedin-comment .share-summary-content .title a:link {
+	color:#333
+}
+
+.nus-feed-container .feed-item.linkedin-group-post .share-summary-content .title a:hover,.nus-feed-container .feed-item.linkedin-like .share-summary-content .title a:hover,.nus-feed-container .feed-item.linkedin-comment .share-summary-content .title a:hover,.feed-redesign #my-feed-post.katify .feed-item.linkedin-group-post .share-summary-content .title a:hover,.feed-redesign #my-feed-post.katify .feed-item.linkedin-like .share-summary-content .title a:hover,.feed-redesign #my-feed-post.katify .feed-item.linkedin-comment .share-summary-content .title a:hover {
+	color:#0072b2;
+	text-decoration:none
+}
+
+.nus-feed-container .feed-item .share-body-viral .new-miniprofile-container a,.nus-feed-container .feed-item .share-body-viral .miniprofile-container a,.feed-redesign #my-feed-post.katify .feed-item .share-body-viral .new-miniprofile-container a,.feed-redesign #my-feed-post.katify .feed-item .share-body-viral .miniprofile-container a {
+	color:#0077b5
+}
+
+.nus-feed-container .jymbii-carousel .carousel-wheel .carousel-item .miniprofile-container,.feed-redesign #my-feed-post.katify .jymbii-carousel .carousel-wheel .carousel-item .miniprofile-container {
+	position:absolute;
+	width:65px;
+	height:65px
+}
+
+.nus-feed-container .jymbii-carousel .carousel-wheel .carousel-item .miniprofile-container .company-popup,.feed-redesign #my-feed-post.katify .jymbii-carousel .carousel-wheel .carousel-item .miniprofile-container .company-popup {
+	text-indent:-119988px;
+	overflow:hidden;
+	text-align:left;
+	text-decoration:none
+}
+
+.nus-feed-container .digest-news-rollup .list-articles .article-1 .article-info .social-gestures li a .count-container.loading,.nus-feed-container .digest-news-rollup .list-articles .article-2 .article-info .social-gestures li a .count-container.loading,.nus-feed-container .digest-news-rollup .list-articles .article-3 .article-info .social-gestures li a .count-container.loading,.feed-redesign #my-feed-post.katify .digest-news-rollup .list-articles .article-1 .article-info .social-gestures li a .count-container.loading,.feed-redesign #my-feed-post.katify .digest-news-rollup .list-articles .article-2 .article-info .social-gestures li a .count-container.loading,.feed-redesign #my-feed-post.katify .digest-news-rollup .list-articles .article-3 .article-info .social-gestures li a .count-container.loading {
+	margin-left:18px
+}
+
+.mosaic-member-photos .miniprofile-container a:hover {
+	background:none
+}
+
+.os-win #slick-sharing-cont.post-home.share-box #post-module #post-module-neu #share-preview-in #share-content #share-edit-summary,.os-win #slick-sharing-cont.post-home.share-box #post-module #post-module-neu #share-preview-in #share-content #share-edit-title,.os-win #slick-sharing-cont.post-home.share-box #post-module #post-module-neu #share-preview-in #share-content #share-view-meta,.os-win #slick-sharing-cont.post-home.share-box #post-module #post-module-neu #share-preview-in #share-content #share-view-title {
+	font-family:Arial,sans-serif
+}
+
+.miniprofile-container a.mention,.miniprofile-container a.mention:hover,.new-miniprofile-container a.mention,.new-miniprofile-container a.mention:hover,* a.mention,* a.mention:hover {
+	background:url('/scds/common/u/img/bg/bg_grey_dotted_h-line_3x1.png') repeat-x scroll 0 100% transparent;
+	text-decoration:none
+}
+
+.os-win .post-home.share-box .file-preview .share-content,.os-win .post-home.share-box .share-preview .share-content {
+	font-family:Arial,sans-serif
+}
+
+.os-win .post-home.share-box .file-preview .share-content .toggle-img-content label,.os-win .post-home.share-box .share-preview .share-content .toggle-img-content label {
+	font-family:Arial,sans-serif
+}
+
+.os-win .post-home.share-box .file-preview .share-image .sharing-carosel .controls a,.os-win .post-home.share-box .file-preview .share-image .sharing-carosel .controls a:link,.os-win .post-home.share-box .file-preview .share-image .sharing-carosel .controls a:visited,.os-win .post-home.share-box .file-preview .share-image .sharing-carosel .controls .min-max-count,.os-win .post-home.share-box .share-preview .share-image .sharing-carosel .controls a,.os-win .post-home.share-box .share-preview .share-image .sharing-carosel .controls a:link,.os-win .post-home.share-box .share-preview .share-image .sharing-carosel .controls a:visited,.os-win .post-home.share-box .share-preview .share-image .sharing-carosel .controls .min-max-count {
+	font-family:Arial,sans-serif
+}
+
+.discovery-module dd.take-action .follow-container.loading a.action-follow,.discovery-module dd.take-action .follow-container.loading a.action-unfollow,.discovery-module dd.take-action .follow-container.loading a:hover.action-follow,.discovery-module dd.take-action .follow-container.loading a:hover.action-unfollow,.discovery-module-legacy dd.take-action .follow-container.loading a.action-follow,.discovery-module-legacy dd.take-action .follow-container.loading a.action-unfollow,.discovery-module-legacy dd.take-action .follow-container.loading a:hover.action-follow,.discovery-module-legacy dd.take-action .follow-container.loading a:hover.action-unfollow {
+	padding-left:20px;
+	background:url('/scds/common/u/img/anim/anim_loading_16x16.gif') no-repeat left center
+}
+
+#extra .share-stats .header .carousel-controls.loading button span:before,#extra .share-stats .header .carousel-controls button.disabled span:before {
+	color:#999
+}
+
+.follow-container.is-following.unfollow-allowed:hover .following,.follow-container.is-following.unfollow-allowed.loading .following {
+	display:none
+}
+
+.follow-container.is-following.unfollow-allowed:hover .action-unfollow,.follow-container.is-following.unfollow-allowed.loading .action-unfollow {
+	display:-moz-inline-stack;
+	display:inline-block;
+	vertical-align:middle;
+	*vertical-align:auto;
+	zoom:1;
+	*display:inline
+}
+
+.new-miniprofile-content .miniprofile-body p.name,.new-miniprofile-content .miniprofile-body .title {
+	position:relative;
+	white-space:nowrap;
+	overflow:hidden;
+	-ms-text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	text-overflow:ellipsis
+}
+
+#remove-mention-dialog-content.error .loading-content,#remove-mention-dialog-content.error .prompt-content,#remove-mention-dialog-content.error .success-content,#remove-mention-dialog-content.loading .error-content,#remove-mention-dialog-content.loading .prompt-content,#remove-mention-dialog-content.loading .success-content,#remove-mention-dialog-content.prompt .error-content,#remove-mention-dialog-content.prompt .loading-content,#remove-mention-dialog-content.prompt .success-content,#remove-mention-dialog-content.success .error-content,#remove-mention-dialog-content.success .loading-content,#remove-mention-dialog-content.success .prompt-content {
+	height:0;
+	opacity:0;
+	position:relative;
+	z-index:-1
+}
+
+.ie.lte8 #remove-mention-dialog-content.error .loading-content,.ie.lte8 #remove-mention-dialog-content.error .prompt-content,.ie.lte8 #remove-mention-dialog-content.error .success-content,.ie.lte8 #remove-mention-dialog-content.loading .error-content,.ie.lte8 #remove-mention-dialog-content.loading .prompt-content,.ie.lte8 #remove-mention-dialog-content.loading .success-content,.ie.lte8 #remove-mention-dialog-content.prompt .error-content,.ie.lte8 #remove-mention-dialog-content.prompt .loading-content,.ie.lte8 #remove-mention-dialog-content.prompt .success-content,.ie.lte8 #remove-mention-dialog-content.success .error-content,.ie.lte8 #remove-mention-dialog-content.success .loading-content,.ie.lte8 #remove-mention-dialog-content.success .prompt-content {
+	display:none
+}
+
+#remove-mention-dialog-content.error .error-content,#remove-mention-dialog-content.loading .loading-content,#remove-mention-dialog-content.prompt .prompt-content,#remove-mention-dialog-content.success .success-content {
+	height:100%;
+	opacity:1;
+	-webkit-transition:opacity 0.25s ease;
+	-moz-transition:opacity 0.25s ease;
+	-o-transition:opacity 0.25s ease;
+	transition:opacity 0.25s ease;
+	z-index:10
+}
+
+.ie.lte8 #remove-mention-dialog-content.error .error-content,.ie.lte8 #remove-mention-dialog-content.loading .loading-content,.ie.lte8 #remove-mention-dialog-content.prompt .prompt-content,.ie.lte8 #remove-mention-dialog-content.success .success-content {
+	display: block
+}
+
+.edit-tools span.media-add {
+	margin-left:10px;
+	padding-left:10px;
+	text-indent:-119988px;
+	overflow:hidden;
+	text-align:left;
+	width:37px;
+	height:16px;
+	cursor:pointer;
+	display:inline-block;
+	background:transparent url('/scds/common/u/images/apps/treasury/bg_add_media_icon_v2.png') no-repeat 10px;
+	border-left:1px solid #ccc
+}
+
+.edit-my-profile.active-edit .edit-tools span.media-add,.profile-self-view-edit.active-edit .edit-tools span.media-add {
+	background:transparent url('/scds/common/u/images/apps/treasury/bg_add_media_icon_grey_v2.png') no-repeat 10px
+}
+
+.edit-tools .add-treasury-dropdown {
+	vertical-align:baseline
+}
+
+.os-win #dialog-wrapper.treasury-dialog .dialog-window .dialog-body .carousel-container .btn-prev,.os-win #dialog-wrapper.treasury-dialog .dialog-window .dialog-body .carousel-container .btn-next {
+	font-family:Arial,sans-serif
+}
+
+.miniprofile-container a:hover {
+	text-decoration:none;
+	background:url('/scds/common/u/img/bg/bg_grey_dotted_h-line_3x1.png') repeat-x 0 100%
+}
+
+.miniprofile-container a.co-miniprof-lnk,.miniprofile-container a.co-miniprof-lnk:hover,.miniprofile-container a.company-profile:hover {
+	background:transparent url('/scds/common/u/img/sprite/sprite_profile_v9.png') no-repeat 130% -806px;
+	padding:0 16px 0 0;
+	font-weight:normal
+}
+
+.company-miniprofile a.company-profile:hover span,.company-miniprofile a.co-miniprof-lnk:hover span,.miniprofile-container a:hover span {
+	text-decoration:none;
+	background:url('/scds/common/u/img/bg/bg_grey_dotted_h-line_3x1.png') repeat-x 0 100%
+}
+
+.miniprofile-container a.company-profile,.miniprofile-container a.company-profile:hover {
+	background-position:100% -806px;
+	padding-right:31px
+}
+
+.miniprofile-container a.company-profile,.miniprofile-container a.company-profile:hover span {
+	font-weight:bold
+}
+
+.improve-profile .org input,.improve-profile .title input {
+	width:80%
+}
+
+.improve-profile .standard-form .date fieldset legend span,.improve-profile .industry {
+	position:absolute;
+	left:-12345px;
+	top:0
+}
+
+.section.reconnect.v2 li .headline,.section.reconnect li .connections {
+	margin-left:75px;
+	font-size:13px;
+	margin-bottom:0
+}
+
+.post-status .status-twitlogo span,.js .post-status #twit-account-list,.js .post-status #twit-account-select {
+	display:none
+}
+
+.post-status .status-twitlogo .plain,#body .post-status .status-twitlogo .plain:visited {
+	color:#000
+}
+
+.feed .miniprofile-container a {
+	font-size:13px
+}
+
+.variable ul .miniprofile-container a {
+	font-weight:normal !important
+}
+
+.feed ul.helps .hide,.feed #nus-hidden-count-master,.js .feed ul.helps a.nus-nojs {
+	display:none
+}
+
+.feed ul.helps .show,.js .feed ul.nus-showing a.nus-js-hide,.js .feed ul.nus-hiding a.nus-js-show {
+	display:inline
+}
+
+.twitter .twitlogo span,.twit-account-list,.provider-account-list,.fb-account-list,.js .twit-account-select {
+	display:none
+}
+
+.js .callout-container,#callout-overlay {
+	position:absolute;
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity:0;
+	-webkit-transition:opacity 0.3s ease;
+	-moz-transition:opacity 0.3s ease;
+	-o-transition:opacity 0.3s ease;
+	transition:opacity 0.3s ease;
+	overflow:hidden;
+	visibility:hidden;
+	*zoom:1
+}
+
+.ie.lte8 .js .callout-container,.ie.lte8 #callout-overlay {
+	filter:none
+}
+
+#reimport .loading,#address-book-import-form .loading,.submit-spinner {
+	background:url('/scds/common/u/img/anim/anim_loading_16x16.gif') no-repeat center center;
+	display:block;
+	float:left;
+	height:16px;
+	text-indent:-12345px;
+	width:16px
+}
+
+.chrome-v4 #universal-typeahead-results .yui-ac-content,.chrome-v5 #universal-typeahead-results .yui-ac-content {
+	border:5px solid #303030;
+	border:5px solid rgba(0,0,0,0.85);
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	-ms-border-radius:0;
+	-o-border-radius:0;
+	border-radius:0;
+	width:470px
+}
+
+.chrome-v4 #universal-typeahead-results .yui-ac-content ul li.item,.chrome-v5 #universal-typeahead-results .yui-ac-content ul li.item {
+	border-top:1px solid transparent
+}
+
+.ie .chrome-v4 #universal-typeahead-results .yui-ac-content ul li.item,.ie .chrome-v5 #universal-typeahead-results .yui-ac-content ul li.item {
+	border-top:1px solid #d2d2d2
+}
+
+.chrome-v4 #universal-typeahead-results .yui-ac-content ul li.item.first,.chrome-v5 #universal-typeahead-results .yui-ac-content ul li.item.first {
+	border-top:none
+}
+
+.chrome-v4 #universal-typeahead-results .yui-ac-content ul li.item p,.chrome-v5 #universal-typeahead-results .yui-ac-content ul li.item p {
+	width:400px;
+	white-space:nowrap;
+	overflow:hidden;
+	-ms-text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	text-overflow:ellipsis
+}
+
+.chrome-v4 #universal-typeahead-results.using-typeahead2 .yui-ac-content,.chrome-v4 #universal-typeahead-results.using-typeahead2 iframe,.chrome-v5 #universal-typeahead-results.using-typeahead2 .yui-ac-content,.chrome-v5 #universal-typeahead-results.using-typeahead2 iframe {
+	margin-top:0;
+	margin-left:-64px
+}
+
+.chrome-v4 #universal-typeahead-results.using-typeahead2 .yui-ac-content .item.company,.chrome-v4 #universal-typeahead-results.using-typeahead2 .yui-ac-content .item.mynetwork,.chrome-v4 #universal-typeahead-results.using-typeahead2 .yui-ac-content .item.group,.chrome-v5 #universal-typeahead-results.using-typeahead2 .yui-ac-content .item.company,.chrome-v5 #universal-typeahead-results.using-typeahead2 .yui-ac-content .item.mynetwork,.chrome-v5 #universal-typeahead-results.using-typeahead2 .yui-ac-content .item.group {
+	min-height:27px;
+	height:auto;
+	_height:27px
+}
+
+.chrome-v4 #universal-typeahead-results ul li.category.suggestion,.chrome-v4 #universal-typeahead-results ul li.category.autocomplete,.chrome-v4 #universal-typeahead-results ul li.category.refine,.chrome-v5 #universal-typeahead-results ul li.category.suggestion,.chrome-v5 #universal-typeahead-results ul li.category.autocomplete,.chrome-v5 #universal-typeahead-results ul li.category.refine {
+	display:none
+}
+
+.chrome-v4 #universal-typeahead-results ul li.item.first.suggestion,.chrome-v4 #universal-typeahead-results ul li.item.first.autocomplete,.chrome-v4 #universal-typeahead-results ul li.item.first.refine,.chrome-v5 #universal-typeahead-results ul li.item.first.suggestion,.chrome-v5 #universal-typeahead-results ul li.item.first.autocomplete,.chrome-v5 #universal-typeahead-results ul li.item.first.refine {
+	border-top:1px solid transparent
+}
+
+.ie .chrome-v4 #universal-typeahead-results ul li.item.first.suggestion,.ie .chrome-v4 #universal-typeahead-results ul li.item.first.autocomplete,.ie .chrome-v4 #universal-typeahead-results ul li.item.first.refine,.ie .chrome-v5 #universal-typeahead-results ul li.item.first.suggestion,.ie .chrome-v5 #universal-typeahead-results ul li.item.first.autocomplete,.ie .chrome-v5 #universal-typeahead-results ul li.item.first.refine {
+	border-top:1px solid #d2d2d2
+}
+
+
+/*Copyright (c) 2010,Yahoo! Inc. All rights reserved.Code licensed under the BSD License:http://developer.yahoo.com/yui/license.htmlversion:2.8.1*/
+.yui-carousel {
+	visibility:hidden;
+	overflow:hidden;
+	position:relative;
+	text-align:left;
+	zoom:1;
+}
+
+#china_locale_switch .wrapper .links li .switch-to-english.lu-state-hover,#china_locale_switch .wrapper .links li .switch-to-english.hover,#china_locale_switch .wrapper .links li .switch-to-english:hover,#china_locale_switch .wrapper .links li .switch-to-english.lu-state-focus,#china_locale_switch .wrapper .links li .switch-to-english.focus,#china_locale_switch .wrapper .links li .switch-to-english:focus {
+	text-decoration:underline
+}
+
+#china_locale_switch .wrapper .links li a.dismiss.lu-state-hover,#china_locale_switch .wrapper .links li a.dismiss.hover,#china_locale_switch .wrapper .links li a.dismiss:hover,#china_locale_switch .wrapper .links li a.dismiss.lu-state-focus,#china_locale_switch .wrapper .links li a.dismiss.focus,#china_locale_switch .wrapper .links li a.dismiss:focus {
+	text-shadow:1px 1px 1px rgba(0,0,0,0.35)
+}
+
+.os-win body {
+	font-family:Arial,sans-serif
+}
+
+#body,#body .hp-nus-wrapper {
+	margin-left:auto;
+	margin-right:auto;
+	width:974px;
+	padding:0
+}
+
+.feed .feed-show-more .loading,.feed.feed-redesign .feed-show-more .loading {
+	background-color:#f4f4f4;
+	height:36px;
+	width:100%;
+	border-top:1px solid #eee
+}
+
+.section.reconnect h2,.section.reconnect h3,.section.reconnect.v2 h2,.section.reconnect.v2 h3 {
+	margin-top:0;
+	margin-left:20px;
+	padding-top:10px;
+	color:#454545;
+	font-size:11px;
+	text-transform:uppercase;
+	border:0
+}
+
+.section.reconnect h2,.section.reconnect.v2 h2 {
+	font-size:13px;
+	margin-bottom:0;
+	font-weight:bold
+}
+
+.section.reconnect h3 span,.section.reconnect.v2 h3 span {
+	border-bottom:0
+}
+
+.section.reconnect li,.section.reconnect.v2 li {
+	border-top:0
+}
+
+.section.reconnect li .avatar img,.section.reconnect.v2 li .avatar img {
+	margin:0 20px
+}
+
+.section.reconnect li .avatar.default,.section.reconnect.v2 li .avatar.default {
+	width:auto;
+	border:0
+}
+
+.section.reconnect li .avatar.default img,.section.reconnect.v2 li .avatar.default img {
+	margin:0 20px;
+	border:1px solid #efefef
+}
+
+.os-win .leo-module.mod-util .header h1,.os-win .leo-module.mod-util .header h2,.os-win .leo-module.mod-util .header h3,.os-win .leo-module.mod-util .header h4,.os-win .leo-module.mod-util .header h5,.os-win .leo-module.mod-util .header h6 {
+	font-family:Arial,sans-serif
+}
+
+#extra .drop li .title,#extra .drop li a,#extra .drop li div,#extra .drop li strong {
+	font-size:13px
+}
+
+.hp-nus-wrapper .feature-promo .pin,.hp-nus-wrapper .feature-promo:before,.hp-nus-wrapper .feature-promo:after {
+	display:none
+}

@@ -51,12 +51,48 @@ class page extends CI_Controller{
 			$data['css3'] = "";
 			$this->load->view('common/header',$data);
             $this->load->view('common/header_home',$data);
+            $this->load->view('common/footer_home',$data);
            // $this->load->view('common/mynav',$data);
 			
            // $this->load->view('Country_View/country_View', $data);
         
         //$this->load->view('common/footer2',$data);
 	}
+	
+	public function advance_search(){
+		
+            $data['heading'] = "Home";
+            $data['css1'] = "header_logged";
+			$data['css2'] = "quicksearch";
+			$data['css3'] = "profile";
+			$this->load->view('common/header',$data);
+            $this->load->view('common/header_home',$data);
+            $this->load->view('home/quicksearch',$data);
+            $this->load->view('common/footer_home',$data);
+           // $this->load->view('common/mynav',$data);
+			
+           // $this->load->view('Country_View/country_View', $data);
+        
+        //$this->load->view('common/footer2',$data);
+	}
+
+	public function profile(){
+		
+            $data['heading'] = "Home";
+            $data['css1'] = "header_logged";
+			$data['css2'] = "";
+			$data['css3'] = "profile";
+			$this->load->view('common/header',$data);
+            $this->load->view('common/header_home',$data);
+            $this->load->view('home/profile',$data);
+            $this->load->view('common/footer_home',$data);
+           // $this->load->view('common/mynav',$data);
+			
+           // $this->load->view('Country_View/country_View', $data);
+        
+        //$this->load->view('common/footer2',$data);
+	}
+	
 	
 
 	public function page3(){
