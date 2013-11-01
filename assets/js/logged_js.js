@@ -1,33 +1,5 @@
-/*$(document).ready(function()
-{
-	window.setInterval(function()
-	{
-		var serviceURL = 'index.php/home/notification/index';
- 	$.ajax({
-            	type:'Get',
-                url: serviceURL,
-                data: "varsity_id=",
-                contentType: "application/json; charset=utf-8",
-                dataType: 'json',
-             	success: function(data)
-            {     
-               alert(data);
 
-            }, 
-                error: errorFunc
-            });
-
-            function successFunc(data) {  
-            alert(data);   
-                $("#text").html(data);
-            }
-
-            function errorFunc() {
-               $("#text").html('error');
-            }
-    },5000);
-});
-*/
+//----------------------Message bar on page load-------------------------
 
    // using JQUERY's ready method to know when all dom elements are rendered
     $( document ).ready(function () {
@@ -70,6 +42,7 @@
     });
 
 
+//-----------------search bar on keyup------------------------------
  $( document ).ready(function () {
       // set an on click on the button
       $("#button").click(function () {
@@ -157,11 +130,11 @@ jQuery(function($) {
 
 
 
-//----------------------------------------
+//--------------Search bar submit--------------------------
 var result_prev_html=$("#results").html();
-
+$(document).ready(function(){
 jQuery(function($) {
-    $('#search_button').click (function(e) {
+ //   $('#search_button').click (function(e) {
       //alert( "Handler for .change() called." );
       var html="";
       var myObject;

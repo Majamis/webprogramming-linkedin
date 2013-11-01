@@ -44,7 +44,8 @@ class page extends CI_Controller{
 	}
 	
 	public function home(){
-		
+			//$data['search_text']="hello";
+			$data['search_text'] = $this->security->xss_clean($this->input->get('keywords'));
             $data['heading'] = "Home";
             $data['css1'] = "header_logged";
 			$data['css2'] = "";
@@ -60,7 +61,8 @@ class page extends CI_Controller{
 	}
 	
 	public function advance_search(){
-		
+			$data['search_text'] = $this->security->xss_clean($this->input->get('keywords'));
+			//$data['search_text'] = "hello";
             $data['heading'] = "Home";
             $data['css1'] = "header_logged";
 			$data['css2'] = "quicksearch";
@@ -69,8 +71,8 @@ class page extends CI_Controller{
             $this->load->view('common/header_home',$data);
             $this->load->view('home/quicksearch',$data);
             $this->load->view('common/footer_home',$data);
-           // $this->load->view('common/mynav',$data);
-			
+           	//$this->load->view('common/mynav',$data);
+		
            // $this->load->view('Country_View/country_View', $data);
         
         //$this->load->view('common/footer2',$data);

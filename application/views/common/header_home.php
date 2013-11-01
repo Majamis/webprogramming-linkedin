@@ -28,7 +28,7 @@
 							LinkedIn
 						</a>
 					</h2>
-					<form id="global-search" role="search" method="get"  accept-charset="UTF-8" name="commonSearch" class="global-search voltron voltron-vertical-selector">
+					<form id="global-search" role="search" method="get" action="<?php echo base_url();?>index.php/common/page/advance_search" accept-charset="UTF-8" name="commonSearch" class="global-search voltron voltron-vertical-selector">
 						<fieldset>
 							<legend>Find People, Jobs, Companies, and More</legend>
 							<div class="search-scope global-nav-styled-dropdown dropdown" id="control_gen_">
@@ -77,14 +77,14 @@
 							<div class="search-box-container" id="search-box-container">
      						 	<span id="search-autocomplete-container" title="Tip: You can also search by keyword, company, school..." class="/typeahead">
             						<label for="main-search-box" class="ghost" id="control_gen_3" style="display: none;">Search for people, jobs, companies, and more...</label>
-          							<input name="keywords" id="main-search-box" class="search-term yui-ac-input" type="text" value="" autocomplete="off" placeholder="Search for people, jobs, companies, and more...">
+          							<input name="keywords" id="main-search-box" class="search-term yui-ac-input" type="text" value="<?php if(!is_null($search_text))echo $search_text; ?>"  autocomplete="off" placeholder="Search for people, jobs, companies, and more...">
         							<span id="search-typeahead-container"></span>
         						</span>
           						<input name="orig" type="hidden" value="GLHD">
           						<input name="rsid" type="hidden">
      							<input name="pageKey" type="hidden" value="member-home">
     						</div>
-    						<button name="search" value="Search" class="search-button" id="search_button" type="button">
+    						<button name="search" value="Search" class="search-button" id="search_button" type="submit">
         						<span>Search</span>
       						</button>
 						</fieldset>
