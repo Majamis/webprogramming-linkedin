@@ -75,8 +75,8 @@ class Register extends CI_Controller{
 		if($result['value'] == false)
 		{
 			$msg = '<font style=bold color=red>Email already exists.</font><br />';
-			//$this->page1($msg);
-			redirect('common/page/page1','refresh');
+			$this->page1($msg);
+			//redirect('common/page/page1','refresh');
 		}
 		else
 		{

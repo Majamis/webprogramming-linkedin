@@ -3,7 +3,8 @@
  * Description: Login controller class
  */
 class page extends CI_Controller{
-	
+	public $userid_to_invite;
+
 	function __construct(){
 		parent::__construct();
 		//$this->load->helper('url');
@@ -78,21 +79,78 @@ class page extends CI_Controller{
         //$this->load->view('common/footer2',$data);
 	}
 
-	public function profile(){
-		
+	public function profile($msg = null){
+			$data['fname']=null;
+			$data['lname']=null;
+			$data['jtitle']=null;
+			$data['thumbnail']=null;
+			$data['picture']=null;
+			$data['country']=null;
+			$data['company']=null;
+		if($msg != null)
+		{
+			$this->load->model('profile_model');
+			$result=$this->profile_model->index($msg);
+			$data['fname']=$result['fname'];
+			$data['lname']=$result['lname'];
+			$data['jtitle']=$result['jtitle'];
+			$data['thumbnail']=$result['thumbnail'];
+			$data['picture']=$result['picture'];
+			$data['country']=$result['country'];
+			$data['company']=$result['company'];
+		}
+			$data['userid'] = $msg;
+			$data['search_text'] = NULL;
             $data['heading'] = "Home";
             $data['css1'] = "header_logged";
-			$data['css2'] = "";
-			$data['css3'] = "profile";
+			$data['css2'] = "profile";
+			$data['css3'] = "";
 			$this->load->view('common/header',$data);
-            $this->load->view('common/header_home',$data);
-            $this->load->view('home/profile',$data);
+           	$this->load->view('common/header_home',$data);
+            $this->load->view('home/profile1',$data);
             $this->load->view('common/footer_home',$data);
            // $this->load->view('common/mynav',$data);
 			
            // $this->load->view('Country_View/country_View', $data);
         
         //$this->load->view('common/footer2',$data);
+	}
+
+	public function request_invite()
+	{
+		
+	}
+	
+	public function send_invite($userid = null){
+		if($userid != null)
+		{
+			$this->load->model('profile_model');
+			$data=$this->profile_model->index($userid);
+			$data['userid']=$userid;
+		}
+		$this->userid_to_invite=$userid;
+		echo $this->userid_to_invite;
+			$data['search_text'] = null;
+            $data['heading'] = "Home";
+            $data['css1'] = "header_logged";
+			$data['css2'] = "send_invite";
+			$data['css3'] = "";
+			$this->load->view('common/header',$data);
+            $this->load->view('common/header_home',$data);
+            $this->load->view('home/send_invite',$data);
+            $this->load->view('common/footer_home',$data);
+           // $this->load->view('common/mynav',$data);
+			
+           // $this->load->view('Country_View/country_View', $data);
+        
+        //$this->load->view('common/footer2',$data);
+	}
+
+	public function send_contact_request($contactid = null)
+	{
+		$this->load->model('contact_model');
+		$this->contact_model->addcontact($contactid);
+		//$this->home();
 	}
 	
 	

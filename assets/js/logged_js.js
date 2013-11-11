@@ -127,15 +127,14 @@ jQuery(function($) {
 
     });
 
+/*
+if(document.getElementById("results-container"))
+{
 
-
-
-//--------------Search bar submit--------------------------
+//--------------Search bar on submit--------------------------
 var result_prev_html=$("#results").html();
 $(document).ready(function(){
 jQuery(function($) {
- //   $('#search_button').click (function(e) {
-      //alert( "Handler for .change() called." );
       var html="";
       var myObject;
       var size=0;
@@ -148,6 +147,7 @@ jQuery(function($) {
             url:  serviceURL,
             data: {data: input},
             success: function(data){
+
               myObject = eval('(' + data + ')');
               size=Object.keys(myObject).length;
             
@@ -155,6 +155,7 @@ jQuery(function($) {
           { 
     
             $(".title").html(myObject[i].fname + ' ' + myObject[i].lname);
+            $(".title").attr("href","index.php/common/page/profile/" + myObject[i].UserId);
 
             document.getElementById("search_profile_img").src=myObject[i].thumbnail;
 
@@ -189,3 +190,97 @@ jQuery(function($) {
       });
 
 });
+}
+*/
+//----------------------profile page---------//
+
+
+if(document.getElementById("results-container"))
+{
+
+//--------------Search bar on submit--------------------------
+var result_prev_html=$("#results").html();
+$(document).ready(function(){
+jQuery(function($) {
+      var html="";
+      var myObject;
+      var myObject2;
+      var size=0;
+      var serviceURL = 'index.php/search/index';
+      var input =$("#main-search-box").val();
+      var checkURL = 'index.php/search/is_connection';
+
+      $("#results").html(result_prev_html);
+    $.ajax({
+            type: "POST",
+            url:  serviceURL,
+            data: {data: input},
+            async:   false,
+            success: function(data){
+              myObject = eval('(' + data + ')');
+              size=Object.keys(myObject).length;
+            
+              for (var i=0;i<10;i++)
+          { 
+
+    
+            $(".title").html(myObject[i].fname + ' ' + myObject[i].lname);
+            $(".title").attr("href","index.php/common/page/profile/" + myObject[i].UserId);
+
+            document.getElementById("search_profile_img").src=myObject[i].thumbnail;
+
+            $(".description").html(myObject[i].JTitle);
+
+            $.ajax({
+              type: "POST",
+              dataType: "json",
+              async:   false,
+              url:  checkURL,
+              data: {data: myObject[i].UserId},
+              success: function(data2){
+            is_true = "";     
+            is_true = data2;
+            if(is_true == "true")
+            {
+              //alert(is_true);
+              $(".primary-action").attr("href","index.php/common/page/profile/" + myObject[i].UserId);
+              $(".primary-action").html("Message");
+            }
+            else
+            {
+              $(".primary-action").attr("href","index.php/common/page/send_invite/" + myObject[i].UserId);
+              $(".primary-action").html("Connect");
+            }
+          
+          }
+          });
+            html=html + $("#results").html();
+
+          }
+           $("#results").html(html);
+
+            //alert(data);   // data printed on echoed on the server side.
+            },
+            error:function(x,e)
+            {
+              if(x.status==0){
+              alert('You are offline!!\n Please Check Your Network.');
+              }else if(x.status==404){
+              alert('Requested URL not found.');
+              }else if(x.status==500){
+              alert('Internel Server Error.');
+              }else if(e=='parsererror'){
+              alert('Error.\nParsing JSON Request failed.');
+              }else if(e=='timeout'){
+              alert('Request Time out.');
+              }else {
+              alert('Unknow Error.\n'+x.responseText);
+              }
+            },
+            dataType: 'html'
+          });     
+          
+      });
+
+});
+}

@@ -4,7 +4,7 @@
 		
 	    function search_by_name($search = null)
 	    {
-	    	$this->db->select('u.fname,u.lname,c.JTitle,c.Company,c.Picture,c.thumbnail');
+	    	$this->db->select('u.fname,u.lname,c.JTitle,c.Company,c.Picture,c.thumbnail,c.UserId');
 	    	$this->db->like('fname', $search); // users table
 	    	$this->db->or_like('lname', $search); // users table
 			$this->db->or_like('Company', $search); // useradditionalinfo table
@@ -21,10 +21,34 @@
 				
 				
 			}
-
+			
 			$json = json_encode($array);
 			echo $json;
 	    }
+
+	    function search_is_connection($userid = null)
+	    {
+	    	$this->db->select('*');
+	    	$this->db->from('users u');
+	    	$this->db->where('userid',$this->session->userdata['userid']);
+	    	$this->db->join('contacts_info c', 'u.userid = c.UserIdd', 'left');
+	    	$query=$this->db->get();
+	    	$is_true = "false";
+	    	
+	   
+	   		foreach ($query->result() as $row)
+			{
+				if($row->ContactId == $userid)
+				{
+					$is_true = "true";
+				}
+			}
+
+			echo json_encode($is_true);    
+
+	    }
+
+	   
 
 	}
 
