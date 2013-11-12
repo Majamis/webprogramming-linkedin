@@ -13,6 +13,8 @@
 			$row = $query->row_array();
 			$array = null; 
 			$data = null;
+			if($query->num_rows() > 0)
+			{
 			foreach ($query->result() as $row)
 			{
 				$data['fname']=$row->fname;
@@ -23,7 +25,18 @@
 				$data['country']=$row->Country;
 				$data['company']=$row->Company;	
 			}
-			
+			}
+			else
+			{
+				$data['userid']="";
+				$data['fname']="";
+				$data['lname']="";
+				$data['jtitle']="";
+				$data['thumbnail']="";
+				$data['picture']="";
+				$data['country']="";
+				$data['company']="";	
+			}
 			return $data;
 	    }
 

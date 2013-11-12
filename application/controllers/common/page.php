@@ -70,7 +70,7 @@ class page extends CI_Controller{
 			$data['css3'] = "profile";
 			$this->load->view('common/header',$data);
             $this->load->view('common/header_home',$data);
-            $this->load->view('home/alumini',$data);
+           $this->load->view('home/quicksearch',$data);
             $this->load->view('common/footer_home',$data);
            	//$this->load->view('common/mynav',$data);
 		
@@ -158,7 +158,15 @@ class page extends CI_Controller{
 	}
 	
 	public function send_invite($userid = null){
-		if($userid != null)
+		$data['userid']="";
+		$data['fname']="";
+		$data['lname']="";
+		$data['jtitle']="";
+		$data['thumbnail']="";
+		$data['picture']="";
+		$data['country']="";
+		$data['company']="";	
+		if($userid != null && $userid != "null")
 		{
 			$this->load->model('profile_model');
 			$data=$this->profile_model->index($userid);
