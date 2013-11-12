@@ -1,9 +1,0 @@
-'Welcome dsgsdgs@gmail.com!
-
-Thank-you for creating an account.
-
-Please confirm your account by copy and pasting the link below into your browsers address bar.
-
-http://localhost/webprogramming-linkedin/index.php/register/register/confirm/06f2a4494aed947348b528c919a428ed
-
-Thanks!'

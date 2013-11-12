@@ -1,9 +1,0 @@
-'Welcome VADVA@GMAIKL.com!
-
-Thank-you for creating an account.
-
-Please confirm your account by copy and pasting the link below into your browsers address bar.
-
-http://localhost/webprogramming-linkedin/index.php/register/register/confirm/f5be9296bca832d5e20ea550dbc70188
-
-Thanks!'

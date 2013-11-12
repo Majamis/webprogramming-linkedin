@@ -1,9 +1,0 @@
-'Welcome admin@gmail.com!
-
-Thank-you for creating an account.
-
-Please confirm your account by copy and pasting the link below into your browsers address bar.
-
-http://localhost/webprogramming-linkedin/index.php/register/register/confirm/126049da7d63c700b4b655129306c21f
-
-Thanks!'

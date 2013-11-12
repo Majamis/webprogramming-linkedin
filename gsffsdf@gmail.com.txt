@@ -1,9 +1,0 @@
-'Welcome gsffsdf@gmail.com!
-
-Thank-you for creating an account.
-
-Please confirm your account by copy and pasting the link below into your browsers address bar.
-
-http://localhost/webprogramming-linkedin/index.php/register/register/confirm/e0d7ca7289b863d5f3ad972614991ff6
-
-Thanks!'

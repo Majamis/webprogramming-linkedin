@@ -1,9 +1,0 @@
-'Welcome sgsefs@gmail.com!
-
-Thank-you for creating an account.
-
-Please confirm your account by copy and pasting the link below into your browsers address bar.
-
-http://localhost/webprogramming-linkedin/index.php/register/register/confirm/e3955cc74f447d960c9d87e3ae7ff745
-
-Thanks!'
