@@ -70,7 +70,43 @@ class page extends CI_Controller{
 			$data['css3'] = "profile";
 			$this->load->view('common/header',$data);
             $this->load->view('common/header_home',$data);
-            $this->load->view('home/quicksearch',$data);
+            $this->load->view('home/alumini',$data);
+            $this->load->view('common/footer_home',$data);
+           	//$this->load->view('common/mynav',$data);
+		
+           // $this->load->view('Country_View/country_View', $data);
+        
+        //$this->load->view('common/footer2',$data);
+	}
+
+	public function accept_connection(){
+			$data['search_text'] = $this->security->xss_clean($this->input->get('keywords'));
+			//$data['search_text'] = "hello";
+            $data['heading'] = "Accept Request";
+            $data['css1'] = "header_logged";
+			$data['css2'] = "acceptconnection";
+			$data['css3'] = "";
+			$this->load->view('common/header',$data);
+            $this->load->view('common/header_home',$data);
+            $this->load->view('home/accept_conn',$data);
+            $this->load->view('common/footer_home',$data);
+           	//$this->load->view('common/mynav',$data);
+		
+           // $this->load->view('Country_View/country_View', $data);
+        
+        //$this->load->view('common/footer2',$data);
+	}
+
+	public function alumini(){
+			$data['search_text'] = $this->security->xss_clean($this->input->get('keywords'));
+			//$data['search_text'] = "hello";
+            $data['heading'] = "Alumni | LinkedIn";
+            $data['css1'] = "header_logged";
+			$data['css2'] = "alumini";
+			$data['css3'] = "";
+			$this->load->view('common/header',$data);
+            $this->load->view('common/header_home',$data);
+            $this->load->view('home/alumini',$data);
             $this->load->view('common/footer_home',$data);
            	//$this->load->view('common/mynav',$data);
 		

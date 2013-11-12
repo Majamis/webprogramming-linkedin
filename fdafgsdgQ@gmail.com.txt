@@ -1,0 +1,9 @@
+'Welcome fdafgsdgQ@gmail.com!
+
+Thank-you for creating an account.
+
+Please confirm your account by copy and pasting the link below into your browsers address bar.
+
+http://localhost/webprogramming-linkedin/index.php/register/register/confirm/a3bb8872f2c4fed5d9879bff776decb3
+
+Thanks!'
