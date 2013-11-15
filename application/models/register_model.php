@@ -25,11 +25,25 @@
 			else
 			{
 			$this->db->insert('users', $data);
-			$userid = mysql_insert_id();
+			$this->db->select('*');
+			$this->db->from('users');
+			$this->db->where('username', $data['username']);
+			$query = $this->db->get();
+			$row = $query->row_array();
+
+			$userid = $row['userid'];
+
 			$key = $data['username'] . date('mY');
 			$key = md5($key);
 			$email=$data['username'];
-			$confirm = mysql_query("INSERT INTO `confirm` VALUES(NULL,'$userid','$key','$email')"); 
+			//$confirm = mysql_query("INSERT INTO `confirm` VALUES(NULL,'$userid','$key','$email')"); 
+			$data1 = array(
+   			'userid' =>  $userid, 
+   			'key' => $key ,
+   			'email' => $email
+			);
+			$confirm=$this->db->insert('confirm', $data1); 
+
 			if($confirm){
 				$info ['username'] = $email;  
     			$info ['key'] = $key;
@@ -58,7 +72,7 @@
 			$data['UserId']= $row['userid'];
 			$data['Country'] = $this->security->xss_clean($this->input->post('countryCode'));
 			$data['PostalCode'] = $this->security->xss_clean($this->input->post('postalCode'));
-	    	$data['Jtitle'] = $this->security->xss_clean($this->input->post('workCompanyTitle'));
+	    	$data['JTitle'] = $this->security->xss_clean($this->input->post('workCompanyTitle'));
 			$data['SelfEmp'] = $this->security->xss_clean($this->input->post('selfEmployed'));
 			$data['Company'] = $this->security->xss_clean($this->input->post('companyName'));
 			$data['Industry'] = $this->security->xss_clean($this->input->post('industryChooser'));

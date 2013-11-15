@@ -141,10 +141,11 @@ class Register extends CI_Controller{
 	public function format_email($info, $format){  
   
     //set the root  
-    $root = $_SERVER['DOCUMENT_ROOT'].'webprogramming-linkedin';  
+    //$root = $_SERVER['DOCUMENT_ROOT'];
+    $root= base_url();  
   
     //grab the template content  
-    $template = file_get_contents($root.'/signup_template.'.$format);  
+    $template = file_get_contents($root.'signup_template.'.$format);  
               
     //replace all the tags  
     $template = preg_replace('/{USERNAME}/', $info['username'], $template);  
