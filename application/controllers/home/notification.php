@@ -24,8 +24,8 @@ class Notification extends CI_Controller{
 			$result=$this->accept_model->accept($id);
 			
 		}
-		redirect('common/page/accept_connection', 'refresh');
-			
+		//redirect('common/page/accept_connection', 'refresh');
+			$this->ignore_connection_process($id);
 		}
 
 		function ignore_connection_process($id = null){

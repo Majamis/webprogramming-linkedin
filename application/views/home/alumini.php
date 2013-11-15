@@ -465,7 +465,7 @@
 			<div id="container-ptc-people-results">
 				<div class="cmpt-ptc-people-results cf">
 					<div class="content active">
-						<ul class="people-cards">
+						<ul class="people-cards" id="alumini-cards">
 							<li class="person">
 							<div class="grad-year">
 								'11
@@ -474,7 +474,7 @@
 							<div class="details">
 								<h3 class="full-name">
 								<div class="distance">
-									<a class="profile-link" data-li-member-gradyear="2011" data-li-member-id="2473457" href="<?php echo base_url('index.php/common/page/alumini');?>">Qasim I.</a><span class="network-degree">3rd</span>
+									<a class="profile-link profile_name2" data-li-member-gradyear="2011" data-li-member-id="2473457" href="<?php echo base_url('index.php/common/page/alumini');?>">Qasim I.</a><span class="network-degree">3rd</span>
 								</div>
 								</h3>
 								<p class="headline">

@@ -1,10 +1,12 @@
 
-//----------------------Message bar on page load-------------------------
+//----------------------Message bar on page load && message inbox-------------------------
 
    // using JQUERY's ready method to know when all dom elements are rendered
     $( document ).ready(function () {
       var html = "";
       var t_html="";
+      var html_invi = "";
+      var t_html_invi="";
       // set an on click on the button
      //window.setInterval(function(){
         // get the time if clicked via an ajax get queury
@@ -16,9 +18,14 @@
           // update the textarea with the time
           t_html=$("#msging").html();
           $("#msging").html("");
+          if(document.getElementById("invitations")){
+          t_html_invi=$("#replicate_conn").html();
+          $("#replicate_conn").html("");}
     var myObject = eval('(' + time + ')');
 		var size=Object.keys(myObject).length;
     var length= 0;
+    if(document.getElementById("invitations")){
+    $("#replicate_conn").html(t_html_invi);}
      $("#msging").html(t_html);
 		
     $(".message-count").html(size);
@@ -27,16 +34,24 @@
         length++;
 				$(".detail-link").html(myObject[i].personal_note);
 				$(".participants").html(myObject[i].fname + ' ' + myObject[i].lname);
-
-				document.getElementById("photo_thumb").src=myObject[i].thumbnail;
-
+				//document.getElementById("photo_thumb").src=myObject[i].thumbnail;
+        $(".photo").attr("src",myObject[i].thumbnail);
+        $(".inbox-item").attr("data-gid",myObject[i].contact_userid);
+        $(".chk").attr("value",myObject[i].contact_userid);
+        $(".accept").attr("href","index.php/home/notification/accept_connection_process/" + myObject[i].contact_userid);
+        $(".ignore").attr("href","index.php/home/notification/ignore_connection_process/" + myObject[i].contact_userid);
 				$(".date").html(myObject[i].time_date);
 
 				html=html + $("#msging").html();
-				$("#text").html("Time on the server is:" + myObject[0].picture );
+        if(document.getElementById("invitations")){
+         html_invi=html_invi + $("#replicate_conn").html();}
+				//$("#text").html("Time on the server is:" + myObject[0].picture );
 			}
 
           $("#msging").html(html);
+          if(document.getElementById("invitations")){
+          $("#replicate_conn").html(html_invi);}
+
         });
      // }, 5000000000000000000000);
     });
@@ -284,3 +299,95 @@ jQuery(function($) {
 
 });
 }
+
+//------------ALUMINI-----------------------
+if(document.getElementById("container-ptc-people-results"))
+{
+
+var result_prev_html=$("#alumini-cards").html();
+$(document).ready(function(){
+jQuery(function($) {
+      var html="";
+      var myObject;
+      var myObject2;
+      var size=0;
+      var serviceURL = 'index.php/search/index_2';
+      var checkURL = 'index.php/search/is_connection';
+
+      $("#alumini-cards").html(result_prev_html);
+    $.ajax({
+            type: "POST",
+            url:  serviceURL,
+            async:   false,
+            success: function(data){
+              myObject = eval('(' + data + ')');
+              size=Object.keys(myObject).length;
+            $(".title").html(myObject[0].Company);
+              for (var i=0;i<size;i++)
+          { 
+            
+            $(".profile_name2").html(myObject[i].fname + ' ' + myObject[i].lname);
+             $(".headline").html(myObject[i].JTitle);
+            $(".hoverZoomLink").attr("src",myObject[i].thumbnail);
+           //  $(".first").html(myObject[i].country);
+           
+            $(".profile-link").attr("href","index.php/common/page/profile/" + myObject[i].UserId);
+
+           
+
+            $(".description").html(myObject[i].JTitle);
+
+            $.ajax({
+              type: "POST",
+              dataType: "json",
+              async:   false,
+              url:  checkURL,
+              data: {data: myObject[i].UserId},
+              success: function(data2){
+            is_true = "";     
+            is_true = data2;
+            if(is_true == "true")
+            {
+              //alert(is_true);
+              $(".connect").attr("href","index.php/common/page/profile/" + myObject[i].UserId);
+              $(".connect").html("Message");
+            }
+            else
+            {
+              $(".connect").attr("href","index.php/common/page/send_invite/" + myObject[i].UserId);
+              $(".connect").html("Connect");
+            }
+          
+          }
+          });
+            html=html + $("#alumini-cards").html();
+
+          }
+           $("#alumini-cards").html(html);
+
+            //alert(data);   // data printed on echoed on the server side.
+            },
+            error:function(x,e)
+            {
+              if(x.status==0){
+              alert('You are offline!!\n Please Check Your Network.');
+              }else if(x.status==404){
+              alert('Requested URL not found.');
+              }else if(x.status==500){
+              alert('Internel Server Error.');
+              }else if(e=='parsererror'){
+              alert('Error.\nParsing JSON Request failed.');
+              }else if(e=='timeout'){
+              alert('Request Time out.');
+              }else {
+              alert('Unknow Error.\n'+x.responseText);
+              }
+            },
+            dataType: 'html'
+          });     
+          
+      });
+
+});
+}
+

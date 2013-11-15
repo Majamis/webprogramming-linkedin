@@ -98,7 +98,7 @@
 				<div class="header-section last-child">
 					<ul class="nav utilities" role="navigation" id="control_gen_5">
 						<li class="nav-item activity-tab" data-li-activity-type="messages">
-							<a href="<?php echo base_url('index.php/common/page/home');?>" class="activity-toggle inbox-alert">Inbox</a>
+							<a href="<?php echo base_url('index.php/common/page/accept_connection');?>" class="activity-toggle inbox-alert">Inbox</a>
 							<div class="activity-container" id="inbox">
 						    	<div class="activity-drop">
 						        	<div id="inbox-overlay-messages">
@@ -319,7 +319,7 @@
 		            Home </a>
 		            </li>
 		            <li class="nav-item">
-		            <a href="<?php echo base_url('index.php/common/page/home');?>" class="nav-link">
+		            <a href="<?php echo base_url('index.php/common/page/profile/');?>/<?php echo $this->session->userdata('userid'); ?>" class="nav-link">
 		            Profile </a>
 		            <ul class="sub-nav" id="profile-sub-nav">
 		                <li>
@@ -345,7 +345,7 @@
 		                Add Connections </a>
 		                </li>
 		                <li>
-		                <a href="<?php echo base_url('index.php/common/page/home');?>">
+		                <a href="<?php echo base_url('index.php/common/page/alumini');?>">
 		                Find Alumni </a>
 		                </li>
 		            </ul>

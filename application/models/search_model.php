@@ -26,6 +26,38 @@
 			echo $json;
 	    }
 
+
+	    function search_by_education()
+	    {
+	    	$userid_1=$this->session->userdata('userid');
+	    	$this->db->select('*');
+	    	$this->db->from('useradditionalinfo');
+	    	$this->db->where('userid' , $userid_1);
+	    	$query=$this->db->get();
+	    	$row = $query->row_array();
+
+			$user_company = $row['Company'];
+			
+			
+	    	$this->db->select('u.fname,u.lname,c.JTitle,c.Company,c.Picture,c.thumbnail,c.UserId');	    	
+			$this->db->like('Company', $user_company); // useradditionalinfo table
+			$this->db->from('users u');
+			$this->db->join('useradditionalinfo c', 'u.userid = c.UserId', 'left');
+			$this->db->group_by('u.userid'); // added a group_by
+			$query=$this->db->get();
+			$row = $query->row_array();
+			$array = null; 
+			foreach ($query->result() as $row)
+			{
+				$array[]=$row;
+				
+				
+			}
+			
+			$json = json_encode($array);
+			echo $json;
+	    }
+
 	    function search_is_connection($userid = null)
 	    {
 	    	$this->db->select('*');

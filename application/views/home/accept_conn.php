@@ -56,7 +56,7 @@
 									</ul>
 								</div>
 								
-								<ol class="inbox-list ">
+								<ol class="inbox-list " id="replicate_conn">
 									<li data-gid="I133969686_252" class="inbox-item invitation-item">
 									<input class="chk" type="checkbox" name="mboxItemGIDs" value="I133969686_252">
 									<img src="http://s.c.lnkd.licdn.com/scds/common/u/img/themes/katy/ghosts/profiles/ghost_profile_40x40_v1.png" class="photo" alt="Omer Zahid" height="40" width="40">

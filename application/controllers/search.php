@@ -9,6 +9,12 @@ class Search extends CI_Controller {
 		$this->load->model('search_model');
 		$result = $this->search_model->search_by_name($input);
   } 
+   public function index_2()
+  {
+    
+    $this->load->model('search_model');
+    $result = $this->search_model->search_by_education();
+  } 
   
   public function is_connection()
   {
