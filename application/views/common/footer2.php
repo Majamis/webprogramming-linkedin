@@ -33,8 +33,8 @@
             </ul>
         </div>
      </div>
-     <script src="assets/js/validation.js"></script>
+     <script src="assets/js/jquery-ui.js"></script>
      <script src="assets/js/jquery-1.9.1.js"></script>
-    <script src="assets/js/jquery-ui.js"></script>
+     <script src="assets/js/validation.js"></script>
 </body>
 </html>

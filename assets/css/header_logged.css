@@ -2497,10 +2497,9 @@ cursor: default;
 	margin-left:156px
 }
 
-		.nav-v5-2-header.responsive-header .search-term {
-			width:344px;
-			height:17px
-		}
+.nav-v5-2-header.responsive-header .search-term {
+	width:344px;
+}
 
 .nav-v5-2-header.responsive-header .voltron .search-term {
 			width:355px;

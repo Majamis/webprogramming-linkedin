@@ -345,6 +345,63 @@ margin-top: 15px;
 background: transparent;
 padding-top: 0;
 }
+li.previous-daterange .daterange-row {
+margin-left: 160px;
+}
+li.previous-daterange .start-year-entry, li.previous-daterange .end-year-entry {
+float: left;
+}
+.previous-daterange li, .previous-daterange select {
+display: inline-block;
+overflow: hidden;
+min-width: 80px;
+}
+option {
+font-weight: normal;
+}
+li.previous-daterange .end-year-entry {
+float: left;
+}
+.previous-daterange label.to {
+display: inline;
+font-size: 130%;
+line-height: 1.2;
+margin: 0 0.5em;
+width: auto;
+}
+#age .info:before {
+font-family: "LinkedIn-Glyphs-1.0.5","LinkedIn-Glyphs";
+font-weight: normal;
+font-style: normal;
+text-decoration: inherit;
+speak: none;
+font-size: 14px;
+color: #666;
+content: "\e030";
+}
+#age #info-callout {
+display: none;
+}
+.dob-chooser-error, .dob-chooser{
+display: list-item;
+}
+#age .dob-chooser {
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 5px;
+padding-bottom: 10px;
+width: 270px;
+background-color: #EFEFEF;
+border-top: 1px solid #CCC;
+display: none;
+}
+#age .info {
+display: inline-block;
+width: 14px;
+height: 14px;
+}
+
+
 .btn-primary, .btn-new-primary, .btn-secondary, .btn-new-secondary, .btn-tertiary, .btn-ternary, .btn-quaternary, .btn-action {
 border-width: 1px;
 border-style: solid;

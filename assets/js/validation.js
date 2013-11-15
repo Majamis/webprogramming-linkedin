@@ -1,3 +1,153 @@
+if(document.getElementById('motivation'))
+{
+  
+  document.getElementById('EmpLiOne').style.display = "block";
+  document.getElementById('EmpLiTwo').style.display = "block";
+  document.getElementById('EmpLiThree').style.display = "block";
+  document.getElementById('employedProfileForm_industry').style.display = "none";
+  document.getElementById('JobLiOne').style.display = "none";
+  document.getElementById('JobLiTwo').style.display = "none";
+  document.getElementById('JobLiThree').style.display = "none";
+  document.getElementById('lookingProfileForm_industry').style.display = "none";
+  document.getElementById('JobLiFive').style.display = "none";
+  document.getElementById('StdLiOne').style.display = "none"; 
+  document.getElementById('StdLiTwo').style.display = "none";
+  document.getElementById('age').style.display = "none";
+  
+  var vall=1;
+  var std_set=1;
+  var looking_industry=1;
+  $("#selfEmployed-employeeCompany-employedProfileForm").click(function(){
+    if(vall==1)
+    {
+      vall=0;
+      document.getElementById('employedProfileForm_industry').style.display = "block";
+      document.getElementById('EmpLiThree').style.display = "none";
+     }
+     else if(vall==0)
+     {
+      vall=1;
+        document.getElementById('employedProfileForm_industry').style.display = "none";
+      document.getElementById('EmpLiThree').style.display = "block";
+     }
+
+  })
+
+$("#employed-btn").click(function(){
+  document.getElementById('EmpLiOne').style.display = "block";
+  document.getElementById('EmpLiTwo').style.display = "block";
+  document.getElementById('EmpLiThree').style.display = "block";
+  //document.getElementById('employedProfileForm_industry').style.display = "block";
+  document.getElementById('JobLiOne').style.display = "none";
+  document.getElementById('JobLiTwo').style.display = "none";
+  document.getElementById('JobLiThree').style.display = "none";
+  document.getElementById('lookingProfileForm_industry').style.display = "none";
+  document.getElementById('JobLiFive').style.display = "none";
+  document.getElementById('StdLiOne').style.display = "none"; 
+  document.getElementById('StdLiTwo').style.display = "none";
+  document.getElementById('age').style.display = "none";
+
+
+})
+$("#looking-btn").click(function(){
+
+  document.getElementById('EmpLiOne').style.display = "none";
+  document.getElementById('EmpLiTwo').style.display = "none";
+  document.getElementById('EmpLiThree').style.display = "none";
+  //document.getElementById('employedProfileForm_industry').style.display = "none";
+  document.getElementById('JobLiOne').style.display = "block";
+  document.getElementById('JobLiTwo').style.display = "block";
+  document.getElementById('JobLiThree').style.display = "block";
+  //document.getElementById('lookingProfileForm_industry').style.display = "block";
+  document.getElementById('JobLiFive').style.display = "block";
+  document.getElementById('StdLiOne').style.display = "none"; 
+  document.getElementById('StdLiTwo').style.display = "none";
+  document.getElementById('age').style.display = "none";
+
+
+
+})
+
+$("#selfEmployed-employeeCompany-lookingProfileForm").click(function(){
+  if(looking_industry==1)
+  {
+    looking_industry=0;
+  document.getElementById('employedProfileForm_industry').style.display = "none";
+  document.getElementById('JobLiThree').style.display = "block";
+  document.getElementById('JobLiFive').style.display = "block";
+  }
+  else if(looking_industry==0)
+  {
+    looking_industry=1;
+    document.getElementById('JobLiThree').style.display = "none";
+  document.getElementById('employedProfileForm_industry').style.display = "block";
+  
+  document.getElementById('JobLiFive').style.display = "block";
+  }
+
+})
+
+$("#student-btn").click(function(){
+  document.getElementById('EmpLiOne').style.display = "none";
+  document.getElementById('EmpLiTwo').style.display = "none";
+  document.getElementById('EmpLiThree').style.display = "none";
+  //document.getElementById('employedProfileForm_industry').style.display = "none";
+  document.getElementById('JobLiOne').style.display = "none";
+  document.getElementById('JobLiTwo').style.display = "none";
+  document.getElementById('JobLiThree').style.display = "none";
+  //document.getElementById('lookingProfileForm_industry').style.display = "none";
+  document.getElementById('JobLiFive').style.display = "none";
+  document.getElementById('StdLiOne').style.display = "block";  
+  document.getElementById('StdLiTwo').style.display = "block";
+  //document.getElementById('age').style.display = "block";
+
+
+
+
+})
+
+$("#schoolText-school-education-studentProfileForm").click(function(){
+  if(document.getElementById('age').style.display == "none")
+  {
+    document.getElementById('age').style.display = "block";
+  }
+
+})
+
+$("#ageOverEighteen-studentAgeBirthday-studentProfileForm").click(function(){
+  
+    if(std_set==1)
+    {
+      std_set=0;
+      document.getElementById('Setdb').style.display = "block";
+    }
+    else if(std_set==0)
+    {
+      std_set=1;
+      document.getElementById('Setdb').style.display = "none";
+    }
+
+  
+})
+
+
+$("#age").click(function(){
+  if(document.getElementById('age').checked==true)
+  {
+    document.getElementById('Setdb').style.display = "none";
+
+  }
+  else
+  {
+    document.getElementById('Setdb').style.display = "block";
+
+
+  }
+
+
+})
+}
+
 $("#page5form").submit(function()
 {
 var is_valid = 1;

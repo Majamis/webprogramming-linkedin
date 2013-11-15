@@ -1,14 +1,4 @@
-<script>
-<?php 
-	if($msg== 'registered')
-	
-	echo '$(function()	{
-		$("#dialogue").dialog();
-	});'
-	
-	//echo 'javascript'
-?>
-</script>
+
 
 <div id="dialogue" title = "Registered !!!">
 	<p> You have been Registered. A verification Email has been sent to you</p>

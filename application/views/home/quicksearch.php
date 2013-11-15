@@ -7,17 +7,17 @@
 					<h2>SEARCH</h2>
 				</div>
 				<div id="facets-col" class="col">
-					<a id="advs-link" href="" class="advs-link mod" onclick="letit" aria-role="button" aria-controls="advanced-search-container">Advanced<span class="advs-indicator available">Advanced Search is available for people</span></a>
+					<a id="advs-link" href="<?php echo base_url('index.php/common/page/advance_search');?>" class="advs-link mod" onclick="letit" aria-role="button" aria-controls="advanced-search-container">Advanced<span class="advs-indicator available">Advanced Search is available for people</span></a>
 					<div id="search-types">
 						<div class="mod search-types hide-extra">
 							<ul>
 								<li class="selected" data-li-current-vertical="/vsearch/f"><strong>All</strong></li>
-								<li><a href="/vsearch/p?orig=TRNV&amp;rsid=2813767421383141866616&amp;trk=vsrp_people_sel&amp;trkInfo=VSRPsearchId%3A2813767421383141866616%2CVSRPcmpt%3Atrans_nav">People</a></li>
-								<li><a href="/vsearch/j?orig=TRNV&amp;rsid=2813767421383141866616&amp;trk=vsrp_jobs_sel&amp;trkInfo=VSRPsearchId%3A2813767421383141866616%2CVSRPcmpt%3Atrans_nav">Jobs</a></li>
-								<li><a href="/vsearch/c?orig=TRNV&amp;rsid=2813767421383141866616&amp;trk=vsrp_companies_sel&amp;trkInfo=VSRPsearchId%3A2813767421383141866616%2CVSRPcmpt%3Atrans_nav">Companies</a></li>
-								<li><a href="/vsearch/g?orig=TRNV&amp;rsid=2813767421383141866616&amp;trk=vsrp_groups_sel&amp;trkInfo=VSRPsearchId%3A2813767421383141866616%2CVSRPcmpt%3Atrans_nav">Groups</a></li>
-								<li><a href="/vsearch/e?orig=TRNV&amp;rsid=2813767421383141866616&amp;trk=vsrp_universities_sel&amp;trkInfo=VSRPsearchId%3A2813767421383141866616%2CVSRPcmpt%3Atrans_nav">Universities</a></li>
-								<li><a href="/inbox/messages/search?trk=vsrp_inbox_sel&amp;trkInfo=VSRPsearchId%3A2813767421383141866616%2CVSRPcmpt%3Atrans_nav">Inbox</a></li>
+								<li><a href="<?php echo base_url('index.php/common/page/advance_search');?>">People</a></li>
+								<li><a href="<?php echo base_url('index.php/common/page/advance_search');?>">Jobs</a></li>
+								<li><a href="<?php echo base_url('index.php/common/page/advance_search');?>">Companies</a></li>
+								<li><a href="<?php echo base_url('index.php/common/page/advance_search');?>">Groups</a></li>
+								<li><a href="<?php echo base_url('index.php/common/page/advance_search');?>">Universities</a></li>
+								<li><a href="<?php echo base_url('index.php/common/page/advance_search');?>">Inbox</a></li>
 							</ul>
 						</div>
 					</div>
@@ -26,7 +26,7 @@
 					<h3>Advanced People Search</h3>
 		<ul class="search-types">
 			<li class="selected"><strong>People</strong></li>
-			<li class="search-type jobs"><a href="/vsearch/j?adv=true">Jobs</a></li>
+			<li class="search-type jobs"><a href="<?php echo base_url('index.php/common/page/advance_search');?>">Jobs</a></li>
 		</ul>
 		<div class="advs-controls">
 			<input type="reset" class="text-button reset-advs" value="Reset"><button class="text-button close-advs">Close</button>
@@ -110,7 +110,7 @@
 							<option value="pk" selected="">Pakistan</option>
 						</select>
 						</li>
-						<li class="postalCode hidden" data-li-geo-enabled-countries="[&quot;us&quot;,&quot;au&quot;,&quot;be&quot;,&quot;br&quot;,&quot;ca&quot;,&quot;cn&quot;,&quot;cz&quot;,&quot;dk&quot;,&quot;fr&quot;,&quot;de&quot;,&quot;in&quot;,&quot;id&quot;,&quot;it&quot;,&quot;jp&quot;,&quot;kr&quot;,&quot;my&quot;,&quot;mx&quot;,&quot;md&quot;,&quot;nl&quot;,&quot;nz&quot;,&quot;no&quot;,&quot;ph&quot;,&quot;pl&quot;,&quot;pt&quot;,&quot;ro&quot;,&quot;ru&quot;,&quot;za&quot;,&quot;es&quot;,&quot;se&quot;,&quot;ch&quot;,&quot;tr&quot;,&quot;gb&quot;]"><label for="advs-postalCode">Postal Code</label><input type="text" name="postalCode" id="advs-postalCode"><a href="http://www.geonames.org/postalcode-search.html?q=&amp;country=us" target="_blank" class="text-button">Lookup</a></li>
+						<li class="postalCode hidden" data-li-geo-enabled-countries="[&quot;us&quot;,&quot;au&quot;,&quot;be&quot;,&quot;br&quot;,&quot;ca&quot;,&quot;cn&quot;,&quot;cz&quot;,&quot;dk&quot;,&quot;fr&quot;,&quot;de&quot;,&quot;in&quot;,&quot;id&quot;,&quot;it&quot;,&quot;jp&quot;,&quot;kr&quot;,&quot;my&quot;,&quot;mx&quot;,&quot;md&quot;,&quot;nl&quot;,&quot;nz&quot;,&quot;no&quot;,&quot;ph&quot;,&quot;pl&quot;,&quot;pt&quot;,&quot;ro&quot;,&quot;ru&quot;,&quot;za&quot;,&quot;es&quot;,&quot;se&quot;,&quot;ch&quot;,&quot;tr&quot;,&quot;gb&quot;]"><label for="advs-postalCode">Postal Code</label><input type="text" name="postalCode" id="advs-postalCode"><a href="<?php echo base_url('index.php/common/page/advance_search');?>" target="_blank" class="text-button">Lookup</a></li>
 						<li class="distance hidden"><label for="advs-distance">Within</label>
 						<select name="distance" id="advs-distance">
 							<option value="10">10 mi (15km)</option>
@@ -1056,7 +1056,7 @@
 						</li>
 						<li id="adv-facet-TE" class="facet premium mod collapsed">
 						<fieldset>
-							<a class="upgrade" href="/mnyfe/subscriptionv2?displayProducts=&amp;family=general&amp;trk=vsrp_people_facets_Years+of+Experience">Upgrade to access</a><legend class="facet-toggle" data-li-trk-code="vsrp_people_facet_label_TE">Years of Experience</legend><button type="button" class="facet-toggle">Toggle</button>
+							<a class="upgrade" href="<?php echo base_url('index.php/common/page/advance_search');?>">Upgrade to access</a><legend class="facet-toggle" data-li-trk-code="vsrp_people_facet_label_TE">Years of Experience</legend><button type="button" class="facet-toggle">Toggle</button>
 							<div class="facet-values-container">
 								<ol class="facet-values" id="control_gen_22">
 									<li class="facet-value disabled" data-li-trk-code="vsrp_people_facet_item_total_years_of_experience"><input type="checkbox" id="adv-1-TE-ffs" name="f_TE" value="1" disabled="">
@@ -1090,7 +1090,7 @@
 						</li>
 						<li id="adv-facet-FA" class="facet premium mod collapsed">
 						<fieldset>
-							<a class="upgrade" href="/mnyfe/subscriptionv2?displayProducts=&amp;family=general&amp;trk=vsrp_people_facets_Function">Upgrade to access</a><legend class="facet-toggle" data-li-trk-code="vsrp_people_facet_label_FA">Function</legend><button type="button" class="facet-toggle">Toggle</button>
+							<a class="upgrade" href="<?php echo base_url('index.php/common/page/advance_search');?>">Upgrade to access</a><legend class="facet-toggle" data-li-trk-code="vsrp_people_facet_label_FA">Function</legend><button type="button" class="facet-toggle">Toggle</button>
 							<div class="facet-values-container">
 								<ol class="facet-values" id="control_gen_23">
 									<li class="facet-value disabled" data-li-trk-code="vsrp_people_facet_item_func_area"><input type="checkbox" id="adv-1-FA-ffs" name="f_FA" value="1" disabled="">
@@ -1204,7 +1204,7 @@
 						</li>
 						<li id="adv-facet-SE" class="facet premium mod collapsed">
 						<fieldset>
-							<a class="upgrade" href="/mnyfe/subscriptionv2?displayProducts=&amp;family=general&amp;trk=vsrp_people_facets_Seniority+Level">Upgrade to access</a><legend class="facet-toggle" data-li-trk-code="vsrp_people_facet_label_SE">Seniority Level</legend><button type="button" class="facet-toggle">Toggle</button>
+							<a class="upgrade" href="<?php echo base_url('index.php/common/page/advance_search');?>">Upgrade to access</a><legend class="facet-toggle" data-li-trk-code="vsrp_people_facet_label_SE">Seniority Level</legend><button type="button" class="facet-toggle">Toggle</button>
 							<div class="facet-values-container">
 								<ol class="facet-values" id="control_gen_24">
 									<li class="facet-value disabled" data-li-trk-code="vsrp_people_facet_item_seniority"><input type="checkbox" id="adv-0-SE-ffs" name="f_SE" value="0" disabled="">
@@ -1263,7 +1263,7 @@
 						</li>
 						<li id="adv-facet-P" class="facet premium mod collapsed">
 						<fieldset>
-							<a class="upgrade" href="/mnyfe/subscriptionv2?displayProducts=&amp;family=general&amp;trk=vsrp_people_facets_Interested+In">Upgrade to access</a><legend class="facet-toggle" data-li-trk-code="vsrp_people_facet_label_P">Interested In</legend><button type="button" class="facet-toggle">Toggle</button>
+							<a class="upgrade" href="<?php echo base_url('index.php/common/page/advance_search');?>">Upgrade to access</a><legend class="facet-toggle" data-li-trk-code="vsrp_people_facet_label_P">Interested In</legend><button type="button" class="facet-toggle">Toggle</button>
 							<div class="facet-values-container">
 								<ol class="facet-values" id="control_gen_25">
 									<li class="facet-value disabled" data-li-trk-code="vsrp_people_facet_item_proposal_accepts"><input type="checkbox" id="adv-1-P-ffs" name="f_P" value="1" disabled="">
@@ -1312,7 +1312,7 @@
 						</li>
 						<li id="adv-facet-CS" class="facet premium mod collapsed">
 						<fieldset>
-							<a class="upgrade" href="/mnyfe/subscriptionv2?displayProducts=&amp;family=general&amp;trk=vsrp_people_facets_Company+Size">Upgrade to access</a><legend class="facet-toggle" data-li-trk-code="vsrp_people_facet_label_CS">Company Size</legend><button type="button" class="facet-toggle">Toggle</button>
+							<a class="upgrade" href="<?php echo base_url('index.php/common/page/advance_search');?>">Upgrade to access</a><legend class="facet-toggle" data-li-trk-code="vsrp_people_facet_label_CS">Company Size</legend><button type="button" class="facet-toggle">Toggle</button>
 							<div class="facet-values-container">
 								<ol class="facet-values" id="control_gen_26">
 									<li class="facet-value disabled" data-li-trk-code="vsrp_people_facet_item_company_size"><input type="checkbox" id="adv-1-CS-ffs" name="f_CS" value="1" disabled="">
@@ -1361,7 +1361,7 @@
 						</li>
 						<li id="adv-facet-F" class="facet premium mod collapsed">
 						<fieldset>
-							<a class="upgrade" href="/mnyfe/subscriptionv2?displayProducts=&amp;family=general&amp;trk=vsrp_people_facets_Fortune">Upgrade to access</a><legend class="facet-toggle" data-li-trk-code="vsrp_people_facet_label_F">Fortune</legend><button type="button" class="facet-toggle">Toggle</button>
+							<a class="upgrade" href="<?php echo base_url('index.php/common/page/advance_search');?>">Upgrade to access</a><legend class="facet-toggle" data-li-trk-code="vsrp_people_facet_label_F">Fortune</legend><button type="button" class="facet-toggle">Toggle</button>
 							<div class="facet-values-container">
 								<ol class="facet-values" id="control_gen_27">
 									<li class="facet-value disabled" data-li-trk-code="vsrp_people_facet_item_fortune"><input type="checkbox" id="adv-1-F-ffs" name="f_F" value="1" disabled="">
@@ -1395,7 +1395,7 @@
 						</li>
 						<li id="adv-facet-DR" class="facet premium mod collapsed">
 						<fieldset>
-							<a class="upgrade" href="/mnyfe/subscriptionv2?displayProducts=&amp;family=general&amp;trk=vsrp_people_facets_When+Joined">Upgrade to access</a><legend class="facet-toggle" data-li-trk-code="vsrp_people_facet_label_DR">When Joined</legend><button type="button" class="facet-toggle">Toggle</button>
+							<a class="upgrade" href="<?php echo base_url('index.php/common/page/advance_search');?>">Upgrade to access</a><legend class="facet-toggle" data-li-trk-code="vsrp_people_facet_label_DR">When Joined</legend><button type="button" class="facet-toggle">Toggle</button>
 							<div class="facet-values-container">
 								<ol class="facet-values" id="control_gen_28">
 									<li class="facet-value disabled" data-li-trk-code="vsrp_people_facet_item_lastJoined"><input type="checkbox" id="adv-1-DR-ffs" name="f_DR" value="1" disabled="">
@@ -1484,7 +1484,7 @@
 								</li>
 								<li id="facet-SE" class="facet mod facet-dirty collapsed premium">
 								<fieldset>
-									<a class="upgrade" href="/mnyfe/subscriptionv2?displayProducts=&amp;family=general&amp;trk=vsrp_people_facets_Seniority+Level">Upgrade to access</a><legend class="facet-toggle" data-li-trk-code="vsrp_people_facet_label_SE">Seniority Level</legend><button type="button" class="facet-toggle"></button>
+									<a class="upgrade" href="<?php echo base_url('index.php/common/page/advance_search');?>">Upgrade to access</a><legend class="facet-toggle" data-li-trk-code="vsrp_people_facet_label_SE">Seniority Level</legend><button type="button" class="facet-toggle"></button>
 									<div class="facet-values-container">
 										<ol class="facet-values" id="control_gen_8">
 										</ol>
@@ -1508,7 +1508,7 @@
 								</li>
 								<li id="facet-CS" class="facet mod facet-dirty collapsed premium">
 								<fieldset>
-									<a class="upgrade" href="/mnyfe/subscriptionv2?displayProducts=&amp;family=general&amp;trk=vsrp_people_facets_Company+Size">Upgrade to access</a><legend class="facet-toggle" data-li-trk-code="vsrp_people_facet_label_CS">Company Size</legend><button type="button" class="facet-toggle"></button>
+									<a class="upgrade" href="<?php echo base_url('index.php/common/page/advance_search');?>">Upgrade to access</a><legend class="facet-toggle" data-li-trk-code="vsrp_people_facet_label_CS">Company Size</legend><button type="button" class="facet-toggle"></button>
 									<div class="facet-values-container">
 										<ol class="facet-values" id="control_gen_9">
 											<li class="facet-value default select-all disabled selected" data-li-trk-code="vsrp_people_facet_item_company_size"><input type="checkbox" id="Y-CS-ffs" name="f_CS" value="Y" checked="" disabled="">
@@ -1570,7 +1570,7 @@
 							<p>
 								Find key people in half the time with Premium Filters
 							</p>
-							<a href="/static?key=about_premium_search&amp;trk=vsrp_people_defaultfacetupsell" class="learn-more" id="control_gen_11">Learn more</a>
+							<a href="<?php echo base_url('index.php/common/page/advance_search');?>" class="learn-more" id="control_gen_11">Learn more</a>
 						</div>
 					</div>
 				</div>
@@ -1594,9 +1594,9 @@
 						<ol id="results" class="search-results">
 						
 						
-						<li class="mod result idx0 people" data-li-entity-id="88433405" data-li-position="0"><a href="/profile/view?id=88433405&amp;authType=OUT_OF_NETWORK&amp;authToken=N4uq&amp;locale=en_US&amp;srchid=2813767421383224654540&amp;srchindex=1&amp;srchtotal=2243&amp;trk=vsrp_people_res_photo&amp;trkInfo=VSRPsearchId%3A2813767421383224654540%2CVSRPtargetId%3A88433405%2CVSRPcmpt%3Aprimary"><img id="search_profile_img" class="entity-img hoverZoomLink" width="60" height="60" src="http://m.c.lnkd.licdn.com/mpr/mpr/shrink_60_60/p/1/000/1a9/3d0/0befb52.jpg"></a>
+						<li class="mod result idx0 people" data-li-entity-id="88433405" data-li-position="0"><a href="<?php echo base_url('index.php/common/page/advance_search');?>"><img id="search_profile_img" class="entity-img hoverZoomLink"  src="#" alt="image"></a>
 							<div class="bd">
-								<h3><a class="title" href="/profile/view?id=88433405&amp;authType=OUT_OF_NETWORK&amp;authToken=N4uq&amp;locale=en_US&amp;srchid=2813767421383224654540&amp;srchindex=1&amp;srchtotal=2243&amp;trk=vsrp_people_res_name&amp;trkInfo=VSRPsearchId%3A2813767421383224654540%2CVSRPtargetId%3A88433405%2CVSRPcmpt%3Aprimary">Asad ullah</a><span class="badges"><span><abbr title="Asad ullah is your connection" class="degree-icon ">1<sup>st</sup></abbr></span></span></h3>
+								<h3><a class="title" href="<?php echo base_url('index.php/common/page/advance_search');?>">Asad ullah</a><span class="badges"><span><abbr title="Asad ullah is your connection" class="degree-icon ">1<sup>st</sup></abbr></span></span></h3>
 								<p class="description">
 									Creative Lead (Deezon)
 								</p>
@@ -1609,7 +1609,7 @@
 								
 								<div class="srp-actions blue-button">
 									<div class="primary-action-button">
-										<a class="primary-action label" href="/msgToConns?displayCreate=&amp;connId=88433405&amp;trk=vsrp_people_res_pri_act&amp;trkInfo=VSRPsearchId%3A2813767421383224654540%2CVSRPtargetId%3A88433405%2CVSRPcmpt%3Aprimary">Message</a>
+										<a class="primary-action label" href="<?php echo base_url('index.php/common/page/advance_search');?>">Message</a>
 									</div>
 									
 									</div>

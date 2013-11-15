@@ -419,24 +419,24 @@
 					</div>
 					<div class="more-schools-wrapper">
 						<div class="more-schools">
-							<a href="#" class="btn-quaternary" data-li-action="show-more-schools">Change school<span class="drop-down-arrow"></span></a>
+							<a href="<?php echo base_url('index.php/common/page/alumini');?>" class="btn-quaternary" data-li-action="show-more-schools">Change school<span class="drop-down-arrow"></span></a>
 							<div class="content">
 								<ul>
 									<li class="section first">
 									<ul class="my-schools group">
 										<li>Your schools</li>
-										<li class="option" data-li-change-school="{&quot;id&quot;:174838519,&quot;schoolName&quot;:&quot;National University of Computer and Emerging Sciences&quot;,&quot;schoolCode&quot;:&quot;National University of Computer and Emerging Sciences&quot;,&quot;startDate&quot;:2011,&quot;endDate&quot;:2015,&quot;isSelected&quot;:true,&quot;idx&quot;:0,&quot;type&quot;:&quot;myschool&quot;,&quot;schoolName_len&quot;:53}"><a href="#">National University of Computer and E…, 2011-2015</a></li>
+										<li class="option" data-li-change-school="{&quot;id&quot;:174838519,&quot;schoolName&quot;:&quot;National University of Computer and Emerging Sciences&quot;,&quot;schoolCode&quot;:&quot;National University of Computer and Emerging Sciences&quot;,&quot;startDate&quot;:2011,&quot;endDate&quot;:2015,&quot;isSelected&quot;:true,&quot;idx&quot;:0,&quot;type&quot;:&quot;myschool&quot;,&quot;schoolName_len&quot;:53}"><a href="<?php echo base_url('index.php/common/page/alumini');?>">National University of Computer and E…, 2011-2015</a></li>
 									</ul>
 									</li>
 									<li class="section first">
 									<ul class="similar-schools group">
 										<li>Similar schools</li>
-										<li class="option" data-li-change-school="{&quot;schoolCode&quot;:21095,&quot;schoolName&quot;:&quot;R. V. College of Engineering, Bangalore&quot;,&quot;url&quot;:&quot;/college/alumni?eduSchool=21095&quot;,&quot;idx&quot;:0,&quot;type&quot;:&quot;similarschool&quot;}"><a href="#">R. V. College of Engineering, Bangalore</a></li>
-										<li class="option" data-li-change-school="{&quot;schoolCode&quot;:20970,&quot;schoolName&quot;:&quot;Pune Institute of Computer Technology&quot;,&quot;url&quot;:&quot;/college/alumni?eduSchool=20970&quot;,&quot;idx&quot;:1,&quot;type&quot;:&quot;similarschool&quot;}"><a href="#">Pune Institute of Computer Technology</a></li>
-										<li class="option" data-li-change-school="{&quot;schoolCode&quot;:20009,&quot;schoolName&quot;:&quot;National Institute of Technology Warangal&quot;,&quot;url&quot;:&quot;/college/alumni?eduSchool=20009&quot;,&quot;idx&quot;:2,&quot;type&quot;:&quot;similarschool&quot;}"><a href="#">National Institute of Technology Wara…</a></li>
-										<li class="option" data-li-change-school="{&quot;schoolCode&quot;:16170,&quot;schoolName&quot;:&quot;Universitatea „Politehnica” din București&quot;,&quot;url&quot;:&quot;/college/alumni?eduSchool=16170&quot;,&quot;idx&quot;:3,&quot;type&quot;:&quot;similarschool&quot;}"><a href="#">Universitatea „Politehnica” din Bucur…</a></li>
-										<li class="option" data-li-change-school="{&quot;schoolCode&quot;:11040,&quot;schoolName&quot;:&quot;Beijing University of Technology&quot;,&quot;url&quot;:&quot;/college/alumni?eduSchool=11040&quot;,&quot;idx&quot;:4,&quot;type&quot;:&quot;similarschool&quot;}"><a href="#">Beijing University of Technology</a></li>
-										<li class="option" data-li-change-school="{&quot;schoolCode&quot;:13494,&quot;schoolName&quot;:&quot;Indian Institute Of Information Technology&quot;,&quot;url&quot;:&quot;/college/alumni?eduSchool=13494&quot;,&quot;idx&quot;:5,&quot;type&quot;:&quot;similarschool&quot;}"><a href="#">Indian Institute Of Information Techn…</a></li>
+										<li class="option" data-li-change-school="{&quot;schoolCode&quot;:21095,&quot;schoolName&quot;:&quot;R. V. College of Engineering, Bangalore&quot;,&quot;url&quot;:&quot;/college/alumni?eduSchool=21095&quot;,&quot;idx&quot;:0,&quot;type&quot;:&quot;similarschool&quot;}"><a href="<?php echo base_url('index.php/common/page/alumini');?>">R. V. College of Engineering, Bangalore</a></li>
+										<li class="option" data-li-change-school="{&quot;schoolCode&quot;:20970,&quot;schoolName&quot;:&quot;Pune Institute of Computer Technology&quot;,&quot;url&quot;:&quot;/college/alumni?eduSchool=20970&quot;,&quot;idx&quot;:1,&quot;type&quot;:&quot;similarschool&quot;}"><a href="<?php echo base_url('index.php/common/page/alumini');?>">Pune Institute of Computer Technology</a></li>
+										<li class="option" data-li-change-school="{&quot;schoolCode&quot;:20009,&quot;schoolName&quot;:&quot;National Institute of Technology Warangal&quot;,&quot;url&quot;:&quot;/college/alumni?eduSchool=20009&quot;,&quot;idx&quot;:2,&quot;type&quot;:&quot;similarschool&quot;}"><a href="<?php echo base_url('index.php/common/page/alumini');?>">National Institute of Technology Wara…</a></li>
+										<li class="option" data-li-change-school="{&quot;schoolCode&quot;:16170,&quot;schoolName&quot;:&quot;Universitatea „Politehnica” din București&quot;,&quot;url&quot;:&quot;/college/alumni?eduSchool=16170&quot;,&quot;idx&quot;:3,&quot;type&quot;:&quot;similarschool&quot;}"><a href="<?php echo base_url('index.php/common/page/alumini');?>">Universitatea „Politehnica” din Bucur…</a></li>
+										<li class="option" data-li-change-school="{&quot;schoolCode&quot;:11040,&quot;schoolName&quot;:&quot;Beijing University of Technology&quot;,&quot;url&quot;:&quot;/college/alumni?eduSchool=11040&quot;,&quot;idx&quot;:4,&quot;type&quot;:&quot;similarschool&quot;}"><a href="<?php echo base_url('index.php/common/page/alumini');?>">Beijing University of Technology</a></li>
+										<li class="option" data-li-change-school="{&quot;schoolCode&quot;:13494,&quot;schoolName&quot;:&quot;Indian Institute Of Information Technology&quot;,&quot;url&quot;:&quot;/college/alumni?eduSchool=13494&quot;,&quot;idx&quot;:5,&quot;type&quot;:&quot;similarschool&quot;}"><a href="<?php echo base_url('index.php/common/page/alumini');?>">Indian Institute Of Information Techn…</a></li>
 									</ul>
 									</li>
 									<li class="section">
@@ -470,11 +470,11 @@
 							<div class="grad-year">
 								'11
 							</div>
-							<a class="profile-link" data-li-member-gradyear="2011" data-li-member-id="2473457" href="/profile/view?id=2473457&amp;authType=OUT_OF_NETWORK&amp;authToken=pny-"><img src="http://m.c.lnkd.licdn.com/mpr/mpr/shrink_80_80/p/1/000/0fc/1de/3471510.jpg" alt="Qasim I." class="hoverZoomLink"></a>
+							<a class="profile-link" data-li-member-gradyear="2011" data-li-member-id="2473457" href="<?php echo base_url('index.php/common/page/alumini');?>"><img src="http://m.c.lnkd.licdn.com/mpr/mpr/shrink_80_80/p/1/000/0fc/1de/3471510.jpg" alt="Qasim I." class="hoverZoomLink"></a>
 							<div class="details">
 								<h3 class="full-name">
 								<div class="distance">
-									<a class="profile-link" data-li-member-gradyear="2011" data-li-member-id="2473457" href="/profile/view?id=2473457&amp;authType=OUT_OF_NETWORK&amp;authToken=pny-">Qasim I.</a><span class="network-degree">3rd</span>
+									<a class="profile-link" data-li-member-gradyear="2011" data-li-member-id="2473457" href="<?php echo base_url('index.php/common/page/alumini');?>">Qasim I.</a><span class="network-degree">3rd</span>
 								</div>
 								</h3>
 								<p class="headline">
@@ -485,7 +485,7 @@
 								</ul>
 							</div>
 							<div class="ft">
-								<span class="connect-logo"></span><a class="left-action connect" data-li-connect-ep="" data-li-connect-id="2473457" href="/inviteFromProfile?from=profile&amp;key=2473457&amp;firstName=Qasim&amp;lastName=I%2E&amp;authToken=pny-&amp;authType=OUT_OF_NETWORK&amp;goback=">Connect</a><span class="divider">&nbsp;</span>
+								<span class="connect-logo"></span><a class="left-action connect" data-li-connect-ep="" data-li-connect-id="2473457" href="<?php echo base_url('index.php/common/page/alumini');?>">Connect</a><span class="divider">&nbsp;</span>
 							</div>
 							</li>
 						</ul>

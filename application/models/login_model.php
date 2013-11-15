@@ -19,6 +19,7 @@ class Login_model extends CI_Model{
 		
 		// Run the query
 		$query = $this->db->get('users');
+		//echo $query[thumbnail']
 		// Let's check if there are any results
 		if($query->num_rows == 1)
 		{
@@ -32,6 +33,12 @@ class Login_model extends CI_Model{
 					'username' => $row->username,
 					'validated' => true
 					);
+			$this->db->where('UserId', $row->userid);
+			$pict=$this->db->get('useradditionalinfo');
+
+			$row=$pict->row();
+			$data['thumbnail']=$row->thumbnail; 
+			//echo $data['thumbnail'];
 			$this->session->set_userdata($data);
 			return true;
 		}

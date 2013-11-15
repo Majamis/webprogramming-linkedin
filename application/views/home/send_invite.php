@@ -4,22 +4,22 @@
                 
                 <ul id="nav-secondary">
                     <li id="nav-invite-contacts" class="">
-                        <a href="#"><span>Add Connections</span></a>
+                        <a href="<?php echo base_url('index.php/common/page/send_invite');?>"><span>Add Connections</span></a>
                     </li>
                         
                         
-                    <li id="nav-colleagues" class=""><a href="#"><span>Colleagues</span></a></li>
-                    <li id="nav-classmates" class=""><a href="#"><span>Alumni</span></a></li>
+                    <li id="nav-colleagues" class=""><a href="<?php echo base_url('index.php/common/page/send_invite');?>"><span>Colleagues</span></a></li>
+                    <li id="nav-classmates" class=""><a href="<?php echo base_url('index.php/common/page/send_invite');?>"><span>Alumni</span></a></li>
                         
                         
                         
                         
-                    <li id="nav-pymk" class=""><a href="#"><span>People You May Know</span></a></li>
+                    <li id="nav-pymk" class=""><a href="<?php echo base_url('index.php/common/page/send_invite');?>"><span>People You May Know</span></a></li>
                         
                         
                 </ul>
                 <ul class="related-links">
-                    <li class="last"><a href="#">View Sent Invitations</a></li>
+                    <li class="last"><a href="<?php echo base_url('index.php/common/page/send_invite');?>">View Sent Invitations</a></li>
                 </ul>
             </div>
             <div class="wrapper2">
@@ -81,10 +81,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="btn"><span class="error-red">Important:</span> Only invite people you know well and who know you. <a class="" href="#"  title="New window will open">Find out why.</a>
+                                <p class="btn"><span class="error-red">Important:</span> Only invite people you know well and who know you. <a class="" href="<?php echo base_url('index.php/common/page/send_invite');?>"  title="New window will open">Find out why.</a>
                                   </p>
                                   <p class="btn">
-                                      <input type="submit" name="relation-Submit" value="Send Invitation" class="btn-primary"> or <a href="#">Cancel</a>
+                                      <input type="submit" name="relation-Submit" value="Send Invitation" class="btn-primary"> or <a href="<?php echo base_url('index.php/common/page/send_invite');?>">Cancel</a>
                                   </p>
                             </div>
                         </form>
