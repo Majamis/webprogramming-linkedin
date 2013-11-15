@@ -15,6 +15,7 @@
 |
 */
 $config['base_url']	= 'http://localhost/webprogramming-linkedin/';
+//$config['base_url'] = 'http://intense-hollows-3458.herokuapp.com/';
 
 /*
 |--------------------------------------------------------------------------
