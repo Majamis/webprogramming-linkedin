@@ -25,7 +25,7 @@
     <?php echo link_css($css1) ?>
     <?php echo link_css($css2) ?>
     <?php echo link_css($css3) ?>
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
     
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->

@@ -51,7 +51,6 @@
         </li>
         <li class="postal-code">
             <label for="postalCode-location-employedProfileForm">
-              <abbr ><em>*</em></abbr>
               <span>Postal Code</span>
             </label>
             <div class="fieldgroup">
@@ -192,7 +191,7 @@
       <abbr title="This is a required field."><em>*</em></abbr> Age </span>
       </legend>
       <ul>
-        <li class="over-eighteen">
+        <li class="over-eighteen" id="SetAgeHere">
         <input type="checkbox" name="ageOverEighteen" value="" checked="" id="ageOverEighteen-studentAgeBirthday-studentProfileForm"><label for="ageOverEighteen-studentAgeBirthday-studentProfileForm">I am 18 or older.</label>
         <span class="info" id="control_gen_1"></span>
         <div id="info-callout" class="callout-container hidden">
@@ -206,7 +205,7 @@
         </div>
         </li>
         <li class="dob-chooser-error"><span class="error" id="studentAgeBirthday-studentProfileForm-error"></span></li>
-        <li class="dob-chooser" id="Setdb">
+        <li class="dob-chooser" id="Set_db">
         <p class="instruction">
           Please provide your date of birth
         </p>

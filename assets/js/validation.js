@@ -1,3 +1,7 @@
+var vall=1;
+  var std_set=1;
+  var looking_industry=1;
+  var adv_search=1;
 if(document.getElementById('motivation'))
 {
   
@@ -14,10 +18,9 @@ if(document.getElementById('motivation'))
   document.getElementById('StdLiTwo').style.display = "none";
   document.getElementById('age').style.display = "none";
   
-  var vall=1;
-  var std_set=1;
-  var looking_industry=1;
+  
   $("#selfEmployed-employeeCompany-employedProfileForm").click(function(){
+    document.getElementById('employedProfileForm_industry').style.display = "none";
     if(vall==1)
     {
       vall=0;
@@ -37,6 +40,7 @@ $("#employed-btn").click(function(){
   document.getElementById('EmpLiOne').style.display = "block";
   document.getElementById('EmpLiTwo').style.display = "block";
   document.getElementById('EmpLiThree').style.display = "block";
+  document.getElementById('employedProfileForm_industry').style.display = "none";
   //document.getElementById('employedProfileForm_industry').style.display = "block";
   document.getElementById('JobLiOne').style.display = "none";
   document.getElementById('JobLiTwo').style.display = "none";
@@ -54,11 +58,11 @@ $("#looking-btn").click(function(){
   document.getElementById('EmpLiOne').style.display = "none";
   document.getElementById('EmpLiTwo').style.display = "none";
   document.getElementById('EmpLiThree').style.display = "none";
-  //document.getElementById('employedProfileForm_industry').style.display = "none";
+  document.getElementById('employedProfileForm_industry').style.display = "none";
   document.getElementById('JobLiOne').style.display = "block";
   document.getElementById('JobLiTwo').style.display = "block";
   document.getElementById('JobLiThree').style.display = "block";
-  //document.getElementById('lookingProfileForm_industry').style.display = "block";
+  document.getElementById('lookingProfileForm_industry').style.display = "none";
   document.getElementById('JobLiFive').style.display = "block";
   document.getElementById('StdLiOne').style.display = "none"; 
   document.getElementById('StdLiTwo').style.display = "none";
@@ -69,18 +73,20 @@ $("#looking-btn").click(function(){
 })
 
 $("#selfEmployed-employeeCompany-lookingProfileForm").click(function(){
+  document.getElementById('lookingProfileForm_industry').style.display = "none";
   if(looking_industry==1)
   {
     looking_industry=0;
-  document.getElementById('employedProfileForm_industry').style.display = "none";
-  document.getElementById('JobLiThree').style.display = "block";
+  document.getElementById('lookingProfileForm_industry').style.display = "block";
+  document.getElementById('JobLiThree').style.display = "none";
   document.getElementById('JobLiFive').style.display = "block";
   }
   else if(looking_industry==0)
   {
     looking_industry=1;
     document.getElementById('JobLiThree').style.display = "none";
-  document.getElementById('employedProfileForm_industry').style.display = "block";
+  document.getElementById('lookingProfileForm_industry').style.display = "none";
+  document.getElementById('JobLiThree').style.display = "block";
   
   document.getElementById('JobLiFive').style.display = "block";
   }
@@ -91,11 +97,11 @@ $("#student-btn").click(function(){
   document.getElementById('EmpLiOne').style.display = "none";
   document.getElementById('EmpLiTwo').style.display = "none";
   document.getElementById('EmpLiThree').style.display = "none";
-  //document.getElementById('employedProfileForm_industry').style.display = "none";
+  document.getElementById('employedProfileForm_industry').style.display = "none";
   document.getElementById('JobLiOne').style.display = "none";
   document.getElementById('JobLiTwo').style.display = "none";
   document.getElementById('JobLiThree').style.display = "none";
-  //document.getElementById('lookingProfileForm_industry').style.display = "none";
+  document.getElementById('lookingProfileForm_industry').style.display = "none";
   document.getElementById('JobLiFive').style.display = "none";
   document.getElementById('StdLiOne').style.display = "block";  
   document.getElementById('StdLiTwo').style.display = "block";
@@ -106,7 +112,7 @@ $("#student-btn").click(function(){
 
 })
 
-$("#schoolText-school-education-studentProfileForm").click(function(){
+$("#studentProfileForm_school_ta").click(function(){
   if(document.getElementById('age').style.display == "none")
   {
     document.getElementById('age').style.display = "block";
@@ -114,38 +120,23 @@ $("#schoolText-school-education-studentProfileForm").click(function(){
 
 })
 
-$("#ageOverEighteen-studentAgeBirthday-studentProfileForm").click(function(){
+$("#SetAgeHere").click(function(){
   
     if(std_set==1)
     {
       std_set=0;
-      document.getElementById('Setdb').style.display = "block";
+      document.getElementById('Set_db').style.display = "block";
     }
     else if(std_set==0)
     {
       std_set=1;
-      document.getElementById('Setdb').style.display = "none";
+      document.getElementById('Set_db').style.display = "none";
     }
 
   
 })
 
 
-$("#age").click(function(){
-  if(document.getElementById('age').checked==true)
-  {
-    document.getElementById('Setdb').style.display = "none";
-
-  }
-  else
-  {
-    document.getElementById('Setdb').style.display = "block";
-
-
-  }
-
-
-})
 }
 
 $("#page5form").submit(function()
@@ -465,4 +456,35 @@ return true;
 }
 )
 
+/*
+if(document.getElementById('srp_container') || document.getElementById('main-search-category'))
+{
+  $("#advs-link").click(function(){
+      if(adv_search==1)
+      {
+        adv_search=0;
+        document.getElementById('advs').style.display= "block";
+      }
+      else if(adv_search==0)
+      {
+        adv_search=1;
+        document.getElementById('advs').style.display= "none";
+      }
 
+  })
+  $("#advanced-search").click(function(){
+      if(adv_search==1)
+      {
+        adv_search=0;
+        document.getElementById('advs').style.display= "block";
+      }
+      else if(adv_search==0)
+      {
+        adv_search=1;
+        document.getElementById('advs').style.display= "none";
+      }
+
+  })
+
+
+}*/
