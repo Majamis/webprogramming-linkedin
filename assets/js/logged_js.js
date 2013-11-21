@@ -88,11 +88,13 @@ jQuery(function($) {
       var size=0;
       var serviceURL = 'index.php/search/index';
       var input = this.value;
+      var e = document.getElementById("main-search-category");
+      var input2 = e.options[e.selectedIndex].value;
       $("#search_bar").html(prev_html);
     $.ajax({
             type: "POST",
             url:  serviceURL,
-            data: {data: input},
+            data: {data: input, data2:input2},
             success: function(data){
                $('#seach_div').hide();
               myObject = eval('(' + data + ')');
@@ -223,13 +225,15 @@ jQuery(function($) {
       var size=0;
       var serviceURL = 'index.php/search/index';
       var input =$("#main-search-box").val();
+      var e = document.getElementById("main-search-category");
+      var input2 = e.options[e.selectedIndex].value;
       var checkURL = 'index.php/search/is_connection';
 
       $("#results").html(result_prev_html);
     $.ajax({
             type: "POST",
             url:  serviceURL,
-            data: {data: input},
+            data: {data: input ,data2: input2},
             async:   false,
             success: function(data){
               myObject = eval('(' + data + ')');
@@ -391,3 +395,27 @@ jQuery(function($) {
 });
 }
 
+/*
+$('.all').click(function ()
+{
+  $('.all').attr('selected',"selected");
+   $('.people').attr('selected',"none");
+    $('.jobs').attr('selected',"none");
+    $('.companies').attr('selected',"none");
+});
+
+$('.people').click(function ()
+{
+  $('.people').attr('selected',"selected");
+});
+
+$('.jobs').click(function ()
+{
+  $('.jobs').attr('selected',"selected");
+});
+
+$('.companies').click(function ()
+{
+  $('.companies').attr('selected',"selected");
+});
+*/

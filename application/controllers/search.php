@@ -6,8 +6,25 @@ class Search extends CI_Controller {
   {
   	
   		$input = $_REQUEST['data'];
+      $value = $_REQUEST['data2'];
 		$this->load->model('search_model');
-		$result = $this->search_model->search_by_name($input);
+    //echo $value;
+    if($value == "all")
+    {
+		  $result = $this->search_model->search_by_name($input);
+    }
+    if($value == "people")
+    {
+
+    }
+    if($value == "jobs")
+    {
+
+    }
+    if($value == "company")
+    {
+
+    }
   } 
    public function index_2()
   {

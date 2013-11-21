@@ -1,0 +1,9 @@
+'Welcome unique@gmail.com!
+
+Thank-you for creating an account.
+
+Please confirm your account by copy and pasting the link below into your browsers address bar.
+
+http://localhost/webprogramming-linkedin/index.php/register/register/confirm/ddecc5886722e2c891ddf2e3333dae87
+
+Thanks!'
