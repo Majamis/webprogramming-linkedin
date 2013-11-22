@@ -395,27 +395,185 @@ jQuery(function($) {
 });
 }
 
-/*
+
 $('.all').click(function ()
-{
+{$("#main-search-category").prop("selectedIndex",0);
   $('.all').attr('selected',"selected");
-   $('.people').attr('selected',"none");
-    $('.jobs').attr('selected',"none");
-    $('.companies').attr('selected',"none");
+  $(".people").removeAttr("selected");
+   $(".jobs").removeAttr("selected");
+    $(".companies").removeAttr("selected");
 });
 
 $('.people').click(function ()
 {
+  $("#main-search-category").prop("selectedIndex",1);
   $('.people').attr('selected',"selected");
+   $(".all").removeAttr("selected");
+   $(".jobs").removeAttr("selected");
+    $(".companies").removeAttr("selected");
 });
 
 $('.jobs').click(function ()
 {
+  $("#main-search-category").prop("selectedIndex",2);
   $('.jobs').attr('selected',"selected");
+   $(".people").removeAttr("selected");
+   $(".all").removeAttr("selected");
+    $(".companies").removeAttr("selected");
 });
 
 $('.companies').click(function ()
 {
+  $("#main-search-category").prop("selectedIndex",3);
   $('.companies').attr('selected',"selected");
+   $(".people").removeAttr("selected");
+   $(".jobs").removeAttr("selected");
+    $(".all").removeAttr("selected");
 });
-*/
+
+
+//---------------newsfeed----------------//
+if(document.getElementById("feed-nhome"))
+{
+var discussion_prev_html=$('#discussion').html();
+var result_prev_html=$("#my-feed-post").html();
+$(document).ready(function(){
+jQuery(function($) {
+      var html="";
+      var html2="";
+      var myObject;
+      var myObject2;
+      var size=0;
+      var serviceURL = 'index.php/search/display_feeds';
+      var checkURL = 'index.php/search/display_comments';
+
+      $("#my-feed-post").html(result_prev_html);
+    $.ajax({
+            type: "POST",
+            url:  serviceURL,
+            async:   false,
+            success: function(data){
+              myObject = eval('(' + data + ')');
+              size=Object.keys(myObject).length;
+            $(".title").html(myObject[0].Company);
+              for (var i=0;i<size;i++)
+          { 
+             
+              
+                $('.name-newsfeed').html(myObject[i].fname + ' ' + myObject[i].lname);
+               $(".newsfeed-photo").attr("src",myObject[i].thumbnail);
+               $('.text-newsfeed').html(myObject[i].text);
+               $('.nus-timestamp').html(myObject[i].time);
+            
+
+           
+
+            
+
+            $.ajax({
+              type: "POST",
+              dataType: "json",
+              async:   false,
+              url:  checkURL,
+              data: {data: myObject[i].id},
+              success: function(data2){
+               is_true="";
+               is_true = data2;
+               if(is_true != 1)
+               {
+              myObject2 = eval('(' + data2 + ')');
+              size2=Object.keys(myObject2).length;
+            for(var j=0;j<size2;j++)
+            {
+               $('.focus-comment-form').html("Comment ("+ size2+ ")");
+               $('.name_comment').html(myObject2[j].fname + ' ' + myObject2[j].lname);
+               $(".comment-photo").attr("src",myObject2[j].thumbnail);
+               $('.text-comment').html(myObject2[j].text);
+               $('.nus-timestamp').html(myObject2[j].time);
+               html2=html2 + $('#discussion').html();
+            }
+          
+             $('#discussion').html(html2);
+            }
+          }
+          , dataType: 'html'
+        
+          });
+            html=html + $("#my-feed-post").html();
+          }
+           $("#my-feed-post").html(html);
+
+            //alert(data);   // data printed on echoed on the server side.
+            },
+            error:function(x,e)
+            {
+              if(x.status==0){
+              alert('You are offline!!\n Please Check Your Network.');
+              }else if(x.status==404){
+              alert('Requested URL not found.');
+              }else if(x.status==500){
+              alert('Internel Server Error.');
+              }else if(e=='parsererror'){
+              alert('Error.\nParsing JSON Request failed.');
+              }else if(e=='timeout'){
+              alert('Request Time out.');
+              }else {
+              alert('Unknow Error.\n'+x.responseText);
+              }
+            },
+            dataType: 'html'
+          });     
+          
+      });
+
+});
+var changestatus=1;
+$("#openstatus").click(function(){
+  //sstring='<div id="openstatus" class="menu-basic styled-dropdown open">';
+  if(changestatus==1)
+  {
+  changestatus=0;
+  $("#openstatus").addClass('open');
+  }
+  else if(changestatus==0)
+  {
+  changestatus=1;
+  $("#openstatus").removeClass('open');
+  }
+  })
+
+
+$("#secondstatus").mouseover(function(){
+  //sstring='<div id="openstatus" class="menu-basic styled-dropdown open">';
+  $('#firststatus').removeClass('selected');
+  $('#firststatus').removeClass('highlighted');
+  $('#secondstatus').addClass('selected');
+  $('#secondstatus').addClass('highlighted');
+  $('#thirdstatus').removeClass('selected');
+  $('#thirdstatus').removeClass('highlighted');
+  
+  })
+$("#thirdstatus").mouseover(function(){
+  //sstring='<div id="openstatus" class="menu-basic styled-dropdown open">';
+  $('#firststatus').removeClass('selected');
+  $('#firststatus').removeClass('highlighted');
+  $('#secondstatus').removeClass('selected');
+  $('#secondstatus').removeClass('highlighted');
+  $('#thirdstatus').addClass('selected');
+  $('#thirdstatus').addClass('highlighted');
+  
+  })
+$('#secondstatus').click(function(){
+  $('#doc-sharing-visibility').prop('selectedIndex',0);
+  document.getElementById('valueofselected').innerHTML="Public";
+
+})
+$('#thirdstatus').click(function(){
+  $('#doc-sharing-visibility').prop('selectedIndex',1);
+  document.getElementById('valueofselected').innerHTML="Connections";
+
+})
+
+}
+
+

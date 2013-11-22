@@ -68,13 +68,13 @@ DROP TABLE IF EXISTS "useradditionalinfo";
 
 CREATE TABLE "useradditionalinfo" (
   "UserId" integer NOT NULL references users("userid"),
-  "Country" varchar(255) NOT NULL,
-  "PostalCode" integer NOT NULL,
-  "JTitle" varchar(255) NOT NULL,
-  "SelfEmp" boolean NOT NULL,
+  "Country" varchar(255) DEFAULT NULL,
+  "PostalCode" integer DEFAULT NULL,
+  "JTitle" varchar(255) DEFAULT NULL,
+  "SelfEmp" varchar(255) DEFAULT NULL,
   "Company" varchar(255) DEFAULT NULL,
   "Industry" varchar(255) DEFAULT NULL,
-  "TypeId" varchar(255) NOT NULL,
+  "TypeId" varchar(255) DEFAULT NULL,
   "Picture" varchar(255) DEFAULT NULL,
   "thumbnail" varchar(255) DEFAULT NULL,
   PRIMARY KEY ("UserId")

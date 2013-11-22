@@ -15,7 +15,7 @@ class Search extends CI_Controller {
     }
     if($value == "people")
     {
-
+      $result = $this->search_model->search_by_name("Fast-Nu");
     }
     if($value == "jobs")
     {
@@ -38,6 +38,18 @@ class Search extends CI_Controller {
   	$userid = $_REQUEST['data'];
   	$this->load->model('search_model');
   	$this->search_model->search_is_connection($userid);
+  }
+
+  public function display_feeds()
+  {
+    $this->load->model('search_model');
+    $this->search_model->display_user_feeds();
+  }
+  public function display_comments()
+  {
+    $input = $_REQUEST['data'];
+    $this->load->model('search_model');
+    $this->search_model->display_feed_comments($input);
   }
 }
 ?>
