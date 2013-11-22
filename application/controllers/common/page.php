@@ -49,10 +49,11 @@ class page extends CI_Controller{
 			$data['search_text'] = $this->security->xss_clean($this->input->get('keywords'));
             $data['heading'] = "Home";
             $data['css1'] = "header_logged";
-			$data['css2'] = "";
+			$data['css2'] = "newsfeed";
 			$data['css3'] = "";
 			$this->load->view('common/header',$data);
             $this->load->view('common/header_home',$data);
+            $this->load->view('home/newsfeed');
             $this->load->view('common/footer_home',$data);
            // $this->load->view('common/mynav',$data);
 			
