@@ -572,10 +572,6 @@ margin-bottom: 5px;
 margin-bottom: 5px;
 }
 
-.post .share-edit label {
-font-size: 100%;
-display: none;
-}
 
 .post .share-edit .text, .post .share-edit textarea {
 font-size: 12px;
@@ -608,7 +604,7 @@ width: 100%;
 margin-top: 10px;
 margin-bottom: 15px;
 }
-.post-home.share-box #post-module-neu.inactive .post-actions {
+.post-home.share-box #post-module-neu.upload_preview .post-actions, .post-home.share-box #post-module-neu.active_message .post-actions {
 display: table;
 }
 
@@ -619,7 +615,7 @@ display: table-row;
 .post .post-actions .settings {
 position: absolute;
 top: 6px;
-display: none;
+display: inline;
 left: 125px;
 }
 .post-home.share-box .post-actions .settings {
@@ -635,6 +631,9 @@ top: 0;
 position: relative;
 vertical-align: middle;
 }
+.post-home.share-box #post-module-neu.active_message .post-actions .settings {
+ 			display: block;
+ 		}
 #slick-sharing-cont.post-home.share-box #post-module #post-module-neu #share-settings {
 width: auto;
 }
@@ -723,6 +722,11 @@ position: absolute;
 z-index: 200;
 background: #fff;
 }
+.js .styled-dropdown.open ul, .js .styled-dropdown.open iframe {
+ 			display: block;
+ 			left: auto;
+ 		}
+
 .post-home.share-box .post-actions .settings .menu-basic .doc-sharing-dropdown {
 background: #fff;
 border: 1px solid #ccc;
@@ -743,6 +747,21 @@ width: auto;
 width: auto;
 }
 
+.post-home.share-box .post-actions .settings .menu-basic .doc-sharing-dropdown li {
+cursor: pointer;
+}
+
+.post-home.share-box .post-actions .settings .menu-basic .doc-sharing-dropdown li a, .post-home.share-box .post-actions .settings .menu-basic .doc-sharing-dropdown li div {
+color: #0073b2;
+display: block;
+font-weight: bold;
+padding: 5px 0 5px 75px;
+}
+
+.post-home.share-box .post-actions .settings .menu-basic .doc-sharing-dropdown li.selected.highlighted div {
+background: url('sprite_sharing_v13.png') no-repeat 55px -1618px #0073b2 !important;
+color: #fff;
+}
 .post-home.share-box .post-actions .settings .arrows {
 background: url('/scds/common/u/img/sprite/sprite_share_module_v2.png') no-repeat -46px -117px;
 cursor: pointer;
@@ -815,6 +834,26 @@ display: inline-block;
 vertical-align: middle;
 zoom: 1;
 vertical-align: middle;
+}
+#slick-sharing-cont.post-home.share-box #post-module #post-module-neu #share-submit:hover{
+	background-color: #2672ae;
+filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF2672AE', endColorstr='#FF1E4F7E');
+background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2672ae), color-stop(100%, #1e4f7e));
+background-image: -webkit-linear-gradient(top, #2672ae 0%,#1e4f7e 100%);
+background-image: -moz-linear-gradient(top, #2672ae 0%,#1e4f7e 100%);
+background-image: -o-linear-gradient(top, #2672ae 0%,#1e4f7e 100%);
+background-image: linear-gradient(top, #2672ae 0%,#1e4f7e 100%);
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+}
+
+.post .post-actions:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
 }
 
 .post-home.share-box .clear {

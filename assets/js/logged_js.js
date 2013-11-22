@@ -435,12 +435,13 @@ $('.companies').click(function ()
 //---------------newsfeed----------------//
 if(document.getElementById("feed-nhome"))
 {
-var discussion_prev_html=$('#discussion').html();
+var discussion_prev_html=$('.comments_field').html();
 var result_prev_html=$("#my-feed-post").html();
 $(document).ready(function(){
 jQuery(function($) {
       var html="";
       var html2="";
+      var html3="";
       var myObject;
       var myObject2;
       var size=0;
@@ -459,7 +460,7 @@ jQuery(function($) {
               for (var i=0;i<size;i++)
           { 
              
-              
+              $("#mentions-data").attr("value",myObject[i].id);
                 $('.name-newsfeed').html(myObject[i].fname + ' ' + myObject[i].lname);
                $(".newsfeed-photo").attr("src",myObject[i].thumbnail);
                $('.text-newsfeed').html(myObject[i].text);
@@ -479,29 +480,49 @@ jQuery(function($) {
               success: function(data2){
                is_true="";
                is_true = data2;
+                html2[i]="";
+                html3="";
                if(is_true != 1)
                {
               myObject2 = eval('(' + data2 + ')');
               size2=Object.keys(myObject2).length;
+
             for(var j=0;j<size2;j++)
             {
+
+              //$('.comments_field').addClass(i+'st');
+              //$('.'+i+'st').removeClass('comments_field');
                $('.focus-comment-form').html("Comment ("+ size2+ ")");
                $('.name_comment').html(myObject2[j].fname + ' ' + myObject2[j].lname);
                $(".comment-photo").attr("src",myObject2[j].thumbnail);
                $('.text-comment').html(myObject2[j].text);
                $('.nus-timestamp').html(myObject2[j].time);
-               html2=html2 + $('#discussion').html();
+               //html2[i]=html2[i] + $('.'+i+'st').html();
+               //chtml=$('.comments_field').html();
+               //html2[i]=html2[i] + $('.comments_field').html();
+               html3=html3+$('.comments_field').html();
             }
           
-             $('#discussion').html(html2);
+             //$('.'+i+'st').html(html2);
+             //html2="";
             }
+            else
+               $('.focus-comment-form').html("Comment (0)");
           }
           , dataType: 'html'
         
           });
+            $('.comments_field').html(html3);
             html=html + $("#my-feed-post").html();
+            $('.comments_field').html(discussion_prev_html);
+
+             //$('.'+i+'st').addClass('comments_field');
+             //$('.comments_field').removeClass(i+'st');
           }
+
            $("#my-feed-post").html(html);
+            // for(var i=0;i<size;i++)
+          //  $('.'+i+'st').html(html2[i]);
 
             //alert(data);   // data printed on echoed on the server side.
             },

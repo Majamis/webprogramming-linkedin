@@ -39,7 +39,7 @@
 										<dd>100MB</dd>
 									</dl>
 									<a href="#" id="file-supported-dialog-close">x</a>
-									<form action="/nhome/submit-post" method="POST" name="postModuleForm" novalidate="novalidate" class="doc-sharing-form post" gbpush="true" id="share-form">
+									<form action="<?php echo base_url().'index.php/home/newsfeed/submit_feed'?>" method="POST" name="postModuleForm" novalidate="novalidate" class="doc-sharing-form post" gbpush="true" id="share-form">
 										<input type="hidden" value="true" name="ajax" id="share-ajax">
 										<input type="hidden" value="0" name="contentImageCount" id="share-img-total">
 										<input type="hidden" value="-1" name="contentImageIndex" id="share-img-selected-idx">
@@ -225,7 +225,7 @@
 												</li>
 												<li class="feed-comment">
 												<a href="#" class="focus-comment-form" title="Click to comment on this update" rel="comment-U-5809578176652779520-M-281376742" role="button">
-												Comment (<span>2</span>) </a>
+												Comment (<span>0</span>) </a>
 												</li>
 												<li class="feed-share">
 												<a href="#" title="Share" role="button">Share</a>
@@ -235,7 +235,7 @@
 											41m ago </span>
 										</div>
 										<div class="comments" id="discussion" style="display: block;">
-											<ul>
+											<ul class="comments_field">
 												<li class="pre-rendered ">
 												<span class="thumb">&nbsp;</span>
 												<p>
@@ -263,12 +263,12 @@
 												
 											</ul>
 											<div class="form mini">
-												<form action="#">
+												<form action="<?php echo base_url().'index.php/home/newsfeed/submit_comment'?>" method="post">
 													<label for="comment-body-U-5809578176652779520-M-281376742-5809578176652779520" style="display: none;" id="comment-body-U-5809578176652779520-M-281376742-5809578176652779520-label" class="ghost">Add a comment…</label>
 													<div id="mentions-container-U-5809578176652779520-M-281376742-5809578176652779520" class="mentions-container">
 														<pre class="mentions-highlighter" id="comment-highlighter-U-5809578176652779520-M-281376742-5809578176652779520">
 														</pre>
-														<textarea class="texta comment-text mentions-input" id="comment-body-U-5809578176652779520-M-281376742-5809578176652779520" placeholder="Add a comment" style="height: 51.5px;"></textarea>
+														<textarea name="postText1" class="texta comment-text mentions-input" id="comment-body-U-5809578176652779520-M-281376742-5809578176652779520" placeholder="Add a comment" style="height: 51.5px;"></textarea>
 														<p class="check-textarea-message info" id="warningcomment-body-U-5809578176652779520-M-281376742-5809578176652779520" style="display: none;">
 															 You may add up to <strong>693</strong> more characters.
 														</p>
@@ -299,7 +299,7 @@
 															</div>
 														</div>
 													</div>
-													<input type="hidden" name="mentions" id="mentions-data-U-5809578176652779520-M-281376742-5809578176652779520" value="[]">
+													<input type="hidden" name="mentions" id="mentions-data" value="[]">
 													<div class="actions">
 														<input type="submit" class="post-comment btn-primary" value="Comment">
 													</div>
