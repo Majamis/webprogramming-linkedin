@@ -32,11 +32,30 @@ CREATE TABLE `add_contact_notification` (
   KEY `contact_userid` (`contact_userid`),
   CONSTRAINT `add_contact_notification_ibfk_1` FOREIGN KEY (`userid`) REFERENCES `users` (`userid`),
   CONSTRAINT `add_contact_notification_ibfk_2` FOREIGN KEY (`contact_userid`) REFERENCES `users` (`userid`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `add_contact_notification` */
 
-insert  into `add_contact_notification`(`id`,`userid`,`contact_userid`,`personal_note`,`relationid`,`time_date`) values (1,78,88,'Please accept','1','2013-10-23'),(3,78,99,'hello','1','2013-12-30');
+/*Table structure for table `comments_newsfeed` */
+
+DROP TABLE IF EXISTS `comments_newsfeed`;
+
+CREATE TABLE `comments_newsfeed` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nf_id` int(11) NOT NULL,
+  `userid` int(11) NOT NULL,
+  `text` varchar(255) DEFAULT NULL,
+  `time` date NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `nf_id` (`nf_id`),
+  KEY `userid` (`userid`),
+  CONSTRAINT `comments_newsfeed_ibfk_2` FOREIGN KEY (`userid`) REFERENCES `users` (`userid`),
+  CONSTRAINT `comments_newsfeed_ibfk_1` FOREIGN KEY (`nf_id`) REFERENCES `newsfeed` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+
+/*Data for the table `comments_newsfeed` */
+
+insert  into `comments_newsfeed`(`id`,`nf_id`,`userid`,`text`,`time`) values (1,1,87,'SUP','2013-11-05'),(2,8,78,'EVERYONE','0000-00-00'),(3,7,78,'SSUPS','0000-00-00'),(5,1,87,'Gotcha','0000-00-00'),(6,1,87,'SUP','0000-00-00'),(10,2,78,'','2013-11-22'),(11,10,78,'','2013-11-22'),(12,8,78,'','2013-11-22'),(13,2,78,'asd','2013-11-22'),(14,2,78,'hi whatsup?','2013-11-22'),(15,6,78,'you there mate?','2013-11-22'),(16,1,88,'you head me nigga','2013-11-22'),(17,11,88,'hey mate','2013-11-22'),(18,2,78,'howdie!','2013-11-23');
 
 /*Table structure for table `confirm` */
 
@@ -48,31 +67,50 @@ CREATE TABLE `confirm` (
   `key` varchar(128) NOT NULL DEFAULT '',
   `email` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=97 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=115 DEFAULT CHARSET=latin1;
 
 /*Data for the table `confirm` */
 
-insert  into `confirm`(`id`,`userid`,`key`,`email`) values (64,'76','0eb991bb98c5bd99d9084c9dcee0e20b','omerzahidbajwa@gmail.com'),(65,'77','7c0ee3c1250fb5dca438030422cf2ac4','majamis@gmail.com'),(66,'78','0eb991bb98c5bd99d9084c9dcee0e20b','omerzahidbajwa@gmail.com'),(67,'79','77544b2e2ec960d0cda387650e3310d6','bajwa@gmail.com'),(68,'80','b81ff85a332eaf869918c62a4035beac','sbs@gmial.com'),(69,'81','7d2901dddbaa1ab2d7fe047f040a3770','nfbd@gmail.com'),(70,'82','102c0dfd0034a13b69af556f6d16a3f3','dhd@gmail.com'),(71,'83','8e39834c92c3d9d08dda2fa0571ede22','dgnd@gmail.com'),(72,'84','1ce4a5a3251359227d546fe9afe0bbf1','dghd@gmail.com'),(73,'85','9f44a3294119ebe017890f8a84816361','fnhf@gmail.com'),(74,'86','6a1b6221b74810da254fa53b8df4bd16','ngdbd@gmail.com'),(75,'87','d4d615291ac9776af4cc61fe85eecd6c','acasda@gmail.com'),(76,'88','6b1302828e8abe8f530fbb3c5483a89a',''),(77,'89','4a403ee523beb5f0c484ccc0e4ec7bd7','aada@gmail.com'),(78,'90','25d805746e23935972c2cd3c90c5c50a','hello@gmail.com'),(79,'91','f200a28ad6ced7be7520507ccdc85e11','qwer@gmail.com'),(80,'92','edd5a8ae2179bdfffc43f1c5036a1e6a','svsd@gmail.com'),(81,'93','2d29b1325f1e080908bfada8cdf337bf','adminyy@gmail.com'),(82,'94','36f8753cbb3e86173a592c8e46c417e1','adm2inyy@gmail.com'),(83,'95','91482b7ba025b1a6f199d8fb23d48832','adm2inyyy@gmail.com'),(84,'96','b1b4f20da175a44f9ffdc8512e81a7b1','adm2ittnyyy@gmail.com'),(85,'97','f17b80298e14eead87c994e815a82fcb','adm2it12tnyyy@gmail.com'),(86,'98','750f203b23a3998f4739ba38e8c14fe4','adm2its12tnyyy@gmail.com'),(87,'99','f20e8de0e0f6e42d3639d0690d7e7e40','adm2its1222tnyyy@gmail.com'),(88,'100','1a3037abf77cf4fb2c016942934a1857','adm2its1222tn12yyy@gmail.com'),(89,'101','5a7a7034aa36dc16e95225bb2a179e2a','adm2its1sds222tn12yyy@gmail.com'),(90,'102','d333a6ab9f38f3c2bacc782c2fc0adbf','admin123@gmail.com'),(91,'103','bac68eb798929e2567bc10b19d3dae0b','admin245@gmail.com'),(92,'104','525258c2e75f8d36a79fe53fb4d12134','adminsds245@gmail.com'),(93,'105','709c2cf39012527b78ca3b67acd6f386','adminsdasds245@gmail.com'),(94,'106','23715602118b5cff133cfc66d1f4ede8','asdh@gmail.com'),(95,'107','c853399a7738bcaae80241c903bdf98c','1234@gmail.com'),(96,'108','4e853602fb33f8bdc059d98b34db72b8','admin1234@gmail.com');
+insert  into `confirm`(`id`,`userid`,`key`,`email`) values (102,'114','ba7c30275a0a77dc180d634a12f8af5e','zxc@gmail.com'),(103,'79','08daf44c0b254992959aec63c67aea68','adaaasaminasdasssdasasda@gmasi;.com'),(104,'127','93784180a643c97296f82ba212da84c6','123@gmail.com'),(105,'128','fb0aa711f115409ebc85445ecb31562b','azdadasd@gmail.com'),(106,'129','36c0a3b639648cdc72145ece5c7d79cd','admin@sdasdm.com'),(107,'130','d18527ec42ae2b8f2572339fb3051a59','admissn@sdasdm.com'),(108,'131','6927afedbc3bade9a1c1350a17bdb16b','admisdsdssn@sdasdm.com'),(109,'132','3cf0765cddd1cb86b289e0ce1ae3b907','bajwa@gmail.com123'),(110,'133','a85b2da2833b897787dbfdc7b04f367f','asdasdas@gmail.comasdasd'),(111,'134','ddecc5886722e2c891ddf2e3333dae87','unique@gmail.com'),(112,'135','540b4786de958b12d11d55ef71705482','123456@gmail.com'),(113,'136','c63fd833ebb6245816535b3cb9a063e6','1234256@gmail.com'),(114,'137','23eaf1c77c3e4466728fc8d6129a7ecc','azb@gmail.com');
 
 /*Table structure for table `contacts_info` */
 
 DROP TABLE IF EXISTS `contacts_info`;
 
 CREATE TABLE `contacts_info` (
-  `ContactId` int(11) NOT NULL AUTO_INCREMENT,
-  `UserIdd` int(11) DEFAULT NULL,
-  `FName` varchar(40) NOT NULL,
-  `LName` varchar(40) NOT NULL,
-  `UserName` varchar(40) NOT NULL,
-  `Email` varchar(40) NOT NULL,
-  `Password` varchar(40) NOT NULL,
-  `Type` varchar(40) NOT NULL COMMENT 'Enter the name of API integration',
-  PRIMARY KEY (`ContactId`),
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `UserIdd` int(11) NOT NULL,
+  `ContactId` int(11) NOT NULL,
+  PRIMARY KEY (`Id`),
   KEY `UserIdd` (`UserIdd`),
+  KEY `ContactId` (`ContactId`),
+  CONSTRAINT `contacts_info_ibfk_1` FOREIGN KEY (`ContactId`) REFERENCES `users` (`userid`),
   CONSTRAINT `UserIdd` FOREIGN KEY (`UserIdd`) REFERENCES `users` (`userid`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=103 DEFAULT CHARSET=latin1;
 
 /*Data for the table `contacts_info` */
+
+insert  into `contacts_info`(`Id`,`UserIdd`,`ContactId`) values (96,78,78),(97,78,94),(98,78,95),(99,78,108),(100,78,90),(101,78,102),(102,78,93);
+
+/*Table structure for table `newsfeed` */
+
+DROP TABLE IF EXISTS `newsfeed`;
+
+CREATE TABLE `newsfeed` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `userid` int(11) NOT NULL,
+  `text` varchar(255) DEFAULT NULL,
+  `status` varchar(255) NOT NULL,
+  `time` date NOT NULL,
+  `picture` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `userid` (`userid`),
+  CONSTRAINT `newsfeed_ibfk_1` FOREIGN KEY (`userid`) REFERENCES `users` (`userid`)
+) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=latin1;
+
+/*Data for the table `newsfeed` */
+
+insert  into `newsfeed`(`id`,`userid`,`text`,`status`,`time`,`picture`) values (1,78,'1','EVERYONE','2013-11-20',NULL),(2,78,'2','CONNECTIONS','0000-00-00',NULL),(3,88,'3','CONNECTIONS','2013-11-19',NULL),(4,94,'4','CONNECTIONS','0000-00-00',NULL),(5,110,'5','EVERYONE','0000-00-00',NULL),(6,78,'6','EVERYONE','2013-11-22',NULL),(7,78,'7','EVERYONE','2013-11-22',NULL),(8,78,'8','EVERYONE','2013-11-22',NULL),(9,78,'9','EVERYONE','2013-11-22',NULL),(10,78,'10','CONNECTIONS','2013-11-22',NULL),(11,78,'11','EVERYONE','2013-11-22',NULL),(12,78,'12','CONNECTIONS','2013-11-22',NULL),(13,78,'13','CONNECTIONS','2013-11-22',NULL),(14,78,'here you go','EVERYONE','2013-11-23',NULL),(15,78,'sup?','EVERYONE','2013-11-23',NULL),(16,78,'thats it!','EVERYONE','2013-11-23',NULL),(17,78,'weehaa','EVERYONE','2013-11-23',NULL),(18,78,'supaaa!','EVERYONE','2013-11-23',NULL),(19,78,'','EVERYONE','2013-11-23',NULL),(20,78,'','EVERYONE','2013-11-23',NULL),(21,78,'','EVERYONE','2013-11-23',NULL),(22,78,'','EVERYONE','2013-11-23',NULL),(23,78,'','EVERYONE','2013-11-23',NULL),(24,78,'','EVERYONE','2013-11-23',NULL),(25,78,'','EVERYONE','2013-11-23',NULL),(26,78,'','EVERYONE','2013-11-23',NULL),(27,78,'','EVERYONE','2013-11-23',''),(28,78,'','EVERYONE','2013-11-23',''),(29,78,'','EVERYONE','2013-11-23',''),(30,78,'herere','EVERYONE','2013-11-23',''),(31,78,'','EVERYONE','2013-11-23',''),(32,78,'asdsad','EVERYONE','2013-11-23',''),(33,78,'asdsadasda','EVERYONE','2013-11-23',''),(34,78,'asdsa','EVERYONE','2013-11-23',''),(35,78,'asdsa','EVERYONE','2013-11-23',''),(36,78,'asdsa','EVERYONE','2013-11-23',''),(37,78,'sd','EVERYONE','2013-11-23',''),(38,78,'sd','EVERYONE','2013-11-23',''),(39,78,'sdasda','EVERYONE','2013-11-23',''),(40,78,'asdas','EVERYONE','2013-11-23',''),(41,78,'asdas','EVERYONE','2013-11-23',''),(42,78,'asdasasd','EVERYONE','2013-11-23',NULL),(43,78,'asdasasd','EVERYONE','2013-11-23',NULL),(44,78,'this is it !','EVERYONE','2013-11-23',''),(45,78,'asdasdas sup!','EVERYONE','2013-11-23',NULL),(46,78,'12345','EVERYONE','2013-11-23',NULL),(47,78,'az','EVERYONE','2013-11-23','uploads/images/snake23.jpg');
 
 /*Table structure for table `relation_types` */
 
@@ -126,7 +164,7 @@ CREATE TABLE `useradditionalinfo` (
 
 /*Data for the table `useradditionalinfo` */
 
-insert  into `useradditionalinfo`(`UserId`,`Country`,`PostalCode`,`JTitle`,`SelfEmp`,`Company`,`Industry`,`TypeId`,`Picture`,`thumbnail`) values (78,'pk',5440,'Student',0,'Fast-NU','8','student','','uploads/images/thumb/snake18.jpg'),(80,'pk',0,'sdfdf',0,'sdfsdfs','','student','','uploads/images/thumb/snake18.jpg'),(81,'pk',54850,'test',0,'','129','student','','uploads/images/thumb/snake18.jpg'),(82,'pk',5166,'test',0,'','129','looking','','uploads/images/thumb/snake18.jpg'),(83,'an',651616,'test111',0,'','138','looking','','uploads/images/thumb/snake18.jpg'),(88,'',0,'',0,'','','','','uploads/images/thumb/snake18.jpg'),(90,'pk',54600,'testing',0,'','54','student','','uploads/images/thumb/snake18.jpg'),(91,'pk',7894,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(92,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(93,'pk',544,'444',0,'123123','54','student','','uploads/images/thumb/snake18.jpg'),(94,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(95,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(96,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(97,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(98,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(99,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(100,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(101,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(102,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(103,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(104,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(105,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(107,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(108,'pk',0,'works at caramel tech',0,'apple','','employed','uploads/images/snake19.jpg','uploads/images/thumb/snake19.jpg');
+insert  into `useradditionalinfo`(`UserId`,`Country`,`PostalCode`,`JTitle`,`SelfEmp`,`Company`,`Industry`,`TypeId`,`Picture`,`thumbnail`) values (78,'pk',5440,'Student',0,'Fast-NU','8','student','','uploads/images/thumb/snake18.jpg'),(80,'pk',0,'sdfdf',0,'sdfsdfs','','student','','uploads/images/thumb/snake18.jpg'),(81,'pk',54850,'test',0,'Fast-NU','129','student','','uploads/images/thumb/snake18.jpg'),(82,'pk',5166,'test',0,'Fast-NU','129','looking','','uploads/images/thumb/snake18.jpg'),(83,'an',651616,'test111',0,'Fast-NU','138','looking','','uploads/images/thumb/snake18.jpg'),(88,'',0,'',0,'Fast-NU','','','','uploads/images/thumb/snake18.jpg'),(90,'pk',54600,'testing',0,'Fast-NU','54','student','uploads/images/thumb/snake18.jpg','uploads/images/thumb/snake18.jpg'),(91,'pk',7894,'',0,'Fast-NU','','employed','','uploads/images/thumb/snake18.jpg'),(92,'pk',0,'',0,'Fast-NU','','employed','','uploads/images/thumb/snake18.jpg'),(93,'pk',544,'444',0,'123123','54','student','','uploads/images/thumb/snake18.jpg'),(94,'pk',0,'',0,'Fast-NU','','employed','','uploads/images/thumb/snake18.jpg'),(95,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(96,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(97,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(98,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(99,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(100,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(101,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(102,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(103,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(104,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(105,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(107,'pk',0,'',0,'','','employed','','uploads/images/thumb/snake18.jpg'),(108,'pk',0,'works at caramel tech',0,'apple','','employed','uploads/images/snake19.jpg','uploads/images/thumb/snake19.jpg'),(110,'pk',0,'',0,'','','employed',NULL,NULL),(113,'pk',544,'student',0,'','94','employed','','uploads/images/thumb/'),(114,'pk',142,'asdsada',0,'asdasdas','','employed','uploads/images/snake20.jpg','uploads/images/thumb/snake20.jpg'),(127,'pk',0,'asdasd',0,'asdasd','','employed','','uploads/images/thumb/'),(132,'pk',0,'asd',0,'asd','','employed','uploads/images/snake21.jpg','uploads/images/thumb/snake21.jpg'),(133,'pk',5444,'12321',0,'123123','','employed','','uploads/images/thumb/'),(134,'pk',323,'student',0,'Fastnu','','employed','uploads/images/snake22.jpg','uploads/images/thumb/snake22.jpg'),(136,'pk',1234,'12333',0,'12312321','','employed','','uploads/images/thumb/'),(137,'pk',5442,'Student',0,'Fast-NU','','employed',NULL,NULL);
 
 /*Table structure for table `users` */
 
@@ -140,11 +178,11 @@ CREATE TABLE `users` (
   `password` varchar(255) NOT NULL,
   `validate` tinyint(1) NOT NULL,
   PRIMARY KEY (`userid`)
-) ENGINE=InnoDB AUTO_INCREMENT=109 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=138 DEFAULT CHARSET=latin1;
 
 /*Data for the table `users` */
 
-insert  into `users`(`userid`,`fname`,`lname`,`username`,`password`,`validate`) values (78,'Omer','Zahid','omerzahidbajwa@gmail.com','hello123',1),(79,'omer','zahid','bajwa@gmail.com','asd1231',0),(80,'b dbsfb','bsfbsd','sbs@gmial.com','dhdfgdfgdf',0),(81,'vsfsdfs','sgsdfs','nfbd@gmail.com','svsgsdfsdf',0),(82,'nhrgbfgb','hdbfgn','dhd@gmail.com','sgsfsdfsdf',0),(83,'vsdvsdv','sbsbd','dgnd@gmail.com','sbdvdvss',0),(84,'gegfdgdf','dfgdfgdfg','dghd@gmail.com','sgfsgsdfsdf',0),(85,'afsdfsdf','sgdfgdf','fnhf@gmail.com','sgsfsdf',0),(86,'afasfds','dfgdfg','ngdbd@gmail.com','dsbgsfsd',0),(87,'svbsdc','bsvsdv','acasda@gmail.com','sfsdfsdgsd',0),(88,'','','admin','admin',1),(89,'vacasc','avasas','aada@gmail.com','fddasdasd',0),(90,'ahsen','arif','hello@gmail.com','qwerty',0),(91,'qwer','qqwer','qwer@gmail.com','qwerty',0),(92,'asda','afsva','svsd@gmail.com','sgsdfsdf',0),(93,'Omer','Zahid','adminyy@gmail.com','1234567',0),(94,'Omer','Zahid','adm2inyy@gmail.com','1234567',0),(95,'Omer','Zahid','adm2inyyy@gmail.com','1231232131231',0),(96,'Omer','Zahid','adm2ittnyyy@gmail.com','12312321321',0),(97,'Omer','Zahid','adm2it12tnyyy@gmail.com','12312321321321',0),(98,'Omer','Zahid','adm2its12tnyyy@gmail.com','12312312321',0),(99,'Omer','Zahid','adm2its1222tnyyy@gmail.com','123456',0),(100,'Omer','Zahid','adm2its1222tn12yyy@gmail.com','1234567',0),(101,'Omer','Zahid','adm2its1sds222tn12yyy@gmail.com','sadasdasdasda',0),(102,'omer','zahid','admin123@gmail.com','1234567',0),(103,'omerzahid','sdsds','admin245@gmail.com','1234567',0),(104,'omerzahidsd','sdsds','adminsds245@gmail.com','1235567',0),(105,'omerzahidsd','sdsds','adminsdasds245@gmail.com','12132131',1),(106,'ahsd','asdh','asdh@gmail.com','asdasdasdas',0),(107,'asdasdas','asdasdsa','1234@gmail.com','12345678',0),(108,'Ahsen','Arif','admin1234@gmail.com','12345678',0);
+insert  into `users`(`userid`,`fname`,`lname`,`username`,`password`,`validate`) values (78,'Omer1','Zahid','omerzahidbajwa@gmail.com','hello123',1),(79,'omer2','zahid','bajwa@gmail.com','asd1231',0),(80,'b dbsfb','bsfbsd','sbs@gmial.com','dhdfgdfgdf',0),(81,'vsfsdfs','sgsdfs','nfbd@gmail.com','svsgsdfsdf',0),(82,'nhrgbfgb','hdbfgn','dhd@gmail.com','sgsfsdfsdf',0),(83,'vsdvsdv','sbsbd','dgnd@gmail.com','sbdvdvss',0),(84,'gegfdgdf','dfgdfgdfg','dghd@gmail.com','sgfsgsdfsdf',0),(85,'afsdfsdf','sgdfgdf','fnhf@gmail.com','sgsfsdf',0),(86,'afasfds','dfgdfg','ngdbd@gmail.com','dsbgsfsd',0),(87,'svbsdc','bsvsdv','acasda@gmail.com','sfsdfsdgsd',0),(88,'','','admin','admin',1),(89,'vacasc','avasas','aada@gmail.com','fddasdasd',0),(90,'ahsen','arif','hello@gmail.com','qwerty',0),(91,'qwer','qqwer','qwer@gmail.com','qwerty',0),(92,'asda','afsva','svsd@gmail.com','sgsdfsdf',0),(93,'Omer3','Zahid','adminyy@gmail.com','1234567',0),(94,'Omer4','Zahid','adm2inyy@gmail.com','1234567',0),(95,'Omer5','Zahid','adm2inyyy@gmail.com','1231232131231',0),(96,'Omer6','Zahid','adm2ittnyyy@gmail.com','12312321321',0),(97,'Omer7','Zahid','adm2it12tnyyy@gmail.com','12312321321321',0),(98,'Omer8','Zahid','adm2its12tnyyy@gmail.com','12312312321',0),(99,'Omer9','Zahid','adm2its1222tnyyy@gmail.com','123456',0),(100,'Omer10','Zahid','adm2its1222tn12yyy@gmail.com','1234567',0),(101,'Omer11','Zahid','adm2its1sds222tn12yyy@gmail.com','sadasdasdasda',0),(102,'omer12','zahid','admin123@gmail.com','1234567',0),(103,'omerzahid13','sdsds','admin245@gmail.com','1234567',0),(104,'omerzahidsd14','sdsds','adminsds245@gmail.com','1235567',0),(105,'omerzahidsd15','sdsds','adminsdasds245@gmail.com','12132131',1),(106,'ahsd','asdh','asdh@gmail.com','asdasdasdas',0),(107,'asdasdas','asdasdsa','1234@gmail.com','12345678',0),(108,'Ahsen','Arif','admin1234@gmail.com','12345678',0),(109,'omer','zahid','admin@gmail.com','adminad',0),(110,'omer','zahid','admingasdas@gmail.com','asdadasdasdasdasdas',0),(111,'omer','aazaz','admingd@gmail.com','123456',1),(112,'asd','asd','adminsad@gmail.com','asd123213',1),(113,'','','','',0),(114,'omer','zxc','zxc@gmail.com','123456',1),(115,'omerzasd','asdasd','omere@zahidbajwa.com','123456',0),(116,'asdas','asdsa','admin@gmailsds.com','asdasdas',0),(117,'asdasdasdas','asdasdasdas','admin@gmail.cp','asdasdasdasd',0),(118,'asdasdasdas','asdasdasdas','admiwe@gmail.cp','qwewqeqweqwewqeqw',0),(119,'asdasda','asdasda','admiasdasdasdn@gmail.com','asdasdasdasd',0),(120,'asdasdasda','asdasdasda','admin@gmaisd.com','asdasdasdas',0),(121,'asdasdasda','asdasdasda','adminasdasdas@gmaisd.com','asdasdasdas',0),(122,'asdasdasdasd','asdasdasdasd','admin@gmasi;.com','asdasdasdas',0),(123,'asdasdasdasd','asdasdasdasd','adminasdasda@gmasi;.com','asdasdasdasdsa',0),(124,'asdasdasdasd','asdasdasdasd','adminasdasdasasda@gmasi;.com','asdasdasdasda',0),(125,'asdasdasdasd','asdasdasdasd','adaaminasdasssdasasda@gmasi;.com','sadasdasdasdsadasda',0),(126,'asdasdasdasd','asdasdasdasd','adaaasaminasdasssdasasda@gmasi;.com','asdasdasda',0),(127,'asdasdasdasd','asdasdasdasd','123@gmail.com','asdasdasda',0),(128,'asdsadas','asdasdasda','azdadasd@gmail.com','asdasdasdas',0),(129,'asdadas','asdsadas','admin@sdasdm.com','asdasdasda',0),(130,'asdadas','asdsadas','admissn@sdasdm.com','asdasdasdasdas',0),(131,'asdadas','asdsadas','admisdsdssn@sdasdm.com','sdsdsdsds',0),(132,'omer','zahid','bajwa@gmail.com123','asdasdasdas',0),(133,'asdasdas','asdasdasd','asdasdas@gmail.comasdasd','asdasdasdasdasdasdas',0),(134,'omer','zahid','unique@gmail.com','123456',1),(135,'12345','12345','123456@gmail.com','123456',0),(136,'12345','12345','1234256@gmail.com','12321312',0),(137,'Ali','Usman','azb@gmail.com','123456',0);
 
 /*Table structure for table `usertype` */
 
