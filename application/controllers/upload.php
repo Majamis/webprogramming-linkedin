@@ -60,6 +60,7 @@ class Upload extends CI_Controller {
     $thumb_path='uploads/images/thumb/'.$filename;
 
 		$this->load->model('register_model');	
+
 		$result = $this->register_model->register_user_details_image($path,$thumb_path);
 		redirect('register/register/page1/registered','refresh');
 

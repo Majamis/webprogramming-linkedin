@@ -595,6 +595,26 @@ $('#thirdstatus').click(function(){
 
 })
 
+
+function readURL(input) {
+
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#prevImage').attr('src', e.target.result);
+            $('.file-upload-image').addClass('file-upload-image-display');
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#slideshare-file-input").change(function(){
+    readURL(this);
+});
+
+
 }
 
 

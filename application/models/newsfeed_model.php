@@ -2,12 +2,13 @@
 
 	class Newsfeed_model extends CI_Model {
 		
-	    function submit_newsfeed()
+	    function submit_newsfeed($path=null)
 	    {
 	    	$data['userid'] = $this->session->userdata('userid');
 	    	$data['text'] = $this->security->xss_clean($this->input->post('postText'));
 			$data['status'] = $this->security->xss_clean($this->input->post('postVisibility2'));
 	   		$data['time'] = date('y-m-d');
+	   		$data['picture'] = $path;
 
 	   		$this->db->insert('newsfeed', $data);
 	    }

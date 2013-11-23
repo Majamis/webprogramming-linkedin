@@ -1929,10 +1929,40 @@ q:after {
 content: "";
 }
 
+.file-preview-errors {
+font-size: 12px;
+line-height: 14px;
+color: #333;
+font-weight: normal;
+display: none;
+}
+
+.upload-status {
+font-size: 13px;
+font-weight: normal;
+color: #000;
+line-height: 121px;
+padding: 2px 0 2px 24px;
+background: url('/scds/common/u/img/anim/anim_loading_16x16.gif') no-repeat 0 50%;
+}
+.file-upload-conversion {
+display: none;
+}
+
+.file-upload-percentage{
+display: none;
+}
 
 
 
+.file-upload-image
+{
+	height:60px;
+	width:70px;
+	display:none;
+}
 
-
-
-
+.file-upload-image-display
+{
+	display:block;
+}

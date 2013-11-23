@@ -17,10 +17,11 @@
 							</a>
 							<div id="post-module" class="post-module">
 								<div class="post-module-in">
-									<form target="slideShareIframeTransport" id="slideshare-upload-form" enctype="multipart/form-data" action="//slideshare.linkedin.com/upload?X-Progress-ID=ss281376742" method="post" class="is-ready is-active is-interactive">
+									<!--
+									<form  id="slideshare-upload-form" enctype="multipart/form-data" action="" method="post" class="is-ready is-active is-interactive">
 										<label for="slideshare-file-input" class="a11y-hidden-label">Attach a File</label>
 										<input name="file_name" type="file" id="slideshare-file-input" class="file-input">
-									</form>
+									</form>!-->
 									<div class="callout-container" id="slideshare-upload-callout">
 										<div class="callout-content">
 											<div class="callout-body">
@@ -39,7 +40,10 @@
 										<dd>100MB</dd>
 									</dl>
 									<a href="#" id="file-supported-dialog-close">x</a>
-									<form action="<?php echo base_url().'index.php/home/newsfeed/submit_feed'?>" method="POST" name="postModuleForm" novalidate="novalidate" class="doc-sharing-form post" gbpush="true" id="share-form">
+									<form action="<?php echo base_url().'index.php/home/newsfeed/do_upload'?>" method="post" enctype="multipart/form-data" name="postModuleForm"  class="doc-sharing-form post" accept-charset="utf-8" id="share-form">
+										<label for="slideshare-file-input" class="a11y-hidden-label">Attach a File</label>
+										<input name="userfile" type="file" id="slideshare-file-input" class="file-input">
+
 										<input type="hidden" value="true" name="ajax" id="share-ajax">
 										<input type="hidden" value="0" name="contentImageCount" id="share-img-total">
 										<input type="hidden" value="-1" name="contentImageIndex" id="share-img-selected-idx">
@@ -86,6 +90,22 @@
 												<div class="share-preview">
 												</div>
 												<a class="cancel-file-upload" href="#" role="button"></a>
+												<div id="share-preview-in">
+													<a href="#" class="share-close">Close</a>
+													<div class="preview-container">
+														<div id="share-image" class="share-image">
+															<span class="upload-status file-upload-conversion">Converting...</span>
+															<span class="upload-status file-upload-percentage">Uploading... 0%</span>
+															<img id="prevImage"src="" class="file-upload-image" alt="snake.jpg">
+														</div>
+													</div>
+													<div class="file-preview-errors">
+														<span class="file-preview-error progress-error">Oops! There was an error when uploading your file. Please try again.</span>
+														<span class="file-preview-error convert-error">Oops! There was an error when processing your file. Please try again.</span>
+														<span class="file-preview-error size-error">Oops! This file exceeds the 100MB limit. Please try another document.</span>
+														<span class="file-preview-error type-error" id="control_gen_10">Oops! This file type is not supported. Please try another document, or <a href="#file-supported-dialog">learn more</a>.</span>
+													</div>
+												</div>
 												<div class="share-edit">
 													<ul id="share-edit-list" class="form">
 														<li id="share-edit-title-wrapper">
@@ -129,7 +149,7 @@
 														<span class="arrows">Share with:</span>
 													</div>
 													<div class="submit">
-														<input type="submit" name="" value="Share" class="btn-primary" id="share-submit">
+														<input type="submit" value="upload" class="btn-primary submit" id="share-submit">
 													</div>
 												</div>
 											</div>
