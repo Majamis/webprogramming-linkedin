@@ -13,7 +13,7 @@
 					<div class="filter-cont rt-filter-cont">
 						<div id="slick-sharing-cont" class="post-home is-view share-box rt-filter-cont">
 							<a href="#">
-							<img src="ghost_profile_60x60_v1.png" class="member-photo animated-member-photo" width="60" height="60" alt="Ahsen Arif" style="margin-top: 15px;">
+							<img src="<?php echo $this->session->userdata('thumbnail');?>" class="member-photo animated-member-photo" width="60" height="60" alt="Ahsen Arif" style="margin-top: 15px;">
 							</a>
 							<div id="post-module" class="post-module">
 								<div class="post-module-in">
@@ -227,6 +227,19 @@
 										<div class="feed-content">
 											<div class="annotated-body">
 												<span class="new-miniprofile-container /profile/mini-profile-with-connections?_ed=0_0yykgZAGbAs3vR3nTUGTutofRgVUOMMPW6PtBHz7Dsy"><strong><a class="name-newsfeed"href="#">Ahsen Arif</a></strong></span>
+											</div>
+											<div class="image-share-upload mini-image-size">
+												<div class="share-object has-photo linkedin-content " id="control_gen_18">
+													<div class="photo">
+														<a href="" class="image feed-external-url" rel="nofollow" target="_blank">
+														<img src="" alt="image" class="newsfeed_upload_image">
+														</a>
+													</div>
+													<div class="properties">
+														<span class="share-source ">
+														Image </span>
+													</div>
+												</div>
 											</div>
 											<span class="share-body">
 											<span class="commentary text-newsfeed" id="control_gen_16">

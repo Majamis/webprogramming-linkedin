@@ -90,7 +90,7 @@
 	    	foreach ($query->result() as $row)
 			{
 
-				$this->db->select('us.fname,us.lname,u.thumbnail,u.UserId,n.id,n.text,n.status,n.time');
+				$this->db->select('us.fname,us.lname,u.thumbnail,u.UserId,n.id,n.text,n.status,n.time,n.picture');
 				$this->db->from('newsfeed n');
 				$this->db->where('n.userid',$row->ContactId);
 				$this->db->where('status',"CONNECTIONS");
@@ -102,7 +102,7 @@
 					$array[]=$row2;
 				}
 			}
-			$this->db->select('us.fname,us.lname,u.thumbnail,u.UserId,n.id,n.text,n.status,n.time');
+			$this->db->select('us.fname,us.lname,u.thumbnail,u.UserId,n.id,n.text,n.status,n.time,n.picture');
 	    	$this->db->from('newsfeed n');
 	    	$this->db->where('status',"EVERYONE");
 	    	$this->db->join('useradditionalinfo u', 'n.userid = u.UserId', 'left');

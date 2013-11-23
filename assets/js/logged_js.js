@@ -459,7 +459,13 @@ jQuery(function($) {
             $(".title").html(myObject[0].Company);
               for (var i=0;i<size;i++)
           { 
-             
+              $('.newsfeed_upload_image').attr("src",myObject[i].picture);
+              var pic_istrue=myObject[i].picture;
+             // alert(pic_istrue);
+             // if(pic_istrue)
+              $('.newsfeed_upload_image').addClass('newsfeed_upload_image_true');
+
+            
               $("#mentions-data").attr("value",myObject[i].id);
                 $('.name-newsfeed').html(myObject[i].fname + ' ' + myObject[i].lname);
                $(".newsfeed-photo").attr("src",myObject[i].thumbnail);
@@ -514,6 +520,7 @@ jQuery(function($) {
           });
             $('.comments_field').html(html3);
             html=html + $("#my-feed-post").html();
+            //$('.newsfeed_upload_image').removeClass('newsfeed_upload_image_true');
             $('.comments_field').html(discussion_prev_html);
 
              //$('.'+i+'st').addClass('comments_field');

@@ -1966,3 +1966,42 @@ display: none;
 {
 	display:block;
 }
+
+.feed-content .share-object {
+border-left: 0;
+}
+
+.feed.feed-redesign .photo {
+border-color: #eaeaea;
+}
+
+.image-share-upload .share-object .image {
+margin-right: 0;
+width: auto;
+max-width: none;
+float: none;
+}
+
+.image-share-upload.mini-image-size .share-object .image img {
+max-width: 350px;
+width: auto;
+_width: 350px;
+max-height: 265px;
+height: auto;
+_height: 265px;
+}
+.share-source
+{
+	display:none;
+}
+
+.newsfeed_upload_image
+{
+	display:none;
+}
+
+.newsfeed_upload_image_true
+{
+	display:block;
+}
+
