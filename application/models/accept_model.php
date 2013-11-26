@@ -20,21 +20,24 @@
 			{
 				$UserIdd=$this->session->userdata('userid');
 				$data = array(
-					'UserIdd' => $this->session->userdata('userid'),
-					'ContactId' => $id
+					'UserIdd' =>$id,
+					'ContactId' => $this->session->userdata('userid')
 					);
 				//$ContactId=$id;
+				$this->db->insert('contacts_info', $data);
+				$data = array(
+					'UserIdd' =>$this->session->userdata('userid'),
+					'ContactId' =>$id 
+					);
 				$this->db->insert('contacts_info', $data);
 			}
 
 		}
 
 		function ignore($id){
-			//$id['ContactId'] = $this->security->xss_clean($this->input->post('contactid'));
-			//$id['UserId'] = $this->security->xss_clean($this->input->post('userid'));
-			
-			$this->db->where('userid',$this->session->userdata('userid'));
-			$this->db->where('contact_userid',$id);
+
+			$this->db->where('userid',$id);
+			$this->db->where('contact_userid',$this->session->userdata('userid'));
 			$this->db->delete('add_contact_notification');/*
 			$query=$this->db->get('add_contact_notification');
     		

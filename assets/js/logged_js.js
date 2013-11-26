@@ -36,10 +36,10 @@
 				$(".participants").html(myObject[i].fname + ' ' + myObject[i].lname);
 				//document.getElementById("photo_thumb").src=myObject[i].thumbnail;
         $(".photo").attr("src",myObject[i].thumbnail);
-        $(".inbox-item").attr("data-gid",myObject[i].contact_userid);
-        $(".chk").attr("value",myObject[i].contact_userid);
-        $(".accept").attr("href","index.php/home/notification/accept_connection_process/" + myObject[i].contact_userid);
-        $(".ignore").attr("href","index.php/home/notification/ignore_connection_process/" + myObject[i].contact_userid);
+        $(".inbox-item").attr("data-gid",myObject[i].userid);
+        $(".chk").attr("value",myObject[i].userid);
+        $(".accept").attr("href","index.php/home/notification/accept_connection_process/" + myObject[i].userid);
+        $(".ignore").attr("href","index.php/home/notification/ignore_connection_process/" + myObject[i].userid);
 				$(".date").html(myObject[i].time_date);
 
 				html=html + $("#msging").html();

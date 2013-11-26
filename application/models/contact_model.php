@@ -11,7 +11,6 @@
 	    	$data['userid'] = $this->session->userdata('userid');
 			$data['contact_userid'] = $contact_userid;
 			$data['time_date'] = date('y-m-d');
-
 			$this->db->select('*');
 			$this->db->from('add_contact_notification');
 			$this->db->where('userid',$data['userid']);

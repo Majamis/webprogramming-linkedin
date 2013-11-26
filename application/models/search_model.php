@@ -112,6 +112,18 @@
 	    	{
 	    		$array[]=$row3;
 	    	}
+	    		$this->db->select('us.fname,us.lname,u.thumbnail,u.UserId,n.id,n.text,n.status,n.time,n.picture');
+				$this->db->from('newsfeed n');
+				$this->db->where('n.userid',$this->session->userdata['userid']);
+				$this->db->where('status',"CONNECTIONS");
+				$this->db->join('useradditionalinfo u', 'n.userid = u.UserId', 'left');
+				$this->db->join('users us', 'n.userid = us.userid', 'left');
+				$query2=$this->db->get();
+				foreach( $query2->result() as $row4)
+				{
+					$array[]=$row4;
+				}
+
 	    	$json = json_encode($array);
 			echo $json;
 	    }	

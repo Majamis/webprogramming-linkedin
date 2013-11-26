@@ -194,7 +194,7 @@ class page extends CI_Controller{
 	{
 		$this->load->model('contact_model');
 		$this->contact_model->addcontact($contactid);
-		//$this->home();
+		$this->home();
 	}
 	
 	
