@@ -40,7 +40,8 @@
 										<dd>100MB</dd>
 									</dl>
 									<a href="#" id="file-supported-dialog-close">x</a>
-									<form action="<?php echo base_url().'index.php/home/newsfeed/do_upload'?>" method="post" enctype="multipart/form-data" name="postModuleForm"  class="doc-sharing-form post" accept-charset="utf-8" id="share-form">
+									<!--<form  method="post" enctype="multipart/form-data" name="postModuleForm"  class="doc-sharing-form post" accept-charset="utf-8" id="share-form">!-->
+										<form  onsubmit="return do_upload()" method="post" enctype="multipart/form-data" name="postModuleForm"  class="doc-sharing-form post" accept-charset="utf-8" id="share-form">
 										<label for="slideshare-file-input" class="a11y-hidden-label">Attach a File</label>
 										<input name="userfile" type="file" id="slideshare-file-input" class="file-input">
 
@@ -296,7 +297,7 @@
 												
 											</ul>
 											<div class="form mini">
-												<form action="<?php echo base_url().'index.php/home/newsfeed/submit_comment'?>" method="post">
+												<form method="post" onsubmit="return submit_comment();">
 													<label for="comment-body-U-5809578176652779520-M-281376742-5809578176652779520" style="display: none;" id="comment-body-U-5809578176652779520-M-281376742-5809578176652779520-label" class="ghost">Add a comment…</label>
 													<div id="mentions-container-U-5809578176652779520-M-281376742-5809578176652779520" class="mentions-container">
 														<pre class="mentions-highlighter" id="comment-highlighter-U-5809578176652779520-M-281376742-5809578176652779520">

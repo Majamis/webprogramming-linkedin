@@ -437,7 +437,7 @@ if(document.getElementById("feed-nhome"))
 {
 var discussion_prev_html=$('.comments_field').html();
 var result_prev_html=$("#my-feed-post").html();
-$(document).ready(function(){
+$(document).ready(function newsfeed(){
 jQuery(function($) {
       var html="";
       var html2="";
@@ -625,3 +625,39 @@ $("#slideshare-file-input").change(function(){
 }
 
 
+
+function submit_comment()
+{
+
+    var serviceURL = 'index.php/home/newsfeed/submit_comment';
+    var text=$('.texta').val();
+    var id= $('#mentions-data').val();
+    $.ajax({
+            type: "POST",
+            url:  serviceURL,
+            async:   false,
+            data:{data: id ,data2: text},
+            success: function(data){
+        }  
+      });
+//newsfeed();
+return false;
+}
+
+function do_upload()
+{
+
+    var serviceURL = 'index.php/home/newsfeed/do_upload';
+    var text=$('.post-message').val();
+    var status= $('#doc-sharing-visibility').prop('value');
+    $.ajax({
+            type: "POST",
+            url:  serviceURL,
+            async:   false,
+            data:{data: status ,data2: text},
+            success: function(data){
+        }  
+      });
+//newsfeed();
+return false;
+}

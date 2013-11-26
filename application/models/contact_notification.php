@@ -12,13 +12,10 @@
 	    	$userid = $this->session->userdata('userid');
 	    	$this->db->select('*');
 	    	$this->db->from('add_contact_notification');
-			$this->db->where('userid',$userid);
+			$this->db->where('contact_userid',$userid);
     		$query = $this->db->get();
 
-
-    		//$row = $query->row_array();
     		$no_of_notification = 0;
-
 
     		$query_row = array();
     		$table = null;
@@ -28,13 +25,13 @@
 			{
 				$this->db->select('*');
 	    		$this->db->from('useradditionalinfo');
-	    		$this->db->where('userid',$row->contact_userid);
+	    		$this->db->where('userid',$row->userid);
 	    		$query_img= $this->db->get();
 	    		$row_pic = $query_img->row_array(); 
 
 	    		$this->db->select('*');
 	    		$this->db->from('users');
-	    		$this->db->where('userid',$row->contact_userid);
+	    		$this->db->where('userid',$row->userid);
 	    		$query_username= $this->db->get();
 	    		$row_username = $query_username->row_array(); 
 

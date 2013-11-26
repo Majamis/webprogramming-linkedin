@@ -61,7 +61,6 @@ class page extends CI_Controller{
         
         //$this->load->view('common/footer2',$data);
 	}
-	
 	public function advance_search(){
 			$data['search_text'] = $this->security->xss_clean($this->input->get('keywords'));
 			//$data['search_text'] = "hello";

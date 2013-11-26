@@ -13,13 +13,18 @@ class Newsfeed extends CI_Controller{
 					//---upload----//
 		function do_upload()
 		{
+
+			$text = $_REQUEST['data2'];
+	        $status = $_REQUEST['data'];
 		$config['upload_path'] = './uploads/images/';
 		$config['allowed_types'] = 'gif|jpg|png';
 		$config['max_size']	= '30000';
 		$config['max_width']  = '2500';
 		$config['max_height']  = '2500';
-		$pic_path="";
-
+		$pic_path=NULL;
+		$data=NULL;
+		$path=NULL;
+		$empty = true;
 
 		$this->load->library('upload', $config);
 
@@ -36,8 +41,11 @@ class Newsfeed extends CI_Controller{
 			$path = $data['upload_data']['file_name'];	
 			$path = 'uploads/images/'.$path;
 			$pic_path=$path;
+			$empty = false;
 		}
 
+		//if(!$empty)
+		//{
 		 $filename = $data['upload_data']['file_name'];
     	 $source_path = $data['upload_data']['full_path'];
 
@@ -50,7 +58,9 @@ class Newsfeed extends CI_Controller{
         'thumb_marker' => '',
         'width' => 60,
         'height' => 60
+
     );
+	
     	$this->load->library('image_lib', $config_manip);
     	if (!$this->image_lib->resize()) {
         echo $this->image_lib->display_errors();
@@ -59,23 +69,24 @@ class Newsfeed extends CI_Controller{
     $this->image_lib->clear();
     $thumb_path='uploads/images/thumb/'.$filename;
     //------
-	
+	//}
 				$this->load->model('newsfeed_model');
-				$result=$this->newsfeed_model->submit_newsfeed($path);
+				$result=$this->newsfeed_model->submit_newsfeed($text,$path,$status);
 			
-			redirect('common/page/home', 'refresh');	
+			//redirect('common/page/home', 'refresh');	
 	}
 
 		function submit_comment()
 		{
+			$text = $_REQUEST['data2'];
+	        $nf_id = $_REQUEST['data'];
+
 			$this->load->model('newsfeed_model');
-			$result=$this->newsfeed_model->comment_newsfeed();
+			$result=$this->newsfeed_model->comment_newsfeed($text,$nf_id);
 
-			redirect('common/page/home', 'refresh');
-		}
 
-		
-		
+			//redirect('common/page/home','refresh');
+		}	
 
 	}
 
