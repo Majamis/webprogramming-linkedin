@@ -35,7 +35,7 @@
 				$(".detail-link").html(myObject[i].personal_note);
 				$(".participants").html(myObject[i].fname + ' ' + myObject[i].lname);
 				//document.getElementById("photo_thumb").src=myObject[i].thumbnail;
-        $(".photo").attr("src",myObject[i].thumbnail);
+        $(".notification-photo").attr("src",myObject[i].thumbnail);
         $(".inbox-item").attr("data-gid",myObject[i].userid);
         $(".chk").attr("value",myObject[i].userid);
         $(".accept").attr("href","index.php/home/notification/accept_connection_process/" + myObject[i].userid);
@@ -461,8 +461,7 @@ jQuery(function($) {
           { 
               $('.newsfeed_upload_image').attr("src",myObject[i].picture);
               var pic_istrue=myObject[i].picture;
-             // alert(pic_istrue);
-             // if(pic_istrue)
+              if(pic_istrue)
               $('.newsfeed_upload_image').addClass('newsfeed_upload_image_true');
 
             
@@ -522,7 +521,7 @@ jQuery(function($) {
             html=html + $("#my-feed-post").html();
             //$('.newsfeed_upload_image').removeClass('newsfeed_upload_image_true');
             $('.comments_field').html(discussion_prev_html);
-
+             $('.newsfeed_upload_image').removeClass('newsfeed_upload_image_true');
              //$('.'+i+'st').addClass('comments_field');
              //$('.comments_field').removeClass(i+'st');
           }

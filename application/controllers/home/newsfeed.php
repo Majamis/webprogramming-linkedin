@@ -20,9 +20,9 @@ class Newsfeed extends CI_Controller{
 
 		$config['upload_path'] = './uploads/images/';
 		$config['allowed_types'] = 'gif|jpg|png';
-		$config['max_size']	= '30000';
-		$config['max_width']  = '2500';
-		$config['max_height']  = '2500';
+		$config['max_size']	= '30000000';
+		$config['max_width']  = '10000';
+		$config['max_height']  = '10000';
 		$pic_path=NULL;
 		$data=NULL;
 		$path=NULL;

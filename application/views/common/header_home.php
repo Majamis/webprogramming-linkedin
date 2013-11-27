@@ -119,7 +119,7 @@
 												<ol class="inbox-list inbox-list-widget">
 													<li data-gid="I24511753_252" class="inbox-item invitation-item">
 													<a href="<?php echo base_url('index.php/common/page/home');?>">
-													<img id="photo_thumb" src="#" class="photo" alt="Muhammad Arslan Shabbir" height="40" width="40">
+													<img id="photo_thumb" src="#" class="photo notification-photo" alt="Muhammad Arslan Shabbir" height="40" width="40">
 													</a>
 													<div class="item-content">
 														<div class="date">
