@@ -43,7 +43,7 @@
 									<!--<form  method="post" enctype="multipart/form-data" name="postModuleForm"  class="doc-sharing-form post" accept-charset="utf-8" id="share-form">!-->
 										<form  onsubmit="return do_upload()" method="post" enctype="multipart/form-data" name="postModuleForm"  class="doc-sharing-form post" accept-charset="utf-8" id="share-form">
 										<label for="slideshare-file-input" class="a11y-hidden-label">Attach a File</label>
-										<input name="userfile" type="file" id="slideshare-file-input" class="file-input">
+										<input name="userfile" type="file" id="userfile" class="file-input">
 
 										<input type="hidden" value="true" name="ajax" id="share-ajax">
 										<input type="hidden" value="0" name="contentImageCount" id="share-img-total">
@@ -297,7 +297,7 @@
 												
 											</ul>
 											<div class="form mini">
-												<form method="post" onsubmit="return submit_comment();">
+												<form method="POST" id="ajaxform" name="ajaxform" onsubmit="return submit_comment(this)" >
 													<label for="comment-body-U-5809578176652779520-M-281376742-5809578176652779520" style="display: none;" id="comment-body-U-5809578176652779520-M-281376742-5809578176652779520-label" class="ghost">Add a comment…</label>
 													<div id="mentions-container-U-5809578176652779520-M-281376742-5809578176652779520" class="mentions-container">
 														<pre class="mentions-highlighter" id="comment-highlighter-U-5809578176652779520-M-281376742-5809578176652779520">
@@ -333,7 +333,7 @@
 															</div>
 														</div>
 													</div>
-													<input type="hidden" name="mentions" id="mentions-data" value="[]">
+													<input type="hidden" name="mentions" class= "nf_id" id="mentions-data" value="[]">
 													<div class="actions">
 														<input type="submit" class="post-comment btn-primary" value="Comment">
 													</div>

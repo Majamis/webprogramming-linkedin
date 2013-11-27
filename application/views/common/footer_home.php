@@ -4,6 +4,7 @@
     <script src="assets/js/jquery-ui.js"></script>
 	<script src="assets/js/logged_js.js"></script>
 	<script src="assets/js/bootstrap-dropdown.js"></script>
+	<script src="assets/js/ajaxfileupload.js"></script>
 
 	<script>
 	$('.dropdown-toggle').dropdown('')

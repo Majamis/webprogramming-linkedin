@@ -553,7 +553,7 @@ jQuery(function($) {
           });     
           
       });
-
+//return false;
 });
 var changestatus=1;
 $("#openstatus").click(function(){
@@ -617,7 +617,7 @@ function readURL(input) {
     }
 }
 
-$("#slideshare-file-input").change(function(){
+$("#userfile").change(function(){
     readURL(this);
 });
 
@@ -625,36 +625,40 @@ $("#slideshare-file-input").change(function(){
 }
 
 
-
-function submit_comment()
+function submit_comment(element)
 {
-
+  var postData = $(element).serialize();
     var serviceURL = 'index.php/home/newsfeed/submit_comment';
     var text=$('.texta').val();
-    var id= $('#mentions-data').val();
+    var id= $('.nf_id').val();
+
     $.ajax({
             type: "POST",
             url:  serviceURL,
             async:   false,
-            data:{data: id ,data2: text},
+            //data: {data: mentions , data2:postText1},
+            data:postData ,
             success: function(data){
         }  
       });
-//newsfeed();
+newsfeed();
 return false;
 }
 
+
 function do_upload()
 {
-
     var serviceURL = 'index.php/home/newsfeed/do_upload';
     var text=$('.post-message').val();
     var status= $('#doc-sharing-visibility').prop('value');
-    $.ajax({
-            type: "POST",
+    $.ajaxFileUpload({
+            enctype: 'multipart/form-data',
             url:  serviceURL,
             async:   false,
-            data:{data: status ,data2: text},
+            secureuri      :false,
+            fileElementId  :'userfile',
+            dataType    : 'JSON',
+            data:{data: status ,data2: text },
             success: function(data){
         }  
       });
