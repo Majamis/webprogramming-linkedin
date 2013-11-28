@@ -3327,3 +3327,9 @@ overflow: hidden;
 -o-text-overflow: ellipsis;
 text-overflow: ellipsis;
 }
+
+#search_bar_img{
+	float: left;
+	height: 40px;
+	width: 40px;
+}

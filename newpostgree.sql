@@ -10,7 +10,7 @@ CREATE TABLE "add_contact_notification" (
   "contact_userid" integer NOT NULL references users("userid"),
   "personal_note" varchar(255) DEFAULT NULL,
   "relationid" varchar(255) NOT NULL,
-  "time_date" date NOT NULL,
+  "time_date" timestamp NOT NULL,
   PRIMARY KEY ("id")
   /*KEY "userId" ("userid"),
   KEY "contact_userId" ("contact_userid")
@@ -34,22 +34,14 @@ CREATE TABLE "confirm" (
 );
 
 /*Table structure for table "contacts_info" */
-
 DROP TABLE IF EXISTS "contacts_info";
 
 CREATE TABLE "contacts_info" (
-  "contactId" SERIAL NOT NULL,
-  "userIdd" integer DEFAULT NULL references users("userid"),
-  "FName" varchar(40) NOT NULL,
-  "LName" varchar(40) NOT NULL,
-  "UserName" varchar(40) NOT NULL,
-  "Email" varchar(40) NOT NULL,
-  "Password" varchar(40) NOT NULL,
-  "Type" varchar(40) NOT NULL,
-  PRIMARY KEY ("contactId")
-  /*KEY "userId" ("userIdd"),
-  CONSTRAINT "userIdd" FOREIGN KEY ("userIdd") REFERENCES "users" ("userid") ON DELETE NO ACTION ON UPDATE NO ACTION
-*/);
+  "Id" SERIAL NOT NULL,
+  "UserIdd" integer NOT NULL references users("userid"),
+  "ContactId" integer NOT NULL references users("userid"),
+  PRIMARY KEY ("Id")
+);
 
 /*Data for the table "contacts_info" */
 
@@ -105,4 +97,26 @@ CREATE TABLE "usertype" (
   PRIMARY KEY ("TypeId","Status")
 );
 
-/*Data for the table "usertype" */
+DROP TABLE IF EXISTS "comments_newsfeed";
+
+CREATE TABLE "comments_newsfeed" (
+  "id" SERIAL NOT NULL ,
+ "nf_id" integer NOT NULL references newsfeed("id"),
+  "userid" integer NOT NULL references users("userid"),
+  "text" varchar(255) DEFAULT NULL,
+  "time" date NOT NULL,
+  PRIMARY KEY ("id")
+  );
+
+DROP TABLE IF EXISTS "newsfeed";
+
+CREATE TABLE "newsfeed" (
+  "id" SERIAL NOT NULL,
+  "userid" integer NOT NULL references users("userid"),
+  "text" varchar(255) DEFAULT NULL,
+  "status" varchar(255) NOT NULL,
+  "time" date NOT NULL,
+  "picture" varchar(255) DEFAULT NULL,
+  PRIMARY KEY ("id")
+);
+

@@ -105,7 +105,7 @@ jQuery(function($) {
             //  alert(myObject[0].fname);
 
 
-          for (var i=0;i<10;i++)
+          for (var i=0;i<size && i<10;i++)
           { 
     
             $(".item-headline").html(myObject[i].fname + ' ' + myObject[i].lname);
@@ -239,7 +239,7 @@ jQuery(function($) {
               myObject = eval('(' + data + ')');
               size=Object.keys(myObject).length;
             
-              for (var i=0;i<10;i++)
+              for (var i=0;i<size && i<10;i++)
           { 
 
     
@@ -550,10 +550,12 @@ jQuery(function($) {
             },
             dataType: 'html'
           });     
-          
+      
       });
 //return false;
 });
+}
+
 var changestatus=1;
 $("#openstatus").click(function(){
   //sstring='<div id="openstatus" class="menu-basic styled-dropdown open">';
@@ -621,7 +623,6 @@ $("#userfile").change(function(){
 });
 
 
-}
 
 
 function submit_comment(element)
