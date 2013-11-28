@@ -48,7 +48,7 @@ class Newsfeed extends CI_Controller{
 
 				$this->load->model('newsfeed_model');
 				$result=$this->newsfeed_model->submit_newsfeed($text,$path,$status);
-			
+			//return;
 			//redirect('common/page/home', 'refresh');	
 	}
 

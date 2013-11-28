@@ -87,6 +87,8 @@
 	    	$this->db->from('contacts_info');
 	    	$this->db->where('UserIdd',$this->session->userdata['userid']);
 	    	$query=$this->db->get();
+	    	$array=null;
+	    	$is_true="false";
 	    	foreach ($query->result() as $row)
 			{
 
@@ -100,6 +102,7 @@
 				foreach( $query2->result() as $row2)
 				{
 					$array[]=$row2;
+					$is_true="true";
 				}
 			}
 			$this->db->select('us.fname,us.lname,u.thumbnail,u.UserId,n.id,n.text,n.status,n.time,n.picture');
@@ -111,6 +114,7 @@
 	    	foreach($query3->result() as $row3)
 	    	{
 	    		$array[]=$row3;
+	    		$is_true="true";
 	    	}
 	    		$this->db->select('us.fname,us.lname,u.thumbnail,u.UserId,n.id,n.text,n.status,n.time,n.picture');
 				$this->db->from('newsfeed n');
@@ -122,9 +126,12 @@
 				foreach( $query2->result() as $row4)
 				{
 					$array[]=$row4;
+					$is_true="true";
 				}
-
+			if($is_true=="true"){
 	    	$json = json_encode($array);
+			}else
+			$json = json_encode($is_true);
 			echo $json;
 	    }	
 

@@ -218,6 +218,7 @@ if(document.getElementById("results-container"))
 //--------------Search bar on submit--------------------------
 var result_prev_html=$("#results").html();
 $(document).ready(function(){
+ $('#results-container').hide();
 jQuery(function($) {
       var html="";
       var myObject;
@@ -238,7 +239,7 @@ jQuery(function($) {
             success: function(data){
               myObject = eval('(' + data + ')');
               size=Object.keys(myObject).length;
-            
+              $('#results-container').show();
               for (var i=0;i<size && i<10;i++)
           { 
 
@@ -279,6 +280,7 @@ jQuery(function($) {
            $("#results").html(html);
 
             //alert(data);   // data printed on echoed on the server side.
+          
             },
             error:function(x,e)
             {
@@ -300,14 +302,12 @@ jQuery(function($) {
           });     
           
       });
-
 });
 }
-
 //------------ALUMINI-----------------------
 if(document.getElementById("container-ptc-people-results"))
 {
-
+$('#container-ptc-people-results').hide();
 var result_prev_html=$("#alumini-cards").html();
 $(document).ready(function(){
 jQuery(function($) {
@@ -391,7 +391,7 @@ jQuery(function($) {
           });     
           
       });
-
+  $('#container-ptc-people-results').show();
 });
 }
 
@@ -431,14 +431,18 @@ $('.companies').click(function ()
     $(".all").removeAttr("selected");
 });
 
-
 //---------------newsfeed----------------//
 if(document.getElementById("feed-nhome"))
 {
+ // var static_prev_html1=$('.comments_field').html();
 var discussion_prev_html=$('.comments_field').html();
 var result_prev_html=$("#my-feed-post").html();
-$(document).ready(function newsfeed(){
-jQuery(function($) {
+//alert(discussion_prev_html);
+//$(document).ready(function newsfeed(){
+//jQuery(function($) {
+  $('.content').hide();
+  newsfeed();
+ function newsfeed(){
       var html="";
       var html2="";
       var html3="";
@@ -454,8 +458,14 @@ jQuery(function($) {
             url:  serviceURL,
             async:   false,
             success: function(data){
+              var temp1="";
+              temp1 = data;
+            
+              if(temp1.length != 9)
+              {
               myObject = eval('(' + data + ')');
               size=Object.keys(myObject).length;
+              $('.content').show();
             $(".title").html(myObject[0].Company);
               for (var i=0;i<size;i++)
           { 
@@ -531,7 +541,7 @@ jQuery(function($) {
           //  $('.'+i+'st').html(html2[i]);
 
             //alert(data);   // data printed on echoed on the server side.
-            },
+            }},
             error:function(x,e)
             {
               if(x.status==0){
@@ -549,11 +559,10 @@ jQuery(function($) {
               }
             },
             dataType: 'html'
-          });     
-      
-      });
-//return false;
-});
+          });  
+	  return false;  
+      //});
+}
 }
 
 var changestatus=1;
@@ -641,10 +650,11 @@ function submit_comment(element)
             success: function(data){
         }  
       });
+  //$('.comments_field').html(discussion_prev_html);
+  //$("#my-feed-post").html(result_prev_html);
 newsfeed();
 return false;
 }
-
 
 function do_upload()
 {
@@ -660,8 +670,22 @@ function do_upload()
             dataType    : 'JSON',
             data:{data: status ,data2: text },
             success: function(data){
+              newsfeed();
         }  
       });
-//newsfeed();
+   //  $('.comments_field').html(discussion_prev_html);
+  //$("#my-feed-post").html(result_prev_html);
 return false;
 }
+
+
+  function embedly_call()
+  {
+        $('.embedly-content').embedly({
+          query: { maxwidth: 450, wmode: 'transparent'},
+          method: 'after',
+          key: '7d4a478575e64017a70ab0babb045bfc'
+        });
+  }
+
+embedly_call();

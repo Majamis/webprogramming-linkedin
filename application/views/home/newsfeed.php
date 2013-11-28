@@ -94,6 +94,9 @@
 												<div id="share-preview-in">
 													<a href="#" class="share-close">Close</a>
 													<div class="preview-container">
+														<div class="embedly-content">
+														<a href="" class="embledly_hyper"></a>
+													</div>
 														<div id="share-image" class="share-image">
 															<span class="upload-status file-upload-conversion">Converting...</span>
 															<span class="upload-status file-upload-percentage">Uploading... 0%</span>
@@ -354,8 +357,20 @@
 </div>
 <div id="footer">
 </div>
-</body>
 <script src="jquery-1.9.1.js"></script>
 <script src="jquery-ui.js"></script>
 <script src="validation.js"></script>
-</html>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://cdn.embed.ly/jquery.embedly-3.1.1.min.js"></script>
+<script>
+  function embedly_call()
+  {
+        $('.embedly-content').embedly({
+          query: { maxwidth: 450, wmode: 'transparent'},
+          method: 'after',
+          key: '7d4a478575e64017a70ab0babb045bfc'
+        });
+  }
+
+embedly_call();
+</script>

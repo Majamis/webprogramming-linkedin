@@ -32,20 +32,20 @@
 						<fieldset>
 							<legend>Find People, Jobs, Companies, and More</legend>
 							<div class="search-scope global-nav-styled-dropdown dropdown" id="control_gen_">
-							<a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" href="<?php echo base_url('index.php/common/page/home');?>">
+							<a class="dropdown-toggle" id="dLabel" role="button"  href="<?php echo base_url('index.php/common/page/home');?>">
 								<label for="main-search-category">Search for:</label>
 								<span class="label">
 									<span class="styled-dropdown-select-all">All</span>
 								</span>
 								<select name="type" id="main-search-category" class="search-category">
 						            
-						             <option class="all"  data-li-styled-dropdown-class="all" data-li-search-action="/vsearch/f" data-li-ghost-text="Search for people, jobs, companies, and more..." data-li-trk-code="vsrp_all_vertical_selector_item" title="Search for people, jobs, companies, and more..." value="all">All</option>
-						             <option class="people" data-li-advanced-link="/vsearch/p?adv=true&amp;trk=advsrch" data-li-styled-dropdown-class="people" data-li-search-action="/vsearch/p" data-li-ghost-text="Search people..." data-li-trk-code="vsrp_people_vertical_selector_item" title="Keyword, name, company or title" value="people">People</option>
-						             <option class="jobs" data-li-advanced-link="/vsearch/j?adv=true&amp;trk=hb_advjs" data-li-styled-dropdown-class="jobs" data-li-search-action="/vsearch/j" data-li-ghost-text="Search jobs..." data-li-trk-code="vsrp_jobs_vertical_selector_item" title="Keyword, company or job title" value="jobs">Jobs</option>
-						             <option class="companies" data-li-styled-dropdown-class="companies" data-li-search-action="/vsearch/c" data-li-ghost-text="Search companies..." title="Keyword" data-li-trk-code="vsrp_companies_vertical_selector_item" value="companies">Companies</option>           
-						             <option class="groups" data-li-styled-dropdown-class="groups" data-li-search-action="/vsearch/g" data-li-ghost-text="Search groups..." data-li-trk-code="vsrp_groups_vertical_selector_item" title="Keyword" value="groups">Groups</option>   
-						             <option class="edu" data-li-styled-dropdown-class="edu" data-li-search-action="/vsearch/e" data-li-ghost-text="Search universities..." data-li-trk-code="vsrp_edu_vertical_selector_item" title="Keyword" value="edu">Universities</option>         
-						             <option class="inbox" data-li-styled-dropdown-class="inbox" data-li-search-action="/inbox/messages/search" data-li-ghost-text="Search inbox..." data-li-trk-code="vsrp_inbox_vertical_selector_item" title="Keyword" value="inbox">Inbox</option>
+						             <option class="all"  title="Search for people, jobs, companies, and more..." value="all">All</option>
+						             <option class="people" title="Keyword, name, company or title" value="people">People</option>
+						             <option class="jobs" title="Keyword, company or job title" value="jobs">Jobs</option>
+						             <option class="companies" title="Keyword" value="companies">Companies</option>           
+						             <option class="groups" title="Keyword" value="groups">Groups</option>   
+						             <option class="edu"  title="Keyword" value="edu">Universities</option>         
+						             <option class="inbox"  title="Keyword" value="inbox">Inbox</option>
 						        	
 						        </select>
 						    </a>
@@ -97,7 +97,7 @@
 				</div>
 				<div class="header-section last-child">
 					<ul class="nav utilities" role="navigation" id="control_gen_5">
-						<li class="nav-item activity-tab" data-li-activity-type="messages">
+						<li class="nav-item activity-tab" >
 							<a href="<?php echo base_url('index.php/common/page/accept_connection');?>" class="activity-toggle inbox-alert">Inbox</a>
 							<div class="activity-container" id="inbox">
 						    	<div class="activity-drop">
@@ -115,35 +115,35 @@
 						            	</div>
 						            	<div id="messages-container" class="activity-drop-body">
 						            		
-						            		<form action="/inbox/bulk_action" method="POST" name="bulkActionForm" novalidate="novalidate" id="msging">
+						            		<form action="<?php echo base_url('index.php/common/page/home');?>" method="POST" name="bulkActionForm" novalidate="novalidate" id="msging">
 												<ol class="inbox-list inbox-list-widget">
-													<li data-gid="I24511753_252" class="inbox-item invitation-item">
+													<li class="inbox-item invitation-item">
 													<a href="<?php echo base_url('index.php/common/page/home');?>">
-													<img id="photo_thumb" src="#" class="photo notification-photo" alt="Muhammad Arslan Shabbir" height="40" width="40">
+													<img id="photo_thumb" src="#" class="photo notification-photo" alt="image" >
 													</a>
 													<div class="item-content">
 														<div class="date">
-															Aug 21
+															
 														</div>
 														<span class="participants">
 														<a class="profile-link" href="<?php echo base_url('index.php/common/page/home');?>">
-														Muhammad Arslan Shabbir </a>
+														 </a>
 														</span>
 														<span class="headline">
-														student at FAST-NUCES </span>
+														</span>
 														<div class="inbox-actions">
 															<ul>
 																<li>
 																<div class="primary-actions">
 																	<ul>
 																		<li>
-																		<a data-action="invitationAccept" data-action-url="/inbox/action?mboxItemGID=I24511753_252&amp;actionType=invitationAccept&amp;csrfToken=ajax%3A7797344814100961717&amp;trk=hb-invitations-item-accept-v2" class="accept noreply" href="<?php echo base_url('index.php/common/page/home');?>">Accept</a>
+																		<a class="accept noreply" href="<?php echo base_url('index.php/common/page/home');?>">Accept</a>
 																		</li>
 																	</ul>
 																</div>
 																</li>
 																<li>
-																<a data-action="invitationIgnore" data-action-url="/inbox/action?mboxItemGID=I24511753_252&amp;actionType=invitationIgnore&amp;csrfToken=ajax%3A7797344814100961717&amp;trk=hb-invitations-item-ignore-v2" class="ignore btn-quaternary" href="<?php echo base_url('index.php/common/page/home');?>">Ignore</a>
+																<a class="ignore btn-quaternary" href="<?php echo base_url('index.php/common/page/home');?>">Ignore</a>
 																</li>
 															</ul>
 														</div>
@@ -157,24 +157,24 @@
 						   		</div>
 							</div>
 						</li>
-						<li class="nav-item activity-tab" data-li-new-count="0" data-li-action-type-click="ntf_click_notifications_icon" data-li-action-type-pagination="ntf_scroll" data-li-activity-type="notifications">
+						<li class="nav-item activity-tab" >
 							<a href="<?php echo base_url('index.php/common/page/home');?>" class="activity-toggle notifications-alert">Notification </a>
 							<div class="activity-container" id="notifications">
 							    <div class="activity-drop">
 							        <div class="activity-drop-header">
 							            <h3>Notifications<span class="sub-nav-header-arrow" role="presentation"></span></h3>
 							        </div>
-							        <div class="activity-drop-body" id="control_gen_44">
+							        <!--<div class="activity-drop-body" id="control_gen_44">
 							            <ol class="li-scroll-content">
-							                <li class="update first last single" data-li-action-type="ntf_click_notification" data-li-impr-id="5eccc851-1d17-4bf7-88ff-a5809aadb1b9" data-li-id="0:MBR_220597888:0" data-li-num-actors="1" data-li-type="VIEWED_YOUR_PROFILE" data-li-wvmpupsellcount="0" data-li-sub-id="">
-							                <span class="timestamp">6mth</span>
+							                <li class="update first last single" >
+							                <span class="timestamp"></span>
 							                <div class="photo">
-							                    <img src="#" width="40" height="40" alt="Anonymous">
+							                    <img src="<?php echo base_url('index.php/common/page/home');?>" id="setimg" alt="Anonymous">
 							                </div>
 							                <div class="action">
-							                    <span class="name">A LinkedIn member</span><strong>viewed your profile</strong>
+							                    <span class="name"></span><strong></strong>
 							                </div>
-							                <a class="notification-link" href="<?php echo base_url('index.php/common/page/home');?>" data-li-action-type="ntf_click_notification">See All</a>
+							                <a class="notification-link" href="<?php echo base_url('index.php/common/page/home');?>" >See All</a>
 							                </li>
 							            </ol>
 							            <div class="li-scroll-track" >
@@ -183,11 +183,11 @@
 							                    </div>
 							                </div>
 							            </div>
-							        </div>
+							        </div>-->
 							    </div>
 							</div>
 						</li>
-						<li class="nav-item activity-tab" data-li-activity-type="">
+						<li class="nav-item activity-tab" >
 						    <a href="<?php echo base_url('index.php/common/page/home');?>" class="activity-toggle add-connections-btn">
 						    Add Connections </a>
 						    <div class="add-connections simple-responsive" id="addconnections">
@@ -217,7 +217,7 @@
 						</li>
 						<li class="nav-item account-settings-tab">
 						    <a href="<?php echo base_url('index.php/common/page/home');?>" class="account-toggle">
-						    <img src="<?php echo $this->session->userdata('thumbnail');?>"  alt="Omer Zahid" class="nav-profile-photo" height="20" width="20">
+						    <img src="<?php echo $this->session->userdata('thumbnail');?>"  alt="image" class="nav-profile-photo" id="setimg2">
 						    </a>
 						    <div class="account-sub-nav" id="account-sub-nav">
 						        <div class="account-sub-nav-options">
@@ -232,7 +232,7 @@
 						                        <span class="act-set-icon">
 						                        <a href="<?php echo base_url('index.php/common/page/home');?>">
 						                        <span class="act-set-icon-image" role="presentation">
-						                        <img src="<?php echo $this->session->userdata('thumbnail');?>"  alt="Omer Zahid" class="profile-photo" height="20" width="20">
+						                        <img src="<?php echo $this->session->userdata('thumbnail');?>"  alt="Image" class="profile-photo" id="setimg3">
 						                        </span>
 						                        </a>
 						                        </span>

@@ -82,7 +82,8 @@ background-position: -7px -419px;
 }
 
 #srp_main_ #results-col #results-container {
-	position:relative
+	position:relative;
+	display:none;
 }
 
 #srp_container {

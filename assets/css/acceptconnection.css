@@ -46,6 +46,7 @@ background-color: transparent !important;
 border: 0 !important;
 overflow: visible;
 width: 386px;
+visibility: hidden;
 }
 #body {
 margin-top: 50px;
@@ -160,7 +161,7 @@ padding-left: 25px;
 padding-right: 10px;
 }
 #inbox-nav .nav-compose a {
-background: #eaeaea url('/scds/common/u/img/sprite/sprite_inbox_v2_bg.png') repeat-x 0 -45px;
+background: #eaeaea url('../img/sprite_inbox_v2_bg.png') repeat-x 0 -45px;
 border: 1px solid #b5b5b5;
 -webkit-border-radius: 3px;
 -moz-border-radius: 3px;
@@ -175,7 +176,7 @@ padding: 0 8px;
 width: 120px;
 }
 #inbox-nav .nav-compose em {
-background: url('/scds/common/u/img/sprite/sprite_inbox_v3_icon.png') no-repeat right -96px;
+background: url('../img/sprite_inbox_v3_icon.png') no-repeat right -96px;
 font-size: 100%;
 padding: 6px 0;
 }
@@ -218,7 +219,7 @@ width: 100%;
 padding: 0;
 }
 .tabs-v2 li {
-background: #fcfcfc url('/scds/common/u/img/sprite/sprite_global_v8.png') repeat-x 0 -301px;
+background: #fcfcfc url('../img/sprite_global_v8.png') repeat-x 0 -301px;
 border: 1px solid #ccc;
 -moz-border-radius-topright: 3px;
 -moz-border-radius-topleft: 3px;
@@ -243,7 +244,7 @@ display: inline-block;
 vertical-align: top;
 }
 .tabs-v2 .selected {
-background: #fff url('/scds/common/u/img/sprite/sprite_global_v8.png') repeat-x 0 -394px;
+background: #fff url('../img/sprite_global_v8.png') repeat-x 0 -394px;
 border-color: #b6b6b6;
 margin-bottom: -1px;
 padding-bottom: 1px;
@@ -310,7 +311,7 @@ padding-left: 10px;
 padding-right: 10px;
 }
 .inbox-v2 .inbox-item {
-background: #fff url('/scds/common/u/img/bg/bg_grey_dotted_h-line_3x1.png') repeat-x 0 0;
+background: #fff url('../img/bg_grey_dotted_h-line_3x1.png') repeat-x 0 0;
 margin: 0;
 padding-left: 10px;
 padding-right: 10px;
@@ -383,7 +384,7 @@ margin-bottom: 0px;
 display: -moz-inline-stack;
 display: inline-block;
 vertical-align: middle;
-zoom: 1;
+
 margin-left: 0px;
 margin-right: 5px;
 vertical-align: bottom;
@@ -392,7 +393,7 @@ vertical-align: bottom;
 display: -moz-inline-stack;
 display: inline-block;
 vertical-align: middle;
-zoom: 1;
+
 }
 .btn-primary, .btn-new-primary, .btn-secondary, .btn-new-secondary, .btn-tertiary, .btn-ternary, .btn-quaternary, .btn-action {
 border-width: 1px;
@@ -426,4 +427,16 @@ display: inline-block !important;
 padding: 0 !important;
 _height: 22px;
 _overflow: hidden;
+}
+#control_gen_8
+{
+	display: none;
+}
+#setter1
+{
+	display: none;
+}
+#yui-gen0
+{
+	display: none;
 }

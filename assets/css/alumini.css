@@ -439,8 +439,8 @@ a.btn-primary,a.btn-new-primary,a.btn-secondary,a.btn-new-secondary,a.btn-tertia
 }
 .cmpt-ptc-people-results .person img {
 	float:left;
-	width:17%;
-	height:auto;
+	width:80px;
+	height:80px;
 	margin:2.2% 4.2% 2.2% 2.2%;
 	border:none;
 }
@@ -557,4 +557,9 @@ a.btn-primary,a.btn-new-primary,a.btn-secondary,a.btn-new-secondary,a.btn-tertia
 	width:0;
 	border-left:1px solid #ccc;
 	border-right: 1px solid #fff;
+}
+
+#container-ptc-people-results
+{
+	display:none;
 }

@@ -1,5 +1,5 @@
 
-<div id="lui-panel-body" class="yui-module yui-overlay yui-overlay-hidden" style="z-index: 1007; visibility: hidden;">
+<div id="lui-panel-body" class="yui-module yui-overlay yui-overlay-hidden" >
 </div>
 <div id="body" class="" role="main">
 	<div class="wrapper hp-nus-wrapper">
@@ -11,7 +11,7 @@
 					<ul>
 						<li class="nav-search ">
 						<form action="/inbox/messages/search" method="POST" name="inboxSearchForm" novalidate="novalidate">
-							<label for="keywords-inboxSearchForm" id="control_gen_8" style="display: none;">Search Inbox</label>
+							<label for="keywords-inboxSearchForm" id="control_gen_8" >Search Inbox</label>
 							<span class="error" id="keywords-inboxSearchForm-error"></span>
 							<input type="text" name="keywords" value="" id="keywords-inboxSearchForm" class="text" placeholder="Search Inbox">
 							<input class="search-go" type="submit" value="Search" name="search">
@@ -81,8 +81,8 @@
 												<li>
 												<div class="primary-actions" id="control_gen_10">
 													<span class="btn-menu btn-ternary btn-split"><a data-action="invitationAccept" data-action-url="/inbox/action?mboxItemGID=I133969686_252&amp;actionType=invitationAccept&amp;csrfToken=ajax%3A5346820311404297045&amp;goback=%2Epiv_*1_*1_*1_*1_*1&amp;trk=inbox-invitations-inv-accept" class="accept btn btn-ternary" href="<?php echo base_url('index.php/common/page/accept_connection');?>" data-li-backref="yui-gen0">Accept</a><span class="toggle-btn"></span></span>
-													<ul style="display: none;">
-														<li id="yui-gen0" style="display: none;">
+													<ul id="setter1">
+														<li id="yui-gen0">
 														</li>
 														<li>
 														<a class="reply reply-to-invite" href="<?php echo base_url('index.php/common/page/accept_connection');?>">Reply (don’t accept yet)</a>
